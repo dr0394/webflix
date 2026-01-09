@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '../../lib/supabase';
 import { Eye, Download, Filter, Search, Calendar, Mail, Phone, Building, FileText, ExternalLink, Copy, Check, Clock, User, AlertCircle, CheckCircle2, RefreshCw, ArrowLeft } from 'lucide-react';
-
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 interface Submission {
   id: string;

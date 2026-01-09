@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '../../lib/supabase';
 import AutoaufbereitungDemo from '../../demos/autoaufbereitung/Landing';
 import GartenlandschaftsbauDemo from '../../demos/gartenlandschaftsbau/Landing';
 import MetallbauDemo from '../../demos/metallbau/Landing';
 import SecurityDemo from '../../demos/security/Landing';
-
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 const GeneratedWebsite: React.FC = () => {
   const { websiteId } = useParams<{ websiteId: string }>();
