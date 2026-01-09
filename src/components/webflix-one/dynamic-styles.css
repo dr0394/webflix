@@ -1,0 +1,181 @@
+/* Dynamic Theme Styles - Applied via CSS Variables from Database */
+
+:root {
+  /* Default fallback values */
+  --color-primary: #3B82F6;
+  --color-secondary: #1F2937;
+  --color-accent: #10B981;
+  --color-text: #1F2937;
+  --color-textLight: #6B7280;
+  --color-background: #FFFFFF;
+  --color-surface: #F9FAFB;
+  --color-border: #E5E7EB;
+
+  --font-family: 'Inter', sans-serif;
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  --spacing-section: 6rem;
+  --spacing-container: 1280px;
+  --spacing-gap: 2rem;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  --animation-duration: 300ms;
+  --animation-easing: ease-in-out;
+}
+
+/* Apply typography globally */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Utility classes that use CSS variables */
+.dynamic-text-primary {
+  color: var(--color-primary);
+}
+
+.dynamic-bg-primary {
+  background-color: var(--color-primary);
+}
+
+.dynamic-border-primary {
+  border-color: var(--color-primary);
+}
+
+.dynamic-shadow {
+  box-shadow: var(--shadow-lg);
+}
+
+.dynamic-rounded {
+  border-radius: var(--radius-lg);
+}
+
+.dynamic-transition {
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-easing);
+}
+
+/* Section spacing */
+.dynamic-section {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
+
+.dynamic-container {
+  max-width: var(--spacing-container);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button styles */
+.dynamic-btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-semibold);
+  box-shadow: var(--shadow-md);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-easing);
+}
+
+.dynamic-btn:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-2px);
+}
+
+.dynamic-btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-semibold);
+}
+
+/* Card styles */
+.dynamic-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-gap);
+  box-shadow: var(--shadow-md);
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-easing);
+}
+
+.dynamic-card:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+}
+
+/* Text sizes */
+.dynamic-heading-1 {
+  font-size: var(--text-6xl);
+  font-weight: var(--font-extrabold);
+  font-family: var(--font-heading);
+  line-height: 1.1;
+}
+
+.dynamic-heading-2 {
+  font-size: var(--text-5xl);
+  font-weight: var(--font-bold);
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+.dynamic-heading-3 {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+.dynamic-body {
+  font-size: var(--text-base);
+  font-weight: var(--font-normal);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.dynamic-body-lg {
+  font-size: var(--text-lg);
+  font-weight: var(--font-normal);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}

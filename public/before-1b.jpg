@@ -1,0 +1,6 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#10b981"/>
+  <text x="50%" y="45%" text-anchor="middle" fill="white" font-size="60" font-family="Arial" font-weight="bold">AFTER</text>
+  <text x="50%" y="55%" text-anchor="middle" fill="white" opacity="0.9" font-size="30" font-family="Arial">Image 1b</text>
+  <text x="50%" y="65%" text-anchor="middle" fill="white" opacity="0.7" font-size="20" font-family="Arial">/public/before-1b.jpg</text>
+</svg>

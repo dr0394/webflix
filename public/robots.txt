@@ -1,0 +1,64 @@
+# Webflix Robots.txt - SEO Optimized
+# Website kaufen | Website erstellen lassen | Günstige Websites
+
+User-agent: *
+Allow: /
+Allow: /shop
+Allow: /zum-mitnehmen
+Allow: /demo/*
+Allow: /configurator
+Allow: /about
+Allow: /contact
+Allow: /custom
+Allow: /addons
+Allow: /blog
+Allow: /blog/*
+
+# Block customer and admin areas from search engines
+Disallow: /customer
+Disallow: /admin
+Disallow: /developer
+Disallow: /checkout
+Disallow: /checkout/*
+Disallow: /password-reset
+
+# Block generated content
+Disallow: /generated/*
+
+# Allow images and assets
+Allow: /assets/*
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Sitemap Location
+Sitemap: https://webflix.info/sitemap.xml
+
+# Crawl-delay (optional - remove if you want faster crawling)
+Crawl-delay: 1
+
+# Specific bot instructions
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Yandex
+User-agent: Yandex
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
