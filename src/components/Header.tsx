@@ -225,10 +225,10 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
         >
           <div className="flex items-center justify-center gap-2 sm:gap-3 relative z-10 flex-wrap px-4">
             <span className="text-gray-800 font-bold text-xs sm:text-sm md:text-base">
-              Kaufe eine Webflix Website für nur <span className="text-pink-500">29,90 Euro monatlich.</span>
+              Einmalige Setup-Kosten: <span className="text-pink-500">499 €</span>
             </span>
             <span className="text-gray-700 text-xs sm:text-sm md:text-base">
-              0 Euro Erstellungskosten. Aktion bis 31.12.2025.
+              · 2 Tage Express-Umsetzung · Aktion gültig bis 31.03.2026
             </span>
             <button
               onClick={() => navigate('/zum-mitnehmen')}
