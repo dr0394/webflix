@@ -231,7 +231,7 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
               · 2 Tage Express-Umsetzung · Aktion gültig bis 31.03.2026
             </span>
             <button
-              onClick={() => navigate('/zum-mitnehmen')}
+              onClick={() => navigate('/custom')}
               className="text-pink-500 font-light hover:text-pink-600 transition-colors text-xs sm:text-sm md:text-base underline"
             >
               jetzt anfragen
