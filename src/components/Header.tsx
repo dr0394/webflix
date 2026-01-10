@@ -234,7 +234,7 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
               onClick={() => navigate('/zum-mitnehmen')}
               className="text-pink-500 font-light hover:text-pink-600 transition-colors text-xs sm:text-sm md:text-base underline"
             >
-              Zum Showroom
+              jetzt anfragen
             </button>
           </div>
         </div>
