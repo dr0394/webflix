@@ -9,47 +9,7 @@ interface HeaderProps {
 
 const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isPromoVisible, setIsPromoVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (!showNavigation) return;
-
-    let ticking = false;
-
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const currentScrollY = window.scrollY;
-          const scrollDifference = Math.abs(currentScrollY - lastScrollY);
-
-          // Only trigger if scroll difference is significant (reduces flicker)
-          if (scrollDifference < 5) {
-            ticking = false;
-            return;
-          }
-
-          // Show promo when scrolling down or at top
-          if (currentScrollY < lastScrollY || currentScrollY < 10) {
-            setIsPromoVisible(true);
-          }
-          // Hide promo when scrolling up
-          else if (currentScrollY > lastScrollY && currentScrollY > 80) {
-            setIsPromoVisible(false);
-          }
-
-          setLastScrollY(currentScrollY);
-          ticking = false;
-        });
-
-        ticking = true;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollY, showNavigation]);
 
   if (showNavigation) {
     return (
@@ -217,27 +177,6 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
           )}
         </div>
 
-        <div
-          className={`bg-white text-center relative border-t border-gray-200 transition-all duration-300 ease-in-out ${
-            isPromoVisible ? 'max-h-32 py-4 opacity-100' : 'max-h-0 py-0 opacity-0'
-          }`}
-          style={{ overflow: 'hidden' }}
-        >
-          <div className="flex items-center justify-center gap-2 sm:gap-3 relative z-10 flex-wrap px-4">
-            <span className="text-gray-800 font-bold text-xs sm:text-sm md:text-base">
-              Einmalige Setup-Kosten: <span className="text-pink-500">499 €</span>
-            </span>
-            <span className="text-gray-700 text-xs sm:text-sm md:text-base">
-              · 2 Tage Express-Umsetzung · Aktion gültig bis 31.03.2026
-            </span>
-            <button
-              onClick={() => navigate('/zum-mitnehmen')}
-              className="text-pink-500 font-light hover:text-pink-600 transition-colors text-xs sm:text-sm md:text-base underline"
-            >
-              Zum Showroom
-            </button>
-          </div>
-        </div>
       </div>
     );
   }
