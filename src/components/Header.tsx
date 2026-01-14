@@ -25,18 +25,22 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
           const scrollDifference = Math.abs(currentScrollY - lastScrollY);
 
           // Only trigger if scroll difference is significant (reduces flicker)
-          if (scrollDifference < 5) {
+          if (scrollDifference < 10) {
             ticking = false;
             return;
           }
 
-          // Show promo when scrolling down or at top
-          if (currentScrollY < lastScrollY || currentScrollY < 10) {
+          // Always show promo at top
+          if (currentScrollY < 100) {
             setIsPromoVisible(true);
           }
-          // Hide promo when scrolling up
-          else if (currentScrollY > lastScrollY && currentScrollY > 80) {
+          // Hide promo when scrolling down
+          else if (currentScrollY > lastScrollY && currentScrollY >= 100) {
             setIsPromoVisible(false);
+          }
+          // Show promo when scrolling up
+          else if (currentScrollY < lastScrollY) {
+            setIsPromoVisible(true);
           }
 
           setLastScrollY(currentScrollY);
