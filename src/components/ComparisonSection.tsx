@@ -14,7 +14,7 @@ export default function ComparisonSection() {
       criterion: 'Kosten einmalig',
       baukasten: 'Individuell ',
       agency: 'Ab 5.000 €',
-      webflix: '0 €',
+      webflix: '499 €',
       custom: 'Ab 999 €',
       webflixHighlight: true
     },
@@ -153,7 +153,7 @@ export default function ComparisonSection() {
               </div>
               <div className="flex justify-center">
                 <button
-                  onClick={() => window.location.href = '/shop'}
+                  onClick={() => window.location.href = 'https://www.webflix.info/custom'}
                   className="px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 rounded-lg font-bold text-white text-sm transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105"
                 >
                   Jetzt starten
@@ -229,7 +229,7 @@ export default function ComparisonSection() {
                     </div>
                   ))}
                   <button
-                    onClick={() => window.location.href = '/shop'}
+                    onClick={() => window.location.href = 'https://www.webflix.info/custom'}
                     className="w-full mt-3 px-4 py-2.5 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 rounded-lg font-bold text-white text-sm transition-all duration-300 shadow-lg hover:shadow-pink-500/50"
                   >
                     Jetzt starten

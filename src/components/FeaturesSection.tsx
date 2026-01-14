@@ -79,10 +79,10 @@ const FeaturesSection = () => {
               Lerne WEBFLIX kennen.
             </h3>
             <a
-              href="/zum-mitnehmen"
+              href="https://www.webflix.info/custom"
               className="inline-flex items-center justify-center px-6 py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300 whitespace-nowrap"
             >
-              Direkt zum Showroom
+              Hier entlang
             </a>
           </div>
           <div className="relative overflow-x-auto scrollbar-hide">

@@ -106,10 +106,10 @@ const ModelExplanation = () => {
               Vergessen Sie monatelange Wartezeiten und teure Webdesigner
             </p>
             <button
-              onClick={() => window.location.href = '/zum-mitnehmen'}
+              onClick={() => window.location.href = 'https://www.webflix.info/custom'}
               className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-pink-400 hover:from-orange-600 hover:to-pink-500 text-white py-2.5 sm:py-3 px-6 sm:px-8 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 mx-auto text-sm sm:text-base"
             >
-              <span>Zum Showroom</span>
+              <span>Jetzt mehr erfahren</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
