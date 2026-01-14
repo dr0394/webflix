@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, Mail, Phone, MapPin, Clock, Send, CheckCircle2, MessageSquare, Calendar, Zap, Users } from 'lucide-react';
+import { Mail, Phone, Clock, Send, CheckCircle2, MessageSquare, Zap, Users } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Header';
 
@@ -21,7 +21,41 @@ const ContactPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    const whatsappNumber = '491751194624';
+
+    let whatsappMessage = `*Neue Kontaktanfrage*\n\n`;
+    whatsappMessage += `*Name:* ${formData.name}\n`;
+    whatsappMessage += `*E-Mail:* ${formData.email}\n`;
+
+    if (formData.phone) {
+      whatsappMessage += `*Telefon:* ${formData.phone}\n`;
+    }
+
+    if (formData.company) {
+      whatsappMessage += `*Firma:* ${formData.company}\n`;
+    }
+
+    const subjectLabels: { [key: string]: string } = {
+      'website': 'Neue Website',
+      'custom': 'Custom Projekt',
+      'webflix': 'Webflix Paket',
+      'support': 'Support',
+      'other': 'Sonstiges'
+    };
+    whatsappMessage += `*Betreff:* ${subjectLabels[formData.subject]}\n`;
+
+    if (formData.budget) {
+      whatsappMessage += `*Budget:* ${formData.budget}\n`;
+    }
+
+    whatsappMessage += `\n*Nachricht:*\n${formData.message}`;
+
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    window.open(whatsappUrl, '_blank');
 
     setIsSubmitting(false);
     setIsSubmitted(true);
@@ -58,23 +92,9 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'Telefon',
-      value: '+49 123 456 7890',
-      link: 'tel:+491234567890',
+      value: '+49 175 1194624',
+      link: 'tel:+491751194624',
       description: 'Mo-Fr 9-18 Uhr'
-    },
-    {
-      icon: MapPin,
-      title: 'Adresse',
-      value: 'Musterstraße 123, 12345 Berlin',
-      link: 'https://maps.google.com',
-      description: 'Besuche uns vor Ort'
-    },
-    {
-      icon: Calendar,
-      title: 'Meeting buchen',
-      value: '15 Min Beratung',
-      link: '#',
-      description: 'Kostenlos & unverbindlich'
     }
   ];
 
@@ -361,40 +381,6 @@ const ContactPage = () => {
                   </p>
                 </form>
               )}
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-br from-orange-500/10 to-pink-400/10 border border-pink-400/30 rounded-3xl p-8 sm:p-12">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Noch unsicher?</h2>
-              <p className="text-white/70 mb-6 leading-relaxed">
-                Buche ein kostenloses 15-minütiges Beratungsgespräch. Wir beantworten deine Fragen
-                und zeigen dir, wie wir dein Projekt zum Erfolg machen können.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button
-                  onClick={() => navigate('/configurator')}
-                  className="px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-400 hover:from-orange-600 hover:to-pink-500 text-white font-semibold rounded-xl transition-all shadow-lg flex items-center justify-center gap-2"
-                >
-                  <span>Direkt konfigurieren</span>
-                </button>
-                <button
-                  onClick={() => navigate('/custom')}
-                  className="px-6 py-3 border-2 border-white/20 hover:border-pink-400/50 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2"
-                >
-                  <span>Custom Anfrage</span>
-                </button>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-pink-400/20 rounded-2xl blur-3xl"></div>
-              <img
-                src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Beratungsgespräch"
-                className="relative rounded-2xl w-full h-64 object-cover shadow-2xl"
-              />
             </div>
           </div>
         </div>
