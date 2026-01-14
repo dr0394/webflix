@@ -77,18 +77,6 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
                   </button>
                 )}
                 <button
-                  onClick={() => navigate('/shop')}
-                  className="text-gray-600 hover:text-black transition-colors text-sm font-light"
-                >
-                  Shop
-                </button>
-                <button
-                  onClick={() => navigate('/zum-mitnehmen')}
-                  className="text-gray-600 hover:text-black transition-colors text-sm font-light"
-                >
-                  Webflix
-                </button>
-                <button
                   onClick={() => navigate('/custom')}
                   className="text-gray-600 hover:text-black transition-colors text-sm font-light"
                 >
@@ -158,24 +146,6 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
                     Zum Showroom
                   </button>
                 )}
-                <button
-                  onClick={() => {
-                    navigate('/shop');
-                    setMobileMenuOpen(false);
-                  }}
-                  className="block w-full text-left text-gray-600 hover:text-black transition-colors text-sm font-light py-2"
-                >
-                  Shop
-                </button>
-                <button
-                  onClick={() => {
-                    navigate('/zum-mitnehmen');
-                    setMobileMenuOpen(false);
-                  }}
-                  className="block w-full text-left text-gray-600 hover:text-black transition-colors text-sm font-light py-2"
-                >
-                  Webflix
-                </button>
                 <button
                   onClick={() => {
                     navigate('/custom');
@@ -256,18 +226,6 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
 
         <div className="hidden md:flex items-center space-x-6">
           <a
-            href="/shop"
-            className="text-sm font-medium hover:text-gray-300 transition-colors"
-          >
-            Shop
-          </a>
-          <a
-            href="/zum-mitnehmen"
-            className="text-sm font-medium hover:text-gray-300 transition-colors"
-          >
-            Zum Mitnehmen
-          </a>
-          <a
             href="/custom"
             className="text-sm font-medium hover:text-gray-300 transition-colors"
           >
@@ -304,20 +262,6 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
       {mobileMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-lg border-t border-white/10">
           <div className="container mx-auto px-4 py-4 space-y-4">
-            <a
-              href="/shop"
-              className="block text-sm font-medium hover:text-gray-300 transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Shop
-            </a>
-            <a
-              href="/zum-mitnehmen"
-              className="block text-sm font-medium hover:text-gray-300 transition-colors py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Zum Mitnehmen
-            </a>
             <a
               href="/custom"
               className="block text-sm font-medium hover:text-gray-300 transition-colors py-2"
