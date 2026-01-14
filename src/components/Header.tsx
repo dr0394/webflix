@@ -77,6 +77,18 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
                   </button>
                 )}
                 <button
+                  onClick={() => navigate('/')}
+                  className="text-gray-600 hover:text-black transition-colors text-sm font-light"
+                >
+                  Startseite
+                </button>
+                <a
+                  href="https://www.webflix.info/custom"
+                  className="text-gray-600 hover:text-black transition-colors text-sm font-light"
+                >
+                  Express Websites
+                </a>
+                <button
                   onClick={() => navigate('/custom')}
                   className="text-gray-600 hover:text-black transition-colors text-sm font-light"
                 >
@@ -146,6 +158,22 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
                     Zum Showroom
                   </button>
                 )}
+                <button
+                  onClick={() => {
+                    navigate('/');
+                    setMobileMenuOpen(false);
+                  }}
+                  className="block w-full text-left text-gray-600 hover:text-black transition-colors text-sm font-light py-2"
+                >
+                  Startseite
+                </button>
+                <a
+                  href="https://www.webflix.info/custom"
+                  className="block w-full text-left text-gray-600 hover:text-black transition-colors text-sm font-light py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Express Websites
+                </a>
                 <button
                   onClick={() => {
                     navigate('/custom');
@@ -226,6 +254,18 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
 
         <div className="hidden md:flex items-center space-x-6">
           <a
+            href="/"
+            className="text-sm font-medium hover:text-gray-300 transition-colors"
+          >
+            Startseite
+          </a>
+          <a
+            href="https://www.webflix.info/custom"
+            className="text-sm font-medium hover:text-gray-300 transition-colors"
+          >
+            Express Websites
+          </a>
+          <a
             href="/custom"
             className="text-sm font-medium hover:text-gray-300 transition-colors"
           >
@@ -262,6 +302,20 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
       {mobileMenuOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-lg border-t border-white/10">
           <div className="container mx-auto px-4 py-4 space-y-4">
+            <a
+              href="/"
+              className="block text-sm font-medium hover:text-gray-300 transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Startseite
+            </a>
+            <a
+              href="https://www.webflix.info/custom"
+              className="block text-sm font-medium hover:text-gray-300 transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Express Websites
+            </a>
             <a
               href="/custom"
               className="block text-sm font-medium hover:text-gray-300 transition-colors py-2"
