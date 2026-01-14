@@ -23,9 +23,9 @@ const Hero = () => {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 max-w-5xl mx-auto">
-          {/* Websites zum Mitnehmen */}
+          {/* Express Websites */}
           <div
-            onClick={() => window.location.href = '/zum-mitnehmen'}
+            onClick={() => window.location.href = '/custom'}
             className="relative bg-black/60 border-2 border-[#E2E5E9]/30 hover:border-pink-400/80 hover:shadow-2xl hover:shadow-pink-500/40 md:hover:scale-[1.03] transition-all duration-500 cursor-pointer group overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8"
           >
             {/* Animated gradient orbs */}
@@ -49,7 +49,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-1">
-                    WEBSITES ZUM<br/>MITNEHMEN
+                    EXPRESS<br/>WEBSITES
                   </h3>
                   <div className="h-1 w-20 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full"></div>
                 </div>
@@ -62,7 +62,7 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center gap-3 group/item">
                   <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-pink-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Ab 29,90€/Monat</p>
+                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Ab 499€</p>
                 </div>
                 <div className="flex items-center gap-3 group/item">
                   <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-pink-500/50 group-hover/item:scale-125 transition-all"></div>
