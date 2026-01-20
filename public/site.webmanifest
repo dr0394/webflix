@@ -1,0 +1,22 @@
+{
+  "name": "Webflix - Professionelle Website für 499 €",
+  "short_name": "Webflix",
+  "description": "Professionelle Website vom Experten: Webdesign zum Festpreis von 499 €. Individuell erstellt, modern, mobiloptimiert & inkl. Google-Indexierung.",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/2SbjgE7.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/2SbjgE7.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#111111",
+  "background_color": "#111111",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}

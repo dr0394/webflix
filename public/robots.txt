@@ -1,31 +1,40 @@
 # Webflix Robots.txt - SEO Optimized
-# Website kaufen | Website erstellen lassen | Günstige Websites
+# Professionelle Website für 499 € | Webdesign Experte | Google-Indexierung
 
 User-agent: *
 Allow: /
+Allow: /custom
+Allow: /499
 Allow: /shop
 Allow: /zum-mitnehmen
 Allow: /demo/*
 Allow: /configurator
 Allow: /about
 Allow: /contact
-Allow: /custom
 Allow: /addons
 Allow: /blog
 Allow: /blog/*
+Allow: /impressum
+Allow: /datenschutz
+Allow: /agb
 
 # Block customer and admin areas from search engines
 Disallow: /customer
+Disallow: /customer/*
 Disallow: /admin
+Disallow: /admin/*
 Disallow: /developer
 Disallow: /checkout
 Disallow: /checkout/*
+Disallow: /reset-password
 Disallow: /password-reset
 
-# Block generated content
+# Block generated and internal content
 Disallow: /generated/*
+Disallow: /w/*
+Disallow: /website/*
 
-# Allow images and assets
+# Allow images and assets for better indexing
 Allow: /assets/*
 Allow: /*.jpg$
 Allow: /*.jpeg$
@@ -33,32 +42,64 @@ Allow: /*.png$
 Allow: /*.gif$
 Allow: /*.webp$
 Allow: /*.svg$
+Allow: /*.css$
+Allow: /*.js$
 
 # Sitemap Location
 Sitemap: https://webflix.info/sitemap.xml
 
-# Crawl-delay (optional - remove if you want faster crawling)
-Crawl-delay: 1
+# No crawl delay for faster indexing
+# Crawl-delay: 0
 
-# Specific bot instructions
+# Specific bot instructions for optimal crawling
 
-# Google
+# Google - Highest Priority
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
 User-agent: Googlebot-Image
 Allow: /
+Crawl-delay: 0
+
+# Google Mobile
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 0
 
 # Bing
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 0
 
+User-agent: msnbot
+Allow: /
+Crawl-delay: 0
+
 # Yandex
 User-agent: Yandex
 Allow: /
+Crawl-delay: 0
 
 # DuckDuckGo
 User-agent: DuckDuckBot
 Allow: /
+Crawl-delay: 0
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

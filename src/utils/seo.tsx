@@ -66,9 +66,9 @@ export const useSEO = ({
 
 export const PAGE_SEO = {
   home: {
-    title: 'Website kaufen ab 29,90€ | Professionelle Website erstellen lassen | Webflix',
-    description: 'Website kaufen und in 48h online gehen! Fertige Websites ab 29,90€/Monat. Professionell, günstig und sofort einsatzbereit. Website mieten statt kaufen - keine Agentur nötig!',
-    keywords: 'website kaufen, website erstellen lassen, günstige website, professionelle website, website mieten, fertige website, website abo, webdesign günstig'
+    title: 'Webflix Webdesign | Professionelle Website für 499 € – SEO & Google-Indexierung',
+    description: 'Professionelle Website vom Experten: Webdesign zum Festpreis von 499 €. Individuell erstellt, modern, mobiloptimiert & inkl. Google-Indexierung. Jetzt Website erstellen lassen mit Webflix.',
+    keywords: 'webdesign, website erstellen lassen, professionelle website, website 499 euro, google indexierung, seo optimierung, webdesign festpreis, mobiloptimiert, website experte, webflix'
   },
   shop: {
     title: 'Website kaufen - Fertige Designs ab 29,90€ | Webflix Shop',
@@ -96,9 +96,14 @@ export const PAGE_SEO = {
     keywords: 'webflix kontakt, website beratung, support, hilfe'
   },
   custom: {
-    title: 'Individuelle Website erstellen lassen - Maßgeschneidert | Webflix',
-    description: 'Individuelle Website erstellen lassen nach deinen Wünschen. Maßgeschneiderte Lösungen für dein Business. Jetzt unverbindlich anfragen!',
-    keywords: 'individuelle website, maßgeschneiderte website, website nach maß, custom website'
+    title: 'Professionelle Website für 499 € – Express-Umsetzung in 2 Tagen | Webflix',
+    description: 'Website erstellen lassen zum Festpreis: 499 € einmalig. 2 Tage Express-Umsetzung, mobiloptimiert, SEO & Google-Indexierung inklusive. Jetzt anfragen!',
+    keywords: 'website 499 euro, website erstellen lassen, express website, webdesign festpreis, professionelle website, seo optimierung'
+  },
+  offer499: {
+    title: '499 € Website Angebot – Professionelles Webdesign | Webflix',
+    description: 'Einmalige Setup-Kosten: 499 €. Professionelle Website in 2 Tagen. Inkl. Mobiloptimierung, SEO & Google-Indexierung. Aktion gültig bis 31.03.2026.',
+    keywords: 'website 499 euro, webdesign angebot, website aktion, express website, günstige website professionell'
   },
   addons: {
     title: 'Website Add-Ons - Erweitere deine Website | Webflix',
