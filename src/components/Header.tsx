@@ -17,6 +17,7 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
     if (!showNavigation) return;
 
     let ticking = false;
+    let scrollTimeout: NodeJS.Timeout;
 
     const handleScroll = () => {
       if (!ticking) {
@@ -25,17 +26,17 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
           const scrollDifference = Math.abs(currentScrollY - lastScrollY);
 
           // Only trigger if scroll difference is significant (reduces flicker)
-          if (scrollDifference < 10) {
+          if (scrollDifference < 50) {
             ticking = false;
             return;
           }
 
           // Always show promo at top
-          if (currentScrollY < 100) {
+          if (currentScrollY < 150) {
             setIsPromoVisible(true);
           }
           // Hide promo when scrolling down
-          else if (currentScrollY > lastScrollY && currentScrollY >= 100) {
+          else if (currentScrollY > lastScrollY && currentScrollY >= 150) {
             setIsPromoVisible(false);
           }
           // Show promo when scrolling up
@@ -49,10 +50,21 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
 
         ticking = true;
       }
+
+      // Debounce: keep promo visible after scroll stops
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        if (window.scrollY < 150) {
+          setIsPromoVisible(true);
+        }
+      }, 150);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(scrollTimeout);
+    };
   }, [lastScrollY, showNavigation]);
 
   if (showNavigation) {
@@ -220,10 +232,13 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
         </div>
 
         <div
-          className={`bg-white text-center relative border-t border-gray-200 transition-all duration-300 ease-in-out ${
-            isPromoVisible ? 'max-h-32 py-4 opacity-100' : 'max-h-0 py-0 opacity-0'
+          className={`bg-white text-center relative border-t border-gray-200 transition-all duration-500 ease-in-out ${
+            isPromoVisible ? 'max-h-32 py-4 opacity-100' : 'max-h-0 py-0 opacity-0 pointer-events-none'
           }`}
-          style={{ overflow: 'hidden' }}
+          style={{
+            overflow: 'hidden',
+            willChange: isPromoVisible ? 'auto' : 'transform'
+          }}
         >
           <div className="flex items-center justify-center gap-2 sm:gap-3 relative z-10 flex-wrap px-4">
             <span className="text-gray-800 font-bold text-xs sm:text-sm md:text-base">
