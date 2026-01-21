@@ -67,7 +67,7 @@ const FeaturesSection = () => {
               <span className="text-sm font-semibold bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">Webflix zum Mitnehmen</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-3">
-              Ihre Premium Website zum Mitnehmen
+              Ihre Premium Webflix Website
             </h2>
             <p className="text-lg sm:text-xl text-gray-600">
               ist in 48 Stunden online – einfach bestellen und loslegen

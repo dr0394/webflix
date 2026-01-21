@@ -101,7 +101,7 @@ const ModelExplanation = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-8 sm:mt-12">
           <div className="bg-gradient-to-r from-orange-500/10 to-pink-400/10 border border-pink-400/30 rounded-2xl p-6 sm:p-8">
-            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-black">Bereit für Ihre Professionelle Website zum Mitnehmen?</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-black">Bereit für Ihre Professionelle Webflix Website?</h3>
             <p className="text-gray-800 mb-4 sm:mb-6 text-sm sm:text-base">
               Vergessen Sie monatelange Wartezeiten und teure Webdesigner
             </p>
