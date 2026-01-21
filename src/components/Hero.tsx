@@ -78,9 +78,11 @@ const Hero = () => {
           </div>
 
           {/* Individuell Entwickelt */}
-          <div
-            onClick={() => window.location.href = '/custom'}
-            className="relative bg-black/50 border-2 border-[#E2E5E9]/30 hover:border-green-400/80 hover:shadow-2xl hover:shadow-green-500/40 md:hover:scale-[1.03] transition-all duration-500 cursor-pointer group overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8"
+          <a
+            href="https://wa.me/4915562710839"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative bg-black/50 border-2 border-[#E2E5E9]/30 hover:border-green-400/80 hover:shadow-2xl hover:shadow-green-500/40 md:hover:scale-[1.03] transition-all duration-500 cursor-pointer group overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8 block"
           >
             {/* Webflix Logo Background */}
             <div className="absolute inset-0 flex items-center justify-center opacity-[0.15] group-hover:opacity-[0.25] transition-opacity duration-500">
@@ -133,12 +135,12 @@ const Hero = () => {
                 </div>
               </div>
 
-              <button className="w-full py-3.5 sm:py-4 bg-[#E2E5E9] hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 rounded-xl sm:rounded-2xl font-black text-gray-800 hover:text-white text-sm sm:text-base transition-all duration-300 shadow-2xl shadow-[#E2E5E9]/30 hover:shadow-green-500/50 group-hover:scale-[1.02] uppercase tracking-wider relative overflow-hidden">
+              <div className="w-full py-3.5 sm:py-4 bg-[#E2E5E9] hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 rounded-xl sm:rounded-2xl font-black text-gray-800 hover:text-white text-sm sm:text-base transition-all duration-300 shadow-2xl shadow-[#E2E5E9]/30 hover:shadow-green-500/50 group-hover:scale-[1.02] uppercase tracking-wider relative overflow-hidden flex items-center justify-center">
                 <span className="relative z-10">INDIVIDUELL GESTALTEN</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* Customer Logos Slider */}

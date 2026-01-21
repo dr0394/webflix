@@ -182,12 +182,14 @@ export default function WebflixCustomSection() {
               </div>
 
               <div className="flex flex-col gap-3 sm:gap-4 w-full lg:w-auto lg:flex-shrink-0">
-                <button
-                  onClick={() => window.location.href = '/custom'}
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 border-2 border-white/30 hover:border-transparent rounded-xl font-bold text-white text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105 whitespace-nowrap"
+                <a
+                  href="https://wa.me/4915562710839"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 border-2 border-white/30 hover:border-transparent rounded-xl font-bold text-white text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105 whitespace-nowrap text-center"
                 >
                   Mehr erfahren
-                </button>
+                </a>
               </div>
             </div>
           </div>
