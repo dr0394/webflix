@@ -63,13 +63,13 @@ export default function WebflixCustomSection() {
             Brauchen Sie mehr als eine{' '}
             <span className="block sm:inline mt-2 sm:mt-0">
               <span className="text-white">
-                Seite zum Mitnehmen?
+                Webflix Website?
               </span>
             </span>
           </h2>
 
           <p className="text-lg sm:text-xl text-white/70 max-w-3xl mx-auto">
-            Individuelle Website haben Grenzen. Meisterwerke nicht.
+            Dein All In One System für Maximale Effizienz!
           </p>
         </div>
 

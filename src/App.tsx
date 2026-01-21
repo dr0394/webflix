@@ -132,6 +132,7 @@ import { AdminPanel } from './components/webflix-one/admin/AdminPanel';
 import { WebflixOneDemo } from './components/webflix-one/DemoIndex';
 import { HelmetProvider } from 'react-helmet-async';
 import Offer499Page from './components/offers/Offer499Page';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -140,6 +141,7 @@ function App() {
         <ScrollToTop />
         <PreviewModeHandler />
         <CalendlyTrackingInitializer />
+        <WhatsAppButton />
       <Routes>
         <Route path="/" element={
           <div className="min-h-screen bg-[#111111] text-white font-inter">
