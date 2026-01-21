@@ -49,7 +49,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-1">
-                    EXPRESS<br/>WEBSITES
+                    WEBFLIX<br/>WEBSITES
                   </h3>
                   <div className="h-1 w-20 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full"></div>
                 </div>
