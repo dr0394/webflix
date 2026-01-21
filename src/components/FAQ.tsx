@@ -4,27 +4,27 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "Was ist Webflix?",
-    answer: "Webflix ist Ihre All-in-One Website-Marketing-Lösung im Abo – Agentur-Qualität ohne hohe Einmalkosten."
+    answer: "Webflix ist Ihre All-in-One Website-Marketing-Lösung im Abo – Agentur-Qualität ohne hohe Einmalkosten. Wir sind ein auf Websites und Plattformen spezialisiertes Unternehmen, das individuelle Lösungen für Ihr Business entwickelt."
   },
   {
     question: "Wie viel kostet Webflix?",
-    answer: "Je nach Laufzeit 79,90 €/29,90 €/24,90 € mtl. Add-ons optional. 5 h Änderungen/Jahr inklusive."
+    answer: "Webflix Websites starten bei 499€ einmalig plus monatlicher Abo-Gebühr je nach gewählter Laufzeit (79,90€/29,90€/24,90€ mtl.). Add-ons sind optional verfügbar. 5 Stunden Änderungen pro Jahr sind inklusive."
   },
   {
     question: "Was bedeutet 48h-Go-Live?",
-    answer: "Nach Eingang aller Unterlagen aus der Checkliste publizieren wir Ihre Website innerhalb von 48 Stunden."
+    answer: "Nach Eingang aller erforderlichen Informationen aus der Checkliste entwickeln und publizieren wir Ihre maßgeschneiderte Website innerhalb von 48 Stunden – keine Templates, sondern eine individuelle Lösung für Ihr Business."
   },
   {
     question: "Wie kann ich kündigen?",
-    answer: "Nach Ende der gewählten Laufzeit monatlich mit 1-Monats-Frist kündbar."
+    answer: "Die Kündigungsfrist ist flexibel und hängt von Ihrem gewählten Vertragsmodell ab. Nach Ende der Mindestlaufzeit können Sie je nach Vertrag monatlich kündigen."
   },
   {
     question: "Welche Add-ons gibt es?",
-    answer: "Vorher/Nachher-Slider, Google-Bewertungen, Terminbuchung, CRM light, SEO-Starter, KI-Chatbot, E-Mail-Marketing, Analytics light, DSGVO-Paket."
+    answer: "Vorher/Nachher-Slider, Google-Bewertungen, Terminbuchung, CRM light, SEO-Starter, KI-Chatbot, E-Mail-Marketing, Analytics light, DSGVO-Paket und weitere individuelle Erweiterungen nach Ihren Anforderungen."
   },
   {
     question: "Gehören mir Domain & Inhalte?",
-    answer: "Ihre Inhalte gehören Ihnen. Bei Domain-Fragen bieten wir faire Optionen (Umzug oder Verwaltung durch uns)."
+    answer: "Ihre Inhalte und Daten gehören vollständig Ihnen. Bei Domain-Fragen bieten wir faire Optionen – entweder Umzug Ihrer bestehenden Domain oder professionelle Verwaltung durch uns."
   }
 ];
 
