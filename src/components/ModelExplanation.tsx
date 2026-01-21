@@ -1,22 +1,22 @@
 import React from 'react';
-import { ArrowRight, MousePointer, Settings, CreditCard, Rocket } from 'lucide-react';
+import { ArrowRight, Calendar, Search, CreditCard, Rocket } from 'lucide-react';
 
 const ModelExplanation = () => {
   const steps = [
     {
       number: 1,
-      icon: MousePointer,
-      title: "Design wählen",
-      description: "Wählen Sie aus unseren professionellen Templates das perfekte Design für Ihre Branche aus.",
+      icon: Calendar,
+      title: "Erstgespräch vereinbaren",
+      description: "Buchen Sie ein kostenloses Erstgespräch oder kontaktieren Sie uns direkt per WhatsApp.",
       color: "from-blue-500 to-blue-600",
       bgColor: "bg-blue-500/10",
       borderColor: "border-blue-500/30"
     },
     {
       number: 2,
-      icon: Settings,
-      title: "Add-ons hinzufügen",
-      description: "Erweitern sie bei bedarf ihre Website mit unseren Features",
+      icon: Search,
+      title: "Bedarfsanalyse & Anzahlung",
+      description: "Wir finden gemeinsam heraus, was Sie genau brauchen. Nach der Analyse erhalten Sie eine Teilrechnung von 50%.",
       color: "from-purple-500 to-purple-600",
       bgColor: "bg-purple-500/10",
       borderColor: "border-purple-500/30"
@@ -24,8 +24,8 @@ const ModelExplanation = () => {
     {
       number: 3,
       icon: CreditCard,
-      title: "Bestellen & bezahlen",
-      description: "Geben Sie Ihre Daten ein, wählen Sie die Laufzeit und schließen Sie die Bestellung ab.",
+      title: "Design & Entwicklung",
+      description: "Unser Team setzt Ihre Website professionell um - mit allen gewünschten Features und Inhalten.",
       color: "from-green-500 to-green-600",
       bgColor: "bg-green-500/10",
       borderColor: "border-green-500/30"
@@ -33,8 +33,8 @@ const ModelExplanation = () => {
     {
       number: 4,
       icon: Rocket,
-      title: " Innerhalb von 48 Stunden Online",
-      description: "Nachdem sie unsere Checkliste vollständig ausgefüllt haben, ist ihre Website innerhalb von 48 Stunden Live.",
+      title: "Website ist live!",
+      description: "Ihre Website geht nach 7 Tagen online. Bei Express-Auswahl sogar bereits nach 72 Stunden!",
       color: "from-orange-500 to-pink-400",
       bgColor: "bg-orange-500/10",
       borderColor: "border-pink-400/30"
