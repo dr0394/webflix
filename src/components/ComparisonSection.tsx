@@ -22,7 +22,7 @@ export default function ComparisonSection() {
       criterion: 'Kosten mtl.',
       baukasten: 'Ab 19,90 €',
       agency: 'Ab 89,90 €',
-      webflix: 'Ab 29,90 €',
+      webflix: 'Ab 9,90 €',
       custom: 'Ab 49,90 €',
       webflixHighlight: true
     },
