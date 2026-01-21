@@ -196,7 +196,17 @@ const AboutPage = () => {
                 <div key={index} className={`relative flex ${index % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'} items-center gap-8`}>
                   <div className={`flex-1 ${index % 2 === 0 ? 'sm:text-right' : 'sm:text-left'}`}>
                     <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-pink-400/30 transition-all">
-                      <div className="text-2xl font-bold text-pink-400 mb-2">{milestone.year}</div>
+                      {index === 0 ? (
+                        <div className="mb-4">
+                          <img
+                            src="/chatgpt_image_21._jan._2026,_11_34_15.png"
+                            alt="Gründung von Webflix"
+                            className="w-32 h-32 rounded-xl object-cover mx-auto sm:mx-0 sm:ml-auto border-2 border-pink-400/30"
+                          />
+                        </div>
+                      ) : (
+                        <div className="text-2xl font-bold text-pink-400 mb-2">{milestone.year}</div>
+                      )}
                       <h3 className="text-xl font-bold mb-2">{milestone.event}</h3>
                       <p className="text-white/60">{milestone.description}</p>
                     </div>
