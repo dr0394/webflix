@@ -6,21 +6,21 @@ export default function WebflixProcessSection() {
       number: '1',
       icon: Lightbulb,
       title: 'STRATEGIE',
-      duration: '3-4 Wochen',
+      duration: '1 Woche',
       description: 'Gemeinsam analysieren wir dein Business und entwickeln eine Website-Strategie mit überzeugendem Copywriting – perfekt abgestimmt auf deine Ziele.'
     },
     {
       number: '2',
       icon: Palette,
       title: 'DESIGN',
-      duration: '4-6 Wochen',
+      duration: '1-2 Wochen',
       description: 'Basierend auf der Strategie gestalten wir ein Design, das deine Zielgruppe fesselt und überzeugt.'
     },
     {
       number: '3',
       icon: Code,
       title: 'ENTWICKLUNG',
-      duration: '3-4 Wochen',
+      duration: '1-3 Wochen',
       description: 'Professionelle Programmierung für optimale Performance, Geschwindigkeit und Benutzerfreundlichkeit.'
     }
   ];
