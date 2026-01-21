@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Star, Menu, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -9,63 +9,7 @@ interface HeaderProps {
 
 const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isPromoVisible, setIsPromoVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (!showNavigation) return;
-
-    let ticking = false;
-    let scrollTimeout: NodeJS.Timeout;
-
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const currentScrollY = window.scrollY;
-          const scrollDifference = Math.abs(currentScrollY - lastScrollY);
-
-          // Only trigger if scroll difference is significant (reduces flicker)
-          if (scrollDifference < 50) {
-            ticking = false;
-            return;
-          }
-
-          // Always show promo at top
-          if (currentScrollY < 150) {
-            setIsPromoVisible(true);
-          }
-          // Hide promo when scrolling down
-          else if (currentScrollY > lastScrollY && currentScrollY >= 150) {
-            setIsPromoVisible(false);
-          }
-          // Show promo when scrolling up
-          else if (currentScrollY < lastScrollY) {
-            setIsPromoVisible(true);
-          }
-
-          setLastScrollY(currentScrollY);
-          ticking = false;
-        });
-
-        ticking = true;
-      }
-
-      // Debounce: keep promo visible after scroll stops
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        if (window.scrollY < 150) {
-          setIsPromoVisible(true);
-        }
-      }, 150);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(scrollTimeout);
-    };
-  }, [lastScrollY, showNavigation]);
 
   if (showNavigation) {
     return (
@@ -231,15 +175,7 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
           )}
         </div>
 
-        <div
-          className={`bg-white text-center relative border-t border-gray-200 transition-all duration-500 ease-in-out ${
-            isPromoVisible ? 'max-h-32 py-4 opacity-100' : 'max-h-0 py-0 opacity-0 pointer-events-none'
-          }`}
-          style={{
-            overflow: 'hidden',
-            willChange: isPromoVisible ? 'auto' : 'transform'
-          }}
-        >
+        <div className="bg-white text-center relative border-t border-gray-200 py-4">
           <div className="flex items-center justify-center gap-2 sm:gap-3 relative z-10 flex-wrap px-4">
             <span className="text-gray-800 font-bold text-xs sm:text-sm md:text-base">
               Einmalige Setup-Kosten: <span className="text-pink-500">499 €</span>
