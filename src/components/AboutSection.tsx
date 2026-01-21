@@ -19,14 +19,12 @@ export default function AboutSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
-          <div className="bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 sm:p-10 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-8xl sm:text-9xl font-black text-white mb-4">
-                <span className="bg-gradient-to-r from-orange-500 to-pink-400 text-transparent bg-clip-text">
-                  2020
-                </span>
-              </div>
-            </div>
+          <div className="bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-xl border border-white/20 rounded-3xl overflow-hidden">
+            <img
+              src="/chatgpt_image_21._jan._2026,_11_34_15.png"
+              alt="Webflix Team"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           <div className="flex flex-col gap-8">
