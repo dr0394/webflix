@@ -66,7 +66,7 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center gap-3 group/item">
                   <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-pink-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">48h online</p>
+                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">in 7 Tagen Online / Express 72 Std.</p>
                 </div>
               </div>
 
