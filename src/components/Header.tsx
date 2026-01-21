@@ -245,7 +245,7 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
               Einmalige Setup-Kosten: <span className="text-pink-500">499 €</span>
             </span>
             <span className="text-gray-700 text-xs sm:text-sm md:text-base">
-              · 2 Tage Express-Umsetzung · Aktion gültig bis 31.03.2026
+              · 72 Stunden Express · mit Zufriedenheitsgarantie oder du zahlst 0€
             </span>
             <button
               onClick={() => navigate('/custom')}
