@@ -4,15 +4,15 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "Was ist Webflix?",
-    answer: "Webflix ist Ihre All-in-One Website-Marketing-Lösung im Abo – Agentur-Qualität ohne hohe Einmalkosten. Wir sind ein auf Websites und Plattformen spezialisiertes Unternehmen, das individuelle Lösungen für Ihr Business entwickelt."
+    answer: "Webflix ist Ihre All-in-One Website-Marketing-Lösung ohne hohe Einmalkosten. Wir sind ein auf Websites und Plattformen spezialisiertes Unternehmen, das individuelle Lösungen für Ihr Business entwickelt."
   },
   {
     question: "Wie viel kostet Webflix?",
-    answer: "Webflix Websites starten bei 499€ einmalig plus monatlicher Abo-Gebühr je nach gewählter Laufzeit (79,90€/29,90€/24,90€ mtl.). Add-ons sind optional verfügbar. 5 Stunden Änderungen pro Jahr sind inklusive."
+    answer: "Webflix Websites starten bei 499€ einmalig plus monatlicher Abo-Gebühr je nach gewählter Laufzeit (29,90€, 19,90€ und 9,90€ mtl.). Add-ons sind optional verfügbar. Eine Änderung pro Jahr ist inklusive."
   },
   {
     question: "Was bedeutet 48h-Go-Live?",
-    answer: "Nach Eingang aller erforderlichen Informationen aus der Checkliste entwickeln und publizieren wir Ihre maßgeschneiderte Website innerhalb von 48 Stunden – keine Templates, sondern eine individuelle Lösung für Ihr Business."
+    answer: "Nach Eingang aller erforderlichen Informationen aus der Checkliste entwickeln und publizieren wir Ihre maßgeschneiderte Website im Normalfall innerhalb von 7 Tagen oder per Express innerhalb von 72 Stunden – keine Templates, sondern eine individuelle Lösung für Ihr Business."
   },
   {
     question: "Wie kann ich kündigen?",
