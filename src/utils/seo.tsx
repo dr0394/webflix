@@ -13,7 +13,7 @@ export const useSEO = ({
   title,
   description,
   keywords,
-  ogImage = 'https://i.imgur.com/2SbjgE7.png',
+  ogImage = 'https://webflix.info/logowebflix499.png',
   canonical
 }: SEOProps) => {
   const location = useLocation();

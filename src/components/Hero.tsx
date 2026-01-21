@@ -85,7 +85,7 @@ const Hero = () => {
             {/* Webflix Logo Background */}
             <div className="absolute inset-0 flex items-center justify-center opacity-[0.15] group-hover:opacity-[0.25] transition-opacity duration-500">
               <img
-                src="https://i.imgur.com/2SbjgE7.png"
+                src="/logowebflix499.png"
                 alt=""
                 className="w-40 h-40 object-contain transform group-hover:scale-110 transition-transform duration-700"
               />
