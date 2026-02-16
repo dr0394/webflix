@@ -77,9 +77,9 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Individuell Entwickelt */}
+          {/* The Website Code */}
           <a
-            href="https://wa.me/4915562710839"
+            href="https://www.the-website-code.de/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative bg-black/50 border-2 border-[#E2E5E9]/30 hover:border-green-400/80 hover:shadow-2xl hover:shadow-green-500/40 md:hover:scale-[1.03] transition-all duration-500 cursor-pointer group overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8 block"
@@ -114,7 +114,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-1">
-                    CUSTOM<br/>WEBSITES
+                    THE WEBSITE<br/>CODE
                   </h3>
                   <div className="h-1 w-20 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full"></div>
                 </div>
@@ -123,20 +123,24 @@ const Hero = () => {
               <div className="space-y-2.5 sm:space-y-3 mb-6 sm:mb-7 text-white">
                 <div className="flex items-center gap-3 group/item">
                   <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-green-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Enterprise Designs</p>
+                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Lerne in 60 Min deine eigene Premium Website zu bauen</p>
                 </div>
                 <div className="flex items-center gap-3 group/item">
                   <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-green-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Digitale Komplettlösungen</p>
+                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Keine Abhängigkeit von Agenturen</p>
                 </div>
                 <div className="flex items-center gap-3 group/item">
                   <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-green-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Ab 999€</p>
+                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Keine Folgekosten für Änderungen</p>
+                </div>
+                <div className="flex items-center gap-3 group/item">
+                  <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-green-500/50 group-hover/item:scale-125 transition-all"></div>
+                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Ohne Vorkenntnisse umsetzbar</p>
                 </div>
               </div>
 
               <div className="w-full py-3.5 sm:py-4 bg-[#E2E5E9] hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 rounded-xl sm:rounded-2xl font-black text-gray-800 hover:text-white text-sm sm:text-base transition-all duration-300 shadow-2xl shadow-[#E2E5E9]/30 hover:shadow-green-500/50 group-hover:scale-[1.02] uppercase tracking-wider relative overflow-hidden flex items-center justify-center">
-                <span className="relative z-10">INDIVIDUELL GESTALTEN</span>
+                <span className="relative z-10">Jetzt mehr erfahren</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
