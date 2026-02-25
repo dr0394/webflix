@@ -77,14 +77,12 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* The Website Code */}
-          <a
+          {/* TEMPORÄR VERSTECKT THE WEBSITE CODE <a
             href="https://www.the-website-code.de/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative bg-black/50 border-2 border-[#E2E5E9]/30 hover:border-green-400/80 hover:shadow-2xl hover:shadow-green-500/40 md:hover:scale-[1.03] transition-all duration-500 cursor-pointer group overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8 block"
           >
-            {/* Webflix Logo Background */}
             <div className="absolute inset-0 flex items-center justify-center opacity-[0.15] group-hover:opacity-[0.25] transition-opacity duration-500">
               <img
                 src="/logowebflix499.png"
@@ -93,14 +91,11 @@ const Hero = () => {
               />
             </div>
 
-            {/* Animated gradient orbs */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
             <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-emerald-500/20 to-green-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
-            {/* Glow effect */}
             <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 rounded-2xl sm:rounded-3xl blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
 
-            {/* Shine effect */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             <div className="relative z-10">
@@ -144,7 +139,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
-          </a>
+          </a> */}
         </div>
 
         {/* Customer Logos Slider */}
