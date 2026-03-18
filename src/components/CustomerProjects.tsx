@@ -110,12 +110,11 @@ export default function CustomerProjects() {
   const projects = activeTab === 'webflix' ? webflixProjects : customProjects;
 
   return (
-    <section className="relative py-16 sm:py-20 md:py-24 bg-gradient-to-b from-[#111111] via-black to-[#111111] overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-pink-500/10"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+    <section className="relative py-16 sm:py-20 md:py-24 bg-black/80 backdrop-blur-sm overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent"></div>
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-1/4 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-1/4 w-72 h-72 bg-orange-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-pink-500/3 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
