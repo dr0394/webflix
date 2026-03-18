@@ -32,51 +32,6 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
   if (showNavigation) {
     return (
       <div className="sticky top-0 z-50">
-        <div className="bg-[#0d0d0d] border-b border-white/10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                {[
-                  { value: pad(timeLeft.days), label: 'TAGE' },
-                  { value: pad(timeLeft.hours), label: 'STUNDEN' },
-                  { value: pad(timeLeft.minutes), label: 'MINUTEN' },
-                  { value: pad(timeLeft.seconds), label: 'SEKUNDEN' },
-                ].map((item, i) => (
-                  <div key={i} className="flex flex-col items-center">
-                    <div className="w-8 h-8 sm:w-9 sm:h-9 border border-white/20 rounded flex items-center justify-center">
-                      <span className="text-white font-black text-sm sm:text-base">{item.value}</span>
-                    </div>
-                    <span className="text-[7px] sm:text-[8px] text-gray-500 mt-0.5 tracking-wider">{item.label}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="hidden sm:flex items-center">
-                <div className="px-4 sm:px-6 py-1.5 sm:py-2 border border-white/20 rounded-full">
-                  <span className="text-white text-xs sm:text-sm font-medium">Nur 349€ statt 3.637 €</span>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 sm:gap-4">
-                <button
-                  onClick={() => navigate('/blog')}
-                  className="hidden sm:block text-white text-xs sm:text-sm font-medium hover:text-gray-300 transition-colors"
-                >
-                  BLOG
-                </button>
-                <a
-                  href={`https://wa.me/4915146692387?text=${encodeURIComponent("Hallo! Ich möchte meine Website für 349€ bestellen.")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white text-black px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-black tracking-wider hover:bg-gray-200 transition-colors flex items-center gap-1.5"
-                >
-                  JETZT SICHERN <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
             <div className="flex items-center justify-between">
@@ -238,12 +193,25 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
           )}
         </div>
 
-        <div className="bg-white text-center relative border-t border-gray-200 py-4">
-          <div className="flex items-center justify-center gap-2 sm:gap-3 relative z-10 flex-wrap px-4">
+        <div className="bg-white text-center relative border-t border-gray-200 py-3">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 relative z-10 flex-wrap px-4">
+            <div className="flex items-center gap-1.5">
+              {[
+                { value: pad(timeLeft.days), label: 'T' },
+                { value: pad(timeLeft.hours), label: 'H' },
+                { value: pad(timeLeft.minutes), label: 'M' },
+                { value: pad(timeLeft.seconds), label: 'S' },
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-0.5">
+                  <span className="bg-gray-900 text-white text-xs font-black px-1.5 py-1 rounded">{item.value}</span>
+                  {i < 3 && <span className="text-gray-400 text-xs font-bold">:</span>}
+                </div>
+              ))}
+            </div>
             <span className="text-gray-800 font-bold text-xs sm:text-sm md:text-base">
               Einmalige Setup-Kosten: <span className="text-pink-500">499 €</span>
             </span>
-            <span className="text-gray-700 text-xs sm:text-sm md:text-base">
+            <span className="hidden sm:inline text-gray-700 text-xs sm:text-sm md:text-base">
               · 72 Stunden Express · mit Zufriedenheitsgarantie oder du zahlst 0€
             </span>
             <button
