@@ -160,13 +160,13 @@ const PopularSection = () => {
       <div className="container mx-auto">
         <div className="mb-6 sm:mb-8">
           <div className="flex items-center gap-3 mb-3">
-            <span className="px-3 py-1 bg-gradient-to-r from-orange-500 to-pink-400 text-white text-xs font-semibold rounded-full">
+            <span className="px-3 py-1 bg-gradient-to-r from-pink-500 to-pink-400 text-white text-xs font-semibold rounded-full">
               WEBFLIX TEMPLATES
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
             Website-Kauf {' '}
-            <span className="bg-gradient-to-r from-orange-500 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-500 to-pink-400 bg-clip-text text-transparent">
               war noch nie so einfach
             </span>
           </h2>
@@ -183,7 +183,7 @@ const PopularSection = () => {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                   selectedCategory === category.id
-                    ? 'bg-gradient-to-r from-orange-500 to-pink-400 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-pink-500 to-pink-400 text-white shadow-lg'
                     : 'bg-[#333333] text-gray-300 hover:bg-[#404040] border border-white/10'
                 }`}
               >
@@ -234,7 +234,7 @@ const PopularSection = () => {
                   >
                     {/* Icon & ID */}
                     <div className="flex justify-between items-start">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-orange-500 to-pink-400 flex items-center justify-center shadow-lg">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-pink-500 to-pink-400 flex items-center justify-center shadow-lg">
                         {IconComponent ? (
                           <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
                         ) : (
@@ -242,8 +242,8 @@ const PopularSection = () => {
                         )}
                       </div>
                       {hasDemo && (
-                        <div className="bg-orange-500/20 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-orange-400">
-                          <span className="text-orange-300 text-[10px] sm:text-xs font-medium">VERFÜGBAR</span>
+                        <div className="bg-pink-500/20 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-pink-400">
+                          <span className="text-pink-300 text-[10px] sm:text-xs font-medium">VERFÜGBAR</span>
                         </div>
                       )}
                     </div>
@@ -267,7 +267,7 @@ const PopularSection = () => {
                       {template.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-2 sm:px-3 py-0.5 sm:py-1 bg-gradient-to-r from-orange-500/20 to-pink-400/20 text-pink-300 text-[10px] sm:text-xs rounded-full border border-pink-400/30 backdrop-blur-sm"
+                          className="px-2 sm:px-3 py-0.5 sm:py-1 bg-gradient-to-r from-pink-500/20 to-pink-400/20 text-pink-300 text-[10px] sm:text-xs rounded-full border border-pink-400/30 backdrop-blur-sm"
                         >
                           {tag}
                         </span>
@@ -276,7 +276,7 @@ const PopularSection = () => {
 
                     {/* CTA Button */}
                     <div className="mt-2 sm:mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <button className="px-4 sm:px-6 py-1.5 sm:py-2 bg-gradient-to-r from-orange-500 to-pink-400 hover:from-orange-600 hover:to-pink-500 text-white text-xs sm:text-sm rounded-lg font-semibold transition-all duration-200 flex items-center justify-center mx-auto">
+                      <button className="px-4 sm:px-6 py-1.5 sm:py-2 bg-gradient-to-r from-pink-500 to-pink-400 hover:from-pink-600 hover:to-pink-500 text-white text-xs sm:text-sm rounded-lg font-semibold transition-all duration-200 flex items-center justify-center mx-auto">
                         {hasDemo ? (
                           <>
                             <span>Jetzt konfigurieren</span>

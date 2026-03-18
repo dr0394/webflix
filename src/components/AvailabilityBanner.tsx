@@ -49,7 +49,7 @@ export default function AvailabilityBanner() {
     <div
       className={`relative overflow-hidden transition-all duration-500 ${
         isVeryLowAvailability
-          ? 'bg-gradient-to-r from-orange-600 to-red-600'
+          ? 'bg-gradient-to-r from-pink-600 to-pink-500'
           : isLowAvailability
             ? 'bg-gradient-to-r from-blue-600 to-indigo-600'
             : 'bg-gradient-to-r from-slate-800 to-slate-900'
@@ -92,7 +92,7 @@ export default function AvailabilityBanner() {
           <div className="flex items-center gap-4">
             {isVeryLowAvailability && status.spots_available && (
               <div className="animate-pulse">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white text-orange-600">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white text-pink-600">
                   Nur noch {status.available_spots} {status.available_spots === 1 ? 'Platz' : 'Plätze'}
                 </span>
               </div>

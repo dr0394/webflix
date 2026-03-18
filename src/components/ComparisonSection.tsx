@@ -80,7 +80,7 @@ export default function ComparisonSection() {
     <section id="packages-section" className="relative py-16 sm:py-20 md:py-24 bg-gradient-to-b from-[#111111] via-[#0a0a0a] to-[#111111] overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl"></div>
       </div>
 
@@ -88,7 +88,7 @@ export default function ComparisonSection() {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4">
-            <span className="bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-400 via-pink-500 to-pink-400 bg-clip-text text-transparent">
               Webflix vs.
             </span>{' '}
             <span className="text-white">der Rest</span>
@@ -107,7 +107,7 @@ export default function ComparisonSection() {
               <div className="font-bold text-white/60 text-lg text-center">Website-Baukästen</div>
               <div className="font-bold text-white/60 text-lg text-center">Agenturen</div>
               <div className="font-bold text-lg text-center">
-                <span className="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
                   Webflix
                 </span>
               </div>
@@ -129,7 +129,7 @@ export default function ComparisonSection() {
                   <div className="text-white/60 text-center">{row.baukasten}</div>
                   <div className="text-white/60 text-center">{row.agency}</div>
                   <div className="text-center">
-                    <span className="font-bold bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">
+                    <span className="font-bold bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
                       {row.webflix}
                     </span>
                   </div>
@@ -143,7 +143,7 @@ export default function ComparisonSection() {
             </div>
 
             {/* CTA Row */}
-            <div className="grid grid-cols-5 gap-4 p-6 bg-gradient-to-br from-orange-500/10 via-pink-500/5 to-pink-500/10 border-t border-white/10">
+            <div className="grid grid-cols-5 gap-4 p-6 bg-gradient-to-br from-pink-500/10 via-pink-500/5 to-pink-500/10 border-t border-white/10">
               <div></div>
               <div className="flex justify-center">
                 <X className="w-8 h-8 text-red-400" />
@@ -154,7 +154,7 @@ export default function ComparisonSection() {
               <div className="flex justify-center">
                 <button
                   onClick={() => window.location.href = 'https://www.webflix.info/custom'}
-                  className="px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 rounded-lg font-bold text-white text-sm transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105"
+                  className="px-6 py-3 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 rounded-lg font-bold text-white text-sm transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105"
                 >
                   Jetzt starten
                 </button>
@@ -206,10 +206,10 @@ export default function ComparisonSection() {
               </div>
 
               {/* Webflix Card - Highlighted */}
-              <div className="w-72 flex-shrink-0 bg-gradient-to-br from-orange-500/20 via-pink-500/10 to-orange-500/20 backdrop-blur-xl border-2 border-pink-400/50 rounded-2xl overflow-hidden shadow-2xl">
-                <div className="bg-gradient-to-r from-orange-500/30 to-pink-500/30 p-4 border-b border-pink-400/30">
+              <div className="w-72 flex-shrink-0 bg-gradient-to-br from-pink-500/20 via-pink-500/10 to-pink-500/20 backdrop-blur-xl border-2 border-pink-400/50 rounded-2xl overflow-hidden shadow-2xl">
+                <div className="bg-gradient-to-r from-pink-500/30 to-pink-500/30 p-4 border-b border-pink-400/30">
                   <h3 className="text-xl font-black text-center">
-                    <span className="bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent">
                       Webflix
                     </span>
                   </h3>
@@ -223,14 +223,14 @@ export default function ComparisonSection() {
                   {comparisonData.map((row, index) => (
                     <div key={index} className="border-b border-pink-400/10 pb-2">
                       <div className="text-white/50 text-xs font-medium mb-1">{row.criterion}</div>
-                      <div className="font-bold bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent text-sm">
+                      <div className="font-bold bg-gradient-to-r from-pink-400 to-pink-500 bg-clip-text text-transparent text-sm">
                         {row.webflix}
                       </div>
                     </div>
                   ))}
                   <button
                     onClick={() => window.location.href = 'https://www.webflix.info/custom'}
-                    className="w-full mt-3 px-4 py-2.5 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 rounded-lg font-bold text-white text-sm transition-all duration-300 shadow-lg hover:shadow-pink-500/50"
+                    className="w-full mt-3 px-4 py-2.5 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 rounded-lg font-bold text-white text-sm transition-all duration-300 shadow-lg hover:shadow-pink-500/50"
                   >
                     Jetzt starten
                   </button>

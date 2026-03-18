@@ -69,7 +69,7 @@ export default function AboutSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-gray-500/30 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gray-500/20 to-gray-400/20 border border-gray-500/30 flex items-center justify-center mb-4">
-                <Heart className="w-6 h-6 text-orange-400" />
+                <Heart className="w-6 h-6 text-pink-400" />
               </div>
               <h4 className="text-lg font-bold text-white mb-2">Qualität</h4>
               <p className="text-white/60 text-sm leading-relaxed">
@@ -89,7 +89,7 @@ export default function AboutSection() {
 
             <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 hover:border-gray-500/30 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gray-500/20 to-gray-400/20 border border-gray-500/30 flex items-center justify-center mb-4">
-                <Lightbulb className="w-6 h-6 text-orange-400" />
+                <Lightbulb className="w-6 h-6 text-pink-400" />
               </div>
               <h4 className="text-lg font-bold text-white mb-2">Innovation</h4>
               <p className="text-white/60 text-sm leading-relaxed">

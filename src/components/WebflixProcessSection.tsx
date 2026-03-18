@@ -28,7 +28,7 @@ export default function WebflixProcessSection() {
   return (
     <section className="relative py-16 sm:py-20 md:py-24 bg-[#111111] overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl"></div>
       </div>
 
@@ -49,10 +49,10 @@ export default function WebflixProcessSection() {
               key={index}
               className="group relative"
             >
-              <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 sm:p-8 hover:border-orange-400/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
+              <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 sm:p-8 hover:border-pink-400/50 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                 <div className="flex items-start justify-between mb-6">
                   <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-pink-400 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-pink-500 rounded-xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity"></div>
                     <div className="relative bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-xl p-3">
                       <phase.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                     </div>
@@ -64,7 +64,7 @@ export default function WebflixProcessSection() {
                 </div>
 
                 <div className="mb-2">
-                  <span className="text-xs font-bold text-orange-400 tracking-wider">
+                  <span className="text-xs font-bold text-pink-400 tracking-wider">
                     PHASE {phase.number}
                   </span>
                 </div>
@@ -74,7 +74,7 @@ export default function WebflixProcessSection() {
                 </h3>
 
                 <div className="inline-flex items-center gap-2 mb-4">
-                  <div className="w-2 h-2 rounded-full bg-gradient-to-r from-orange-400 to-pink-400"></div>
+                  <div className="w-2 h-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-500"></div>
                   <span className="text-sm text-white/60 font-medium">
                     {phase.duration}
                   </span>
@@ -87,7 +87,7 @@ export default function WebflixProcessSection() {
 
               {index < phases.length - 1 && (
                 <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
-                  <div className="w-8 h-0.5 bg-gradient-to-r from-orange-400/50 to-transparent"></div>
+                  <div className="w-8 h-0.5 bg-gradient-to-r from-pink-400/50 to-transparent"></div>
                 </div>
               )}
             </div>
@@ -95,8 +95,8 @@ export default function WebflixProcessSection() {
         </div>
 
         {/* CTA Banner */}
-        <div className="relative bg-gradient-to-br from-orange-500/20 via-pink-500/10 to-purple-500/20 backdrop-blur-xl border-2 border-pink-400/30 rounded-3xl overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-400/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="relative bg-gradient-to-br from-pink-500/20 via-pink-500/10 to-purple-500/20 backdrop-blur-xl border-2 border-pink-400/30 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-pink-400/20 to-transparent rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-pink-400/20 to-transparent rounded-full blur-3xl"></div>
 
           <div className="relative z-10 px-6 sm:px-8 md:px-12 py-8 sm:py-10 md:py-12">
@@ -113,7 +113,7 @@ export default function WebflixProcessSection() {
               <div className="flex flex-col gap-3 sm:gap-4 w-full lg:w-auto lg:flex-shrink-0">
                 <button
                   onClick={() => window.location.href = '/custom/form'}
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 rounded-xl font-bold text-white text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105 whitespace-nowrap"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 rounded-xl font-bold text-white text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105 whitespace-nowrap"
                 >
                   ✨ Projekt anfragen
                 </button>

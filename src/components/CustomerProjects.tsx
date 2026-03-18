@@ -119,7 +119,7 @@ export default function CustomerProjects() {
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
             <span className="text-gray-900">
-              ECHTE WEBSITES VON <span className="text-orange-500">ECHTEN KUNDEN</span>
+              ECHTE WEBSITES VON <span className="text-pink-500">ECHTEN KUNDEN</span>
             </span>
           </h2>
           <p className="text-gray-500 text-base sm:text-lg max-w-3xl mx-auto mb-4">
@@ -141,7 +141,7 @@ export default function CustomerProjects() {
               onClick={() => setActiveTab('custom')}
               className={`px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 ${
                 activeTab === 'custom'
-                  ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg shadow-pink-500/50'
+                  ? 'bg-gradient-to-r from-pink-500 to-pink-600 text-white shadow-lg shadow-pink-500/50'
                   : 'text-gray-500 hover:text-gray-700'
               }`}
             >
@@ -186,7 +186,7 @@ export default function CustomerProjects() {
                           rel="noopener noreferrer"
                           className={`flex-1 sm:flex-none px-4 sm:px-6 py-3 rounded-xl font-bold text-white text-center text-sm sm:text-base transition-all duration-300 ${
                             activeTab === 'webflix'
-                              ? 'bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 shadow-lg hover:shadow-pink-500/50'
+                              ? 'bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 shadow-lg hover:shadow-pink-500/50'
                               : 'bg-white/10 hover:bg-white/20 shadow-lg'
                           } hover:scale-105`}
                         >
@@ -232,11 +232,11 @@ export default function CustomerProjects() {
                       >
                         <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center ${
                           activeTab === 'webflix'
-                            ? 'bg-orange-500/10 border border-orange-500/20'
+                            ? 'bg-pink-500/10 border border-pink-500/20'
                             : 'bg-white/10 border border-white/20'
                         }`}>
                           <TrendingUp className={`w-4 h-4 sm:w-5 sm:h-5 ${
-                            activeTab === 'webflix' ? 'text-orange-400' : 'text-white/60'
+                            activeTab === 'webflix' ? 'text-pink-400' : 'text-white/60'
                           }`} />
                         </div>
                         <div className="flex-1 min-w-0">
@@ -245,7 +245,7 @@ export default function CustomerProjects() {
                           </p>
                         </div>
                         <div className={`flex-shrink-0 text-lg sm:text-xl lg:text-2xl font-black ${
-                          activeTab === 'webflix' ? 'text-orange-400' : 'text-white/60'
+                          activeTab === 'webflix' ? 'text-pink-400' : 'text-white/60'
                         }`}>
                           {stat.value}
                         </div>
@@ -260,7 +260,7 @@ export default function CustomerProjects() {
                       rel="noopener noreferrer"
                       className={`block w-full px-4 sm:px-6 py-3 sm:py-4 rounded-xl font-bold text-white text-center text-sm sm:text-base transition-all duration-300 ${
                         activeTab === 'webflix'
-                          ? 'bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 shadow-lg hover:shadow-pink-500/50'
+                          ? 'bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 shadow-lg hover:shadow-pink-500/50'
                           : 'bg-white/10 hover:bg-white/20 shadow-lg'
                       } hover:scale-105`}
                     >
@@ -274,7 +274,7 @@ export default function CustomerProjects() {
                         rel="noopener noreferrer"
                         className={`flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-xl font-bold text-white text-center text-sm sm:text-base transition-all duration-300 ${
                           activeTab === 'webflix'
-                            ? 'bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 shadow-lg hover:shadow-pink-500/50'
+                            ? 'bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 shadow-lg hover:shadow-pink-500/50'
                             : 'bg-white/10 hover:bg-white/20 shadow-lg'
                         } hover:scale-105`}
                       >
@@ -333,17 +333,17 @@ export default function CustomerProjects() {
                       <div className="flex-shrink-0">
                         <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center ${
                           activeTab === 'webflix'
-                            ? 'bg-orange-500/10 border border-orange-500/20'
+                            ? 'bg-pink-500/10 border border-pink-500/20'
                             : 'bg-white/10 border border-white/20'
                         }`}>
                           <CheckCircle2 className={`w-4 h-4 sm:w-5 sm:h-5 ${
-                            activeTab === 'webflix' ? 'text-orange-400' : 'text-white/60'
+                            activeTab === 'webflix' ? 'text-pink-400' : 'text-white/60'
                           }`} />
                         </div>
                       </div>
                       <div className="flex-1">
                         <h4 className={`text-xs font-bold uppercase tracking-wider mb-1.5 sm:mb-2 ${
-                          activeTab === 'webflix' ? 'text-orange-400' : 'text-white/60'
+                          activeTab === 'webflix' ? 'text-pink-400' : 'text-white/60'
                         }`}>
                           Ergebnis
                         </h4>
@@ -366,7 +366,7 @@ export default function CustomerProjects() {
           {activeTab === 'webflix' ? (
             <button
               onClick={() => window.location.href = '/shop'}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-400 hover:to-pink-400 rounded-xl font-bold text-white text-sm sm:text-base transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-400 hover:to-pink-500 rounded-xl font-bold text-white text-sm sm:text-base transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105"
             >
               Deine Webflix Website starten
             </button>

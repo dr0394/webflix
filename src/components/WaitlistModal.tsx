@@ -84,7 +84,7 @@ export default function WaitlistModal({ isOpen, onClose, interestedTemplate }: W
           </div>
         ) : (
           <>
-            <div className="relative p-6 pb-4 bg-gradient-to-br from-[#FF6B35] to-[#F7931E] rounded-t-2xl">
+            <div className="relative p-6 pb-4 bg-gradient-to-br from-[#EC4899] to-[#DB2777] rounded-t-2xl">
               <button
                 onClick={handleClose}
                 className="absolute top-4 right-4 p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
@@ -116,7 +116,7 @@ export default function WaitlistModal({ isOpen, onClose, interestedTemplate }: W
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EC4899] focus:border-transparent transition-all"
                   placeholder="Dein Name"
                 />
               </div>
@@ -131,7 +131,7 @@ export default function WaitlistModal({ isOpen, onClose, interestedTemplate }: W
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EC4899] focus:border-transparent transition-all"
                   placeholder="deine@email.de"
                 />
               </div>
@@ -145,7 +145,7 @@ export default function WaitlistModal({ isOpen, onClose, interestedTemplate }: W
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#EC4899] focus:border-transparent transition-all"
                   placeholder="+49 123 456789"
                 />
               </div>
@@ -169,7 +169,7 @@ export default function WaitlistModal({ isOpen, onClose, interestedTemplate }: W
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex-1 px-6 py-3 bg-gradient-to-r from-[#FF6B35] to-[#F7931E] text-white rounded-lg hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed font-bold"
+                  className="flex-1 px-6 py-3 bg-gradient-to-r from-[#EC4899] to-[#DB2777] text-white rounded-lg hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed font-bold"
                 >
                   {isSubmitting ? 'Wird eingetragen...' : 'Auf Warteliste'}
                 </button>

@@ -23,7 +23,7 @@ const Modal = () => {
             </button>
           </div>
           
-          <div className="aspect-video bg-gradient-to-br from-green-500/30 to-orange-500/20 rounded-lg mb-6 flex items-center justify-center">
+          <div className="aspect-video bg-gradient-to-br from-pink-500/30 to-pink-400/20 rounded-lg mb-6 flex items-center justify-center">
             <div className="text-center">
               <p className="text-lg font-semibold mb-2">Template-Vorschau</p>
               <p className="text-gray-400">Professionelle Website für Gebäudereinigung</p>
@@ -34,7 +34,7 @@ const Modal = () => {
             {["Template", "Responsive", "SEO-Ready", "72h"].map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-pink-400/20 text-pink-400 text-sm rounded-full border border-pink-400/30"
+                className="px-3 py-1 bg-gradient-to-r from-pink-500/20 to-pink-400/20 text-pink-400 text-sm rounded-full border border-pink-400/30"
               >
                 {tag}
               </span>
@@ -47,11 +47,11 @@ const Modal = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3">
-            <button className="flex-1 px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-400 hover:from-orange-600 hover:to-pink-500 text-white font-semibold rounded transition-all duration-200 flex items-center justify-center space-x-2 group">
+            <button className="flex-1 px-6 py-3 bg-gradient-to-r from-pink-500 to-pink-400 hover:from-pink-600 hover:to-pink-500 text-white font-semibold rounded transition-all duration-200 flex items-center justify-center space-x-2 group">
               <span>Loslegen</span>
               <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="px-6 py-3 border border-green-400 text-green-400 hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-400 hover:text-white transition-all duration-200 rounded font-medium">
+            <button className="px-6 py-3 border border-pink-400 text-pink-400 hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-400 hover:text-white transition-all duration-200 rounded font-medium">
               Mehr erfahren
             </button>
           </div>

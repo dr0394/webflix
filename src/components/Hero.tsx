@@ -192,7 +192,7 @@ const Hero = () => {
                   href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 text-white text-center rounded-md py-4 sm:py-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-orange-500/20"
+                  className="block w-full bg-gradient-to-r from-pink-600 to-pink-500 hover:from-pink-500 hover:to-pink-400 text-white text-center rounded-md py-4 sm:py-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-pink-500/20"
                 >
                   <span className="block text-base sm:text-lg font-black uppercase tracking-wider">
                     Ja, ich will meine Website

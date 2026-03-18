@@ -83,7 +83,7 @@ export default function WebflixCustomSection() {
               {/* Icon */}
               <div className="flex justify-center mb-4">
                 <div className="relative">
-                  <div className="absolute inset-0 bg-white/10 group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 rounded-xl blur-lg opacity-0 group-hover:opacity-75 transition-all duration-300"></div>
+                  <div className="absolute inset-0 bg-white/10 group-hover:bg-gradient-to-r group-hover:from-pink-400 group-hover:to-pink-500 rounded-xl blur-lg opacity-0 group-hover:opacity-75 transition-all duration-300"></div>
                   <div className="relative bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-xl p-3">
                     <feature.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                   </div>
@@ -122,7 +122,7 @@ export default function WebflixCustomSection() {
                 <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 sm:p-8 hover:border-white/40 transition-all duration-300 hover:scale-105 h-full flex flex-col">
                   <div className="flex items-start justify-between mb-6">
                     <div className="relative">
-                      <div className="absolute inset-0 bg-white/10 group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 rounded-xl blur-lg opacity-0 group-hover:opacity-75 transition-all duration-300"></div>
+                      <div className="absolute inset-0 bg-white/10 group-hover:bg-gradient-to-r group-hover:from-pink-400 group-hover:to-pink-500 rounded-xl blur-lg opacity-0 group-hover:opacity-75 transition-all duration-300"></div>
                       <div className="relative bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-xl border border-white/30 rounded-xl p-3">
                         <phase.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                       </div>
@@ -134,7 +134,7 @@ export default function WebflixCustomSection() {
                   </div>
 
                   <div className="mb-2">
-                    <span className="text-xs font-bold text-white/60 group-hover:text-orange-400 tracking-wider transition-colors duration-300">
+                    <span className="text-xs font-bold text-white/60 group-hover:text-pink-400 tracking-wider transition-colors duration-300">
                       PHASE {phase.number}
                     </span>
                   </div>
@@ -144,7 +144,7 @@ export default function WebflixCustomSection() {
                   </h3>
 
                   <div className="inline-flex items-center gap-2 mb-4">
-                    <div className="w-2 h-2 rounded-full bg-white/30 group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 transition-all duration-300"></div>
+                    <div className="w-2 h-2 rounded-full bg-white/30 group-hover:bg-gradient-to-r group-hover:from-pink-400 group-hover:to-pink-500 transition-all duration-300"></div>
                     <span className="text-sm text-white/60 font-medium">
                       {phase.duration}
                     </span>
@@ -157,7 +157,7 @@ export default function WebflixCustomSection() {
 
                 {index < phases.length - 1 && (
                   <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-20">
-                    <div className="w-8 h-0.5 bg-white/20 group-hover:bg-gradient-to-r group-hover:from-orange-400/50 group-hover:to-transparent transition-all duration-300"></div>
+                    <div className="w-8 h-0.5 bg-white/20 group-hover:bg-gradient-to-r group-hover:from-pink-400/50 group-hover:to-transparent transition-all duration-300"></div>
                   </div>
                 )}
               </div>
@@ -167,7 +167,7 @@ export default function WebflixCustomSection() {
 
         {/* CTA Banner */}
         <div className="group relative bg-gradient-to-br from-white/5 via-white/[0.02] to-white/5 backdrop-blur-xl border-2 border-white/20 hover:border-white/40 rounded-3xl overflow-hidden shadow-2xl transition-all duration-500">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 group-hover:bg-gradient-to-br group-hover:from-orange-400/20 to-transparent rounded-full blur-3xl transition-all duration-500"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 group-hover:bg-gradient-to-br group-hover:from-pink-400/20 to-transparent rounded-full blur-3xl transition-all duration-500"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 group-hover:bg-gradient-to-tr group-hover:from-pink-400/20 to-transparent rounded-full blur-3xl transition-all duration-500"></div>
 
           <div className="relative z-10 px-6 sm:px-8 md:px-12 py-8 sm:py-10 md:py-12">
@@ -186,7 +186,7 @@ export default function WebflixCustomSection() {
                   href="https://wa.me/4915562710839"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 border-2 border-white/30 hover:border-transparent rounded-xl font-bold text-white text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105 whitespace-nowrap text-center"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600 border-2 border-white/30 hover:border-transparent rounded-xl font-bold text-white text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-pink-500/50 hover:scale-105 whitespace-nowrap text-center"
                 >
                   Mehr erfahren
                 </a>

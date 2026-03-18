@@ -26,17 +26,17 @@ const ModelExplanation = () => {
       icon: CreditCard,
       title: "Design & Entwicklung",
       description: "Unser Team setzt Ihre Website professionell um - mit allen gewünschten Features und Inhalten.",
-      color: "from-orange-500 to-red-600",
-      bgColor: "bg-orange-500/10",
-      borderColor: "border-orange-500/30"
+      color: "from-pink-500 to-pink-600",
+      bgColor: "bg-pink-500/10",
+      borderColor: "border-pink-500/30"
     },
     {
       number: 4,
       icon: Rocket,
       title: "Website ist live!",
       description: "Ihre Website geht nach 7 Tagen online. Bei Express-Auswahl sogar bereits nach 72 Stunden!",
-      color: "from-orange-500 to-pink-400",
-      bgColor: "bg-orange-500/10",
+      color: "from-pink-500 to-pink-400",
+      bgColor: "bg-pink-500/10",
       borderColor: "border-pink-400/30"
     }
   ];
@@ -100,14 +100,14 @@ const ModelExplanation = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-8 sm:mt-12">
-          <div className="bg-gradient-to-r from-orange-500/10 to-pink-400/10 border border-pink-400/30 rounded-2xl p-6 sm:p-8">
+          <div className="bg-gradient-to-r from-pink-500/10 to-pink-400/10 border border-pink-400/30 rounded-2xl p-6 sm:p-8">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-black">Bereit für Ihre Professionelle Webflix Website?</h3>
             <p className="text-gray-800 mb-4 sm:mb-6 text-sm sm:text-base">
               Vergessen Sie monatelange Wartezeiten und teure Webdesigner
             </p>
             <button
               onClick={() => window.location.href = 'https://www.webflix.info/custom'}
-              className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-pink-400 hover:from-orange-600 hover:to-pink-500 text-white py-2.5 sm:py-3 px-6 sm:px-8 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 mx-auto text-sm sm:text-base"
+              className="w-full sm:w-auto bg-gradient-to-r from-pink-500 to-pink-400 hover:from-pink-600 hover:to-pink-500 text-white py-2.5 sm:py-3 px-6 sm:px-8 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2 mx-auto text-sm sm:text-base"
             >
               <span>Jetzt mehr erfahren</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
