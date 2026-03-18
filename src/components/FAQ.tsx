@@ -4,7 +4,7 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "Was kostet die Website genau?",
-    answer: "347€ einmalig fuer deine Website. Technischer Support, Updates und Wartung ab 7,90€/Monat. Du zahlst einmal fuer die Website und die gehoert dir."
+    answer: "347€ einmalige Setup-Gebuehr fuer deine Website. Technischer Support, Updates und Wartung ab 7,90€/Monat. Die Website gehoert dir."
   },
   {
     question: "Was ist alles im Preis enthalten?",

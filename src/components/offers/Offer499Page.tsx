@@ -438,7 +438,7 @@ const Offer499Page = () => {
 
           <div className="space-y-3 sm:space-y-4">
             {[
-              { q: 'Was kostet die Website nach den ersten 347€?', a: 'Die 347€ sind eine Einmalzahlung. Für Hosting und Domain fallen ca. 10-15€ monatlich an. Keine versteckten Kosten.' },
+              { q: 'Was kostet die Website nach dem Setup?', a: 'Die 347€ sind die einmalige Setup-Gebuehr. Technischer Support, Updates und Wartung gibt es ab 7,90€/Monat. Keine versteckten Kosten.' },
               { q: 'Kann ich meine Website selbst bearbeiten?', a: 'Ja! Du bekommst ein einfaches CMS, mit dem du Texte und Bilder selbst ändern kannst. Oder wir machen das für dich.' },
               { q: 'Was passiert wenn ich nicht zufrieden bin?', a: 'Dann arbeitest wir kostenlos weiter, bis du zufrieden bist. Solltest du am Ende nicht happy sein, zahlst du nichts.' },
               { q: 'Wie viele Seiten bekomme ich?', a: 'Ein professioneller Onepager mit allen wichtigen Infos zu deinem Business, plus Basis-Impressum und Datenschutz-Seite. Mehr Seiten gegen Aufpreis möglich.' },

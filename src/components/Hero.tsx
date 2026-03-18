@@ -135,13 +135,13 @@ const Hero = () => {
 
               <div className="flex items-baseline gap-3 mb-4">
                 <span className="text-5xl sm:text-6xl font-black text-white">347€</span>
-                <span className="text-lg sm:text-xl text-red-500 line-through font-bold">3.637 Euro</span>
+                <span className="text-lg sm:text-xl text-red-500 line-through font-bold">1.637 Euro</span>
               </div>
 
               <div className="bg-[#1a1a1a] border border-white/10 rounded-md px-4 py-3 mb-5">
                 <p className="text-xs sm:text-sm font-bold text-white tracking-wider uppercase">
                   <ArrowRight className="w-3 h-3 inline mr-1" />
-                  Du sparst 3.290€ mit Code: WFXDEAL
+                  Du sparst 1.290€ mit Code: WFXDEAL
                 </p>
               </div>
 
@@ -153,7 +153,7 @@ const Hero = () => {
                 <div className="flex gap-3">
                   <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-bold text-white uppercase tracking-wide">Professionelle Website in 72 Stunden (Wert 1.997 €)</p>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Professionelle Website in 72 Stunden (Wert 997 €)</p>
                     <p className="text-sm text-gray-400 mt-1">Von "Ich habe keine Website" zu "Meine Website ist online" - in 72 Stunden.</p>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ const Hero = () => {
 
               <div className="mt-6 pt-5 border-t border-white/10">
                 <p className="text-xs sm:text-sm font-bold text-white text-center uppercase tracking-wider mb-4">
-                  Gesamtwert: weit ueber 3.637 Euro
+                  Gesamtwert: ueber 1.637 Euro
                 </p>
 
                 <a

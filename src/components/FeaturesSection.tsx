@@ -151,7 +151,7 @@ const FeaturesSection = () => {
           <div className="max-w-2xl mx-auto bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-2xl p-8 text-center">
             <div className="mb-6">
               <div className="text-5xl sm:text-6xl font-black text-white mb-2">347€</div>
-              <div className="text-xl text-green-400 font-medium">Einmalzahlung - Keine Abo-Falle</div>
+              <div className="text-xl text-green-400 font-medium">347€ Setup + Support ab 7,90€/Mo.</div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left mb-8">
               <div className="flex items-start gap-2">

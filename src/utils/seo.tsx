@@ -97,12 +97,12 @@ export const PAGE_SEO = {
   },
   custom: {
     title: 'Professionelle Website für 347 € – Express-Umsetzung in 2 Tagen | Webflix',
-    description: 'Website erstellen lassen zum Festpreis: 347 € einmalig. 2 Tage Express-Umsetzung, mobiloptimiert, SEO & Google-Indexierung inklusive. Jetzt anfragen!',
+    description: 'Website erstellen lassen zum Festpreis: 347 € Setup-Gebuehr. 2 Tage Express-Umsetzung, mobiloptimiert, SEO & Google-Indexierung inklusive. Jetzt anfragen!',
     keywords: 'website 347 euro, website erstellen lassen, express website, webdesign festpreis, professionelle website, seo optimierung'
   },
   offer499: {
     title: '347 € Website Angebot – Professionelles Webdesign | Webflix',
-    description: 'Einmalige Setup-Kosten: 347 €. Professionelle Website in 2 Tagen. Inkl. Mobiloptimierung, SEO & Google-Indexierung. Aktion gültig bis 31.03.2026.',
+    description: 'Setup-Gebuehr: 347 €. Professionelle Website in 2 Tagen. Inkl. Mobiloptimierung, SEO & Google-Indexierung. Support ab 7,90€/Mo.',
     keywords: 'website 347 euro, webdesign angebot, website aktion, express website, günstige website professionell'
   },
   addons: {
