@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "Kann ich Änderungen vornehmen?",
-    answer: "Ja! Während der Entwurfsphase kannst du kostenlos Änderungen anfragen. Nach Go-Live bieten wir Support-Pakete für weitere Anpassungen an."
+    answer: "Ja! Während der Entwurfsphase kannst du kostenlos Änderungen anfragen. Nach Go-Live steht dir unser 24/7-Assistent zur Verfügung, mit dem du deine gesamte Website selbst verwalten kannst – Texte, Bilder und mehr jederzeit eigenständig ändern. Zusätzlich erhältst du regelmäßige Reports über die Performance deiner Seite."
   },
   {
     question: "Was passiert nach dem ersten Jahr?",
