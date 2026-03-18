@@ -144,19 +144,10 @@ function App() {
         <WhatsAppButton />
       <Routes>
         <Route path="/" element={
-          <div className="min-h-screen bg-[#111111] text-white font-inter">
+          <div className="min-h-screen bg-black text-white font-inter">
             <Header showNavigation={true} />
             <Hero />
             <FeaturesSection />
-            <ModelExplanation />
-            <WebflixCustomSection />
-            <CustomerProjects />
-            <ComparisonSection />
-            <AboutSection />
-
-            <ConsultationBanner />
-            
-            <HighlightSection />
             <FAQ />
             <Footer />
             <Modal />

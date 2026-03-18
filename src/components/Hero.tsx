@@ -1,206 +1,180 @@
-import React, { useState } from 'react';
-import { ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { CheckCircle2, Sparkles, Clock, Shield } from 'lucide-react';
 
 const Hero = () => {
-  const [email, setEmail] = useState('');
+  const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 45, seconds: 30 });
+  const [availableSlots, setAvailableSlots] = useState(2);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev.seconds > 0) {
+          return { ...prev, seconds: prev.seconds - 1 };
+        } else if (prev.minutes > 0) {
+          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
+        } else if (prev.hours > 0) {
+          return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
+        }
+        return prev;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const whatsappNumber = "4915146692387";
+  const whatsappMessage = encodeURIComponent("Hallo! Ich möchte meinen kostenlosen Website-Entwurf für 349€ erhalten.");
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-24 pb-12 sm:pt-28 sm:pb-16 md:pt-32 md:pb-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black pt-24 pb-12 sm:pt-28 sm:pb-16 md:pt-32 md:pb-20">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-green-500/10 via-transparent to-transparent"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 w-full max-w-6xl mx-auto">
-        <h1 className="font-montserrat font-bold mb-8 sm:mb-10 md:mb-12 leading-tight">
-          <span className="block mb-4 sm:mb-5">
-            <span className="text-white font-black tracking-tight text-[32px] leading-[1.1] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              Game changing Websites
-            </span>
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 w-full max-w-5xl mx-auto">
+
+        {/* Limited Availability Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-full mb-6 animate-pulse">
+          <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+          <span className="text-sm font-bold text-red-400">Nur noch {availableSlots} Plätze diese Woche verfügbar</span>
+        </div>
+
+        {/* Main Headline */}
+        <h1 className="font-black mb-6 leading-tight">
+          <span className="block text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4">
+            Deine Website für
           </span>
-          <span className="block text-base leading-relaxed sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light tracking-wide px-4 sm:px-0">
-            <span className="text-gray-300">Webflix bringt dich aufs nächste Level,</span>
-            <br className="block" />
-            <span className="text-gray-400 font-extralight">mit der perfekten Lösung für deine Online Präsenz.</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+            349€
           </span>
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 max-w-5xl mx-auto">
-          {/* Express Websites */}
-          <div
-            onClick={() => window.location.href = '/custom'}
-            className="relative bg-black/60 border-2 border-[#E2E5E9]/30 hover:border-pink-400/80 hover:shadow-2xl hover:shadow-pink-500/40 md:hover:scale-[1.03] transition-all duration-500 cursor-pointer group overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8"
-          >
-            {/* Animated gradient orbs */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-500/20 to-pink-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
-            <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-pink-500/20 to-orange-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+        {/* Subheadline */}
+        <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-4 font-light">
+          Erst den Entwurf sehen. Dann bezahlen.
+        </p>
+        <p className="text-lg sm:text-xl text-gray-400 mb-12">
+          Kein Risiko. Keine Vorauszahlung. Alles per WhatsApp.
+        </p>
 
-            {/* Glow effect */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 via-pink-400 to-orange-400 rounded-2xl sm:rounded-3xl blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
-
-            {/* Shine effect */}
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-6">
-                <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20">
-                  <img
-                    src="https://i.imgur.com/cFVa9f4.png"
-                    alt=""
-                    className="w-full h-full object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-1">
-                    WEBFLIX<br/>WEBSITES
-                  </h3>
-                  <div className="h-1 w-20 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full"></div>
-                </div>
-              </div>
-
-              <div className="space-y-2.5 sm:space-y-3 mb-6 sm:mb-7 text-white">
-                <div className="flex items-center gap-3 group/item">
-                  <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-pink-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Premium-Designs</p>
-                </div>
-                <div className="flex items-center gap-3 group/item">
-                  <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-pink-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Ab 499€</p>
-                </div>
-                <div className="flex items-center gap-3 group/item">
-                  <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-pink-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-pink-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">in 7 Tagen Online / Express 72 Std.</p>
-                </div>
-              </div>
-
-              <button className="w-full py-3.5 sm:py-4 bg-[#E2E5E9] hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 rounded-xl sm:rounded-2xl font-black text-gray-800 hover:text-white text-sm sm:text-base transition-all duration-300 shadow-2xl shadow-[#E2E5E9]/30 hover:shadow-pink-500/50 group-hover:scale-[1.02] uppercase tracking-wider relative overflow-hidden">
-                <span className="relative z-10">Weitere Infos</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
-            </div>
+        {/* Trust Badges */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
+          <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3">
+            <Shield className="w-5 h-5 text-green-400 flex-shrink-0" />
+            <span className="text-sm text-white font-medium">Kein Risiko</span>
           </div>
-
-          {/* TEMPORÄR VERSTECKT THE WEBSITE CODE <a
-            href="https://www.the-website-code.de/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative bg-black/50 border-2 border-[#E2E5E9]/30 hover:border-green-400/80 hover:shadow-2xl hover:shadow-green-500/40 md:hover:scale-[1.03] transition-all duration-500 cursor-pointer group overflow-hidden rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8 block"
-          >
-            <div className="absolute inset-0 flex items-center justify-center opacity-[0.15] group-hover:opacity-[0.25] transition-opacity duration-500">
-              <img
-                src="/logowebflix499.png"
-                alt=""
-                className="w-40 h-40 object-contain transform group-hover:scale-110 transition-transform duration-700"
-              />
-            </div>
-
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></div>
-            <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-emerald-500/20 to-green-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-
-            <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 rounded-2xl sm:rounded-3xl blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
-
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-            <div className="relative z-10">
-              <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-6">
-                <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20">
-                  <img
-                    src="https://i.imgur.com/WDgHF29.png"
-                    alt=""
-                    className="w-full h-full object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white tracking-tight leading-tight mb-1">
-                    THE WEBSITE<br/>CODE
-                  </h3>
-                  <div className="h-1 w-20 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full"></div>
-                </div>
-              </div>
-
-              <div className="space-y-2.5 sm:space-y-3 mb-6 sm:mb-7 text-white">
-                <div className="flex items-center gap-3 group/item">
-                  <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-green-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Lerne in 60 Min deine eigene Premium Website zu bauen</p>
-                </div>
-                <div className="flex items-center gap-3 group/item">
-                  <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-green-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Keine Abhängigkeit von Agenturen</p>
-                </div>
-                <div className="flex items-center gap-3 group/item">
-                  <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-green-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Keine Folgekosten für Änderungen</p>
-                </div>
-                <div className="flex items-center gap-3 group/item">
-                  <div className="w-2 h-2 rounded-full bg-[#E2E5E9] group-hover:bg-gradient-to-r group-hover:from-green-400 group-hover:to-emerald-400 flex-shrink-0 shadow-lg shadow-[#E2E5E9]/30 group-hover:shadow-green-500/50 group-hover/item:scale-125 transition-all"></div>
-                  <p className="text-sm sm:text-base md:text-lg font-bold group-hover/item:translate-x-1 transition-transform">Ohne Vorkenntnisse umsetzbar</p>
-                </div>
-              </div>
-
-              <div className="w-full py-3.5 sm:py-4 bg-[#E2E5E9] hover:bg-gradient-to-r hover:from-green-500 hover:to-emerald-500 rounded-xl sm:rounded-2xl font-black text-gray-800 hover:text-white text-sm sm:text-base transition-all duration-300 shadow-2xl shadow-[#E2E5E9]/30 hover:shadow-green-500/50 group-hover:scale-[1.02] uppercase tracking-wider relative overflow-hidden flex items-center justify-center">
-                <span className="relative z-10">Jetzt mehr erfahren</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-            </div>
-          </a> */}
+          <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3">
+            <Clock className="w-5 h-5 text-green-400 flex-shrink-0" />
+            <span className="text-sm text-white font-medium">In 24h Entwurf</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3">
+            <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
+            <span className="text-sm text-white font-medium">Erst sehen</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3">
+            <Sparkles className="w-5 h-5 text-green-400 flex-shrink-0" />
+            <span className="text-sm text-white font-medium">Dann zahlen</span>
+          </div>
         </div>
 
-        {/* Customer Logos Slider */}
-        <div className="mt-10 sm:mt-12 md:mt-16 lg:mt-20">
-          <p className="text-center text-white/60 text-xs sm:text-sm md:text-base mb-4 sm:mb-6 md:mb-8 font-medium">
-            Vertraut von über 847 zufriedenen Kunden
-          </p>
-          <div className="relative overflow-hidden">
-            <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-16 md:w-32 bg-gradient-to-r from-black/80 to-transparent z-10"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-16 md:w-32 bg-gradient-to-l from-black/80 to-transparent z-10"></div>
-
-            <div className="flex animate-scroll">
-              {[
-                'https://cdn.prod.website-files.com/6685978ca68674910cce55d7/6731f71e47d75de47101645a_Jad-Helou_Logo_Schutzraum_wei%C3%9F_RGB-p-500.png',
-                'https://aesthetic-home.de/wp-content/uploads/2019/10/logo_color_wide-1.png',
-                'https://cdn.prod.website-files.com/64da9115ad6b28ffcb813aa6/667bd1f40dd575e2dfcf5656_NIKO%20Netzwerk%20Inspirations%20Kongress_LOGO_negativ_web-p-500.png',
-                'https://lh3.googleusercontent.com/p/AF1QipObwGAC9MNVxS5hiF1TKlHz7FwjAi6xw9G6ug7B=s1360-w1360-h1020-rw',
-                'https://shop.rotundkehlchen.de/cdn/shop/files/Rot_u_Kehlchen_Logo_Version_2_rot-2048x989_1_360x.png?v=1731680919',
-                'https://i.imgur.com/TaHBycH.png',
-                'https://cdn.prod.website-files.com/6798aed2feba24aba04b3ff0/679e01f8613e21e83306ce5c_Logo_weiss-p-800.png',
-                'https://cdn.prod.website-files.com/6798aed2feba24aba04b3ff0/6798c531dffdf43d357dfa02_Kein%20Titel%20(768%20x%20215%20px)%20(768%20x%20300%20px)%20(83%20x%2040%20px)%20(1).png'
-              ].map((logo, index) => (
-                <div key={`first-${index}`} className="flex-shrink-0 mx-2 sm:mx-3 md:mx-4 lg:mx-6 group">
-                  <div className="relative w-28 h-20 sm:w-36 sm:h-24 md:w-48 md:h-32 lg:w-56 lg:h-36 rounded-lg sm:rounded-xl overflow-hidden bg-black/40 backdrop-blur-xl border border-white/10 hover:border-green-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center p-3 sm:p-4 md:p-6">
-                    <img
-                      src={logo}
-                      alt={`Customer ${index + 1}`}
-                      className="w-full h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                    />
+        {/* Main CTA */}
+        <div className="max-w-2xl mx-auto">
+          <a
+            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative block"
+          >
+            <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-300 animate-pulse"></div>
+            <div className="relative bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl p-8 hover:from-green-400 hover:to-emerald-400 transition-all duration-300 transform group-hover:scale-[1.02]">
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <div className="text-left">
+                  <div className="text-white text-2xl sm:text-3xl font-black">
+                    Kostenlosen Entwurf erhalten
+                  </div>
+                  <div className="text-green-100 text-sm font-medium">
+                    Direkt per WhatsApp starten
                   </div>
                 </div>
-              ))}
-
-              {[
-                'https://cdn.prod.website-files.com/6685978ca68674910cce55d7/6731f71e47d75de47101645a_Jad-Helou_Logo_Schutzraum_wei%C3%9F_RGB-p-500.png',
-                'https://aesthetic-home.de/wp-content/uploads/2019/10/logo_color_wide-1.png',
-                'https://cdn.prod.website-files.com/64da9115ad6b28ffcb813aa6/667bd1f40dd575e2dfcf5656_NIKO%20Netzwerk%20Inspirations%20Kongress_LOGO_negativ_web-p-500.png',
-                'https://lh3.googleusercontent.com/p/AF1QipObwGAC9MNVxS5hiF1TKlHz7FwjAi6xw9G6ug7B=s1360-w1360-h1020-rw',
-                'https://shop.rotundkehlchen.de/cdn/shop/files/Rot_u_Kehlchen_Logo_Version_2_rot-2048x989_1_360x.png?v=1731680919',
-                'https://i.imgur.com/TaHBycH.png',
-                'https://cdn.prod.website-files.com/6798aed2feba24aba04b3ff0/679e01f8613e21e83306ce5c_Logo_weiss-p-800.png',
-                'https://cdn.prod.website-files.com/6798aed2feba24aba04b3ff0/6798c531dffdf43d357dfa02_Kein%20Titel%20(768%20x%20215%20px)%20(768%20x%20300%20px)%20(83%20x%2040%20px)%20(1).png'
-              ].map((logo, index) => (
-                <div key={`second-${index}`} className="flex-shrink-0 mx-2 sm:mx-3 md:mx-4 lg:mx-6 group">
-                  <div className="relative w-28 h-20 sm:w-36 sm:h-24 md:w-48 md:h-32 lg:w-56 lg:h-36 rounded-lg sm:rounded-xl overflow-hidden bg-black/40 backdrop-blur-xl border border-white/10 hover:border-green-500/50 transition-all duration-300 hover:scale-105 flex items-center justify-center p-3 sm:p-4 md:p-6">
-                    <img
-                      src={logo}
-                      alt={`Customer ${index + 1}`}
-                      className="w-full h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                    />
-                  </div>
+              </div>
+              <div className="text-center">
+                <div className="text-green-50 text-sm font-medium opacity-90">
+                  Antwort in wenigen Minuten
                 </div>
-              ))}
+              </div>
             </div>
+          </a>
+
+          {/* Countdown Timer */}
+          <div className="mt-6 bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl p-4">
+            <div className="text-gray-300 text-sm mb-2">Angebot endet in:</div>
+            <div className="flex justify-center gap-4">
+              <div className="text-center">
+                <div className="text-3xl font-black text-white">{String(timeLeft.hours).padStart(2, '0')}</div>
+                <div className="text-xs text-gray-400">Stunden</div>
+              </div>
+              <div className="text-3xl font-black text-white">:</div>
+              <div className="text-center">
+                <div className="text-3xl font-black text-white">{String(timeLeft.minutes).padStart(2, '0')}</div>
+                <div className="text-xs text-gray-400">Minuten</div>
+              </div>
+              <div className="text-3xl font-black text-white">:</div>
+              <div className="text-center">
+                <div className="text-3xl font-black text-white">{String(timeLeft.seconds).padStart(2, '0')}</div>
+                <div className="text-xs text-gray-400">Sekunden</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* How it Works */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="text-center">
+            <div className="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <span className="text-3xl font-black text-green-400">1</span>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">WhatsApp-Nachricht</h3>
+            <p className="text-gray-400">Schreibe uns deine Branche und grundlegende Wünsche</p>
+          </div>
+          <div className="text-center">
+            <div className="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <span className="text-3xl font-black text-green-400">2</span>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Entwurf in 24h</h3>
+            <p className="text-gray-400">Erhalte deinen persönlichen Website-Entwurf per WhatsApp</p>
+          </div>
+          <div className="text-center">
+            <div className="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <span className="text-3xl font-black text-green-400">3</span>
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Zahlen & Online</h3>
+            <p className="text-gray-400">Nur bei Gefallen 349€ zahlen und Website geht live</p>
+          </div>
+        </div>
+
+        {/* Social Proof */}
+        <div className="mt-16 flex items-center justify-center gap-8 flex-wrap">
+          <div className="text-center">
+            <div className="text-3xl font-black text-green-400">847+</div>
+            <div className="text-sm text-gray-400">Zufriedene Kunden</div>
+          </div>
+          <div className="w-px h-12 bg-white/10"></div>
+          <div className="text-center">
+            <div className="text-3xl font-black text-green-400">4.9/5</div>
+            <div className="text-sm text-gray-400">Bewertung</div>
+          </div>
+          <div className="w-px h-12 bg-white/10"></div>
+          <div className="text-center">
+            <div className="text-3xl font-black text-green-400">24h</div>
+            <div className="text-sm text-gray-400">Entwurf-Zeit</div>
           </div>
         </div>
 
       </div>
 
       {/* Gradient overlay at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#111111] to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
 
     </section>
   );
