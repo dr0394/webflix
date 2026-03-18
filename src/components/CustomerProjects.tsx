@@ -121,15 +121,15 @@ export default function CustomerProjects() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-6">
-            <span className="text-white/60 font-semibold text-sm">Erfolgsgeschichten</span>
+            <span className="text-white/60 font-semibold text-sm">Ergebnis Gallery</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
             <span className="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
-              Kundenprojekte
+              ECHTE WEBSITES VON ECHTEN KUNDEN
             </span>
           </h2>
-          <p className="text-white/60 text-base sm:text-lg max-w-2xl mx-auto mb-4">
-            Erfolgreiche Websites und Business Systeme für unsere Kunden
+          <p className="text-white/60 text-base sm:text-lg max-w-3xl mx-auto mb-4">
+            Gebaut mit WEBFLIX, ohne Agentur, ohne Vorkenntnisse. Jede dieser Websites wurde von einem Kunden selbst bestellt – fertig in 48 Stunden. Besser als jeder Website Baukasten.
           </p>
 
           <div className="inline-flex bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-1.5 mt-8">
