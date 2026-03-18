@@ -1,54 +1,31 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const references = [
   {
-    image: '/screenshot-2025-11-15_um_09.25.13.png',
-    title: 'Krankenbeförderung',
+    image: '/1.png',
+    title: 'Gartenpflege Theisen',
+    category: 'Gartenpflege',
+  },
+  {
+    image: '/2.png',
+    title: 'Facility Excellence',
+    category: 'Gebäudereinigung',
+  },
+  {
+    image: '/3.png',
+    title: 'Elbwacht Security',
+    category: 'Sicherheitsdienst',
+  },
+  {
+    image: '/4.png',
+    title: 'Team Sauber',
+    category: 'Umzug & Logistik',
+  },
+  {
+    image: '/5.png',
+    title: 'KBVest Krankenbeförderung',
     category: 'Gesundheitswesen',
-    link: '/demo/autoaufbereitung',
-  },
-  {
-    image: '/screenshot-2025-10-18_um_18.29.34.png',
-    title: 'Sicherheitsdienst Hamburg',
-    category: 'Security',
-    link: '/demo/security',
-  },
-  {
-    image: '/screenshot-2025-11-05_um_20.28.51.png',
-    title: 'Umzug & Logistik',
-    category: 'Dienstleistung',
-    link: '/demo/handwerk',
-  },
-  {
-    image: '/screenshot-2025-11-17_um_00.35.50.png',
-    title: 'Event & Party Service',
-    category: 'Veranstaltung',
-    link: '/demo/gastro',
-  },
-  {
-    image: '/screenshot-2025-10-18_um_18.29.39.png',
-    title: 'Maschinenbau Solutions',
-    category: 'Industrie',
-    link: '/demo/metallbau',
-  },
-  {
-    image: '/screenshot-2025-11-15_um_09.33.26.png',
-    title: 'KFZ Gutachter NRW',
-    category: 'Automobile',
-    link: '/demo/autoaufbereitung-v3',
-  },
-  {
-    image: '/screenshot-2025-11-15_um_09.34.40.png',
-    title: 'Gebäudereinigung Plus',
-    category: 'Reinigung',
-    link: '/demo/gebaeudereinigung',
-  },
-  {
-    image: '/bildschirmfoto_2026-01-21_um_11.42.30.png',
-    title: 'Garten & Landschaftsbau',
-    category: 'Handwerk',
-    link: '/demo/gartenlandschaftsbau',
   },
 ];
 
@@ -136,10 +113,9 @@ const ReferencesSlider = () => {
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {references.map((ref, index) => (
-              <a
+              <div
                 key={index}
-                href={ref.link}
-                className="flex-shrink-0 w-[340px] sm:w-[360px] group/card snap-start cursor-pointer"
+                className="flex-shrink-0 w-[340px] sm:w-[360px] group/card snap-start"
               >
                 <div className="relative rounded-xl overflow-hidden border border-white/10 hover:border-green-400/40 transition-all duration-500 bg-gray-900/50">
                   <div className="absolute top-0 left-0 right-0 h-8 bg-gray-800/90 flex items-center px-3 gap-1.5 z-10">
@@ -157,13 +133,6 @@ const ReferencesSlider = () => {
                       loading="lazy"
                     />
                   </div>
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-end p-5">
-                    <div className="flex items-center gap-2 text-white text-sm font-medium">
-                      <ExternalLink className="w-4 h-4" />
-                      <span>Demo ansehen</span>
-                    </div>
-                  </div>
                 </div>
 
                 <div className="mt-3 px-1">
@@ -176,7 +145,7 @@ const ReferencesSlider = () => {
                     </span>
                   </div>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </div>
