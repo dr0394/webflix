@@ -4,11 +4,11 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "Was kostet die Website genau?",
-    answer: "347€ einmalig. Das ist alles. Keine versteckten Kosten, keine monatlichen Gebühren, kein Abo. Du zahlst einmal und die Website gehört dir."
+    answer: "347€ einmalig fuer deine Website. Technischer Support, Updates und Wartung ab 7,90€/Monat. Du zahlst einmal fuer die Website und die gehoert dir."
   },
   {
     question: "Was ist alles im Preis enthalten?",
-    answer: "Premium Website-Design, Hosting für 1 Jahr, Domain-Setup, SSL-Zertifikat, Mobile-Optimierung, SEO-Grundlagen, Kontaktformular und WhatsApp-Integration."
+    answer: "Premium Website-Design, SSL-Zertifikat, Mobile-Optimierung, SEO-Grundlagen, Kontaktformular und WhatsApp-Integration. Technischer Support, Updates und Wartung gibt es ab 7,90€/Monat."
   },
   {
     question: "Wie funktioniert der kostenlose Entwurf?",
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "Was passiert nach dem ersten Jahr?",
-    answer: "Du kannst das Hosting für 9,90€/Monat verlängern oder die Website zu einem anderen Anbieter umziehen. Die Website gehört dir."
+    answer: "Technischer Support, Updates und Wartung sind ab 7,90€/Monat verfuegbar. Die Website gehoert dir - du kannst sie jederzeit zu einem anderen Anbieter umziehen."
   }
 ];
 

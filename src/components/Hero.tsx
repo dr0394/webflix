@@ -177,8 +177,8 @@ const Hero = () => {
                 <div className="flex gap-3">
                   <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-bold text-white uppercase tracking-wide">Bonus 2: SSL, Hosting & Domain inklusive</p>
-                    <p className="text-sm text-gray-400 mt-1">Alles was du brauchst ist dabei. Keine versteckten Kosten, keine Extras.</p>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Bonus 2: Technischer Support ab 7,90 Euro/Monat</p>
+                    <p className="text-sm text-gray-400 mt-1">Laufender Support, Updates und Wartung - alles ab 7,90 Euro im Monat.</p>
                   </div>
                 </div>
               </div>

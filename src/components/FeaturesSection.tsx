@@ -160,7 +160,7 @@ const FeaturesSection = () => {
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 text-sm">Hosting & Domain inklusive</span>
+                <span className="text-gray-300 text-sm">Support & Wartung ab 7,90€/Mo.</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
