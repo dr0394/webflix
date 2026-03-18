@@ -26,9 +26,9 @@ const ModelExplanation = () => {
       icon: CreditCard,
       title: "Design & Entwicklung",
       description: "Unser Team setzt Ihre Website professionell um - mit allen gewünschten Features und Inhalten.",
-      color: "from-green-500 to-green-600",
-      bgColor: "bg-green-500/10",
-      borderColor: "border-green-500/30"
+      color: "from-orange-500 to-red-600",
+      bgColor: "bg-orange-500/10",
+      borderColor: "border-orange-500/30"
     },
     {
       number: 4,

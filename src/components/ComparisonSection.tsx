@@ -80,7 +80,7 @@ export default function ComparisonSection() {
     <section id="packages-section" className="relative py-16 sm:py-20 md:py-24 bg-gradient-to-b from-[#111111] via-[#0a0a0a] to-[#111111] overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-green-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl"></div>
       </div>
 
@@ -88,7 +88,7 @@ export default function ComparisonSection() {
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4">
-            <span className="bg-gradient-to-r from-green-400 via-emerald-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-400 via-red-400 to-pink-400 bg-clip-text text-transparent">
               Webflix vs.
             </span>{' '}
             <span className="text-white">der Rest</span>
@@ -143,7 +143,7 @@ export default function ComparisonSection() {
             </div>
 
             {/* CTA Row */}
-            <div className="grid grid-cols-5 gap-4 p-6 bg-gradient-to-br from-green-500/10 via-pink-500/5 to-pink-500/10 border-t border-white/10">
+            <div className="grid grid-cols-5 gap-4 p-6 bg-gradient-to-br from-orange-500/10 via-pink-500/5 to-pink-500/10 border-t border-white/10">
               <div></div>
               <div className="flex justify-center">
                 <X className="w-8 h-8 text-red-400" />

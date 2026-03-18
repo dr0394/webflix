@@ -242,8 +242,8 @@ const PopularSection = () => {
                         )}
                       </div>
                       {hasDemo && (
-                        <div className="bg-green-500/20 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-green-400">
-                          <span className="text-green-300 text-[10px] sm:text-xs font-medium">VERFÜGBAR</span>
+                        <div className="bg-orange-500/20 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-orange-400">
+                          <span className="text-orange-300 text-[10px] sm:text-xs font-medium">VERFÜGBAR</span>
                         </div>
                       )}
                     </div>
