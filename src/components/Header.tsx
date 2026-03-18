@@ -38,7 +38,7 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
               <div className="flex items-center gap-4 sm:gap-6">
                 <button onClick={() => navigate('/')}>
                   <img
-                    src="/Webflixlogo_nurlogo.png"
+                    src="/WEbflix_mdd_ohne_(2).png"
                     alt="Webflix"
                     className="h-10 sm:h-12 w-auto cursor-pointer hover:opacity-80 transition-opacity"
                   />
@@ -231,7 +231,7 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <img
-            src="/Webflixlogo_nurlogo.png"
+            src="/WEbflix_mdd_ohne_(2).png"
             alt="Webflix"
             className="h-14 sm:h-16 md:h-20 w-auto cursor-pointer"
             onClick={() => navigate('/')}

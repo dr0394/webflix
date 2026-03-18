@@ -37,7 +37,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="mb-8 sm:mb-10">
           <img
-            src="/Webflixlogo_nurlogo.png"
+            src="/WEbflix_mdd_ohne_(2).png"
             alt="Webflix"
             className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
           />
