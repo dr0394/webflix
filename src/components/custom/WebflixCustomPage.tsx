@@ -207,7 +207,7 @@ export default function WebflixCustomPage() {
                 <h4 className="text-2xl font-bold text-green-500">BASIC</h4>
               </div>
               <p className="text-gray-400 mb-6">Für Startups & kleine Unternehmen</p>
-              <p className="text-5xl font-bold mb-8">Ab 499€</p>
+              <p className="text-5xl font-bold mb-8">Ab 347€</p>
 
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start space-x-3">

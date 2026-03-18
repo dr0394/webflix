@@ -22,7 +22,7 @@ const Hero = () => {
   const pad = (n: number) => String(n).padStart(2, '0');
 
   const whatsappNumber = "4915146692387";
-  const whatsappMessage = encodeURIComponent("Hallo! Ich interessiere mich für eine Website für 349€.");
+  const whatsappMessage = encodeURIComponent("Hallo! Ich interessiere mich für eine Website für 347€.");
 
   return (
     <section className="relative bg-[#0d0d0d] overflow-hidden">
@@ -134,14 +134,14 @@ const Hero = () => {
               </p>
 
               <div className="flex items-baseline gap-3 mb-4">
-                <span className="text-5xl sm:text-6xl font-black text-white">349€</span>
+                <span className="text-5xl sm:text-6xl font-black text-white">347€</span>
                 <span className="text-lg sm:text-xl text-red-500 line-through font-bold">3.637 Euro</span>
               </div>
 
               <div className="bg-[#1a1a1a] border border-white/10 rounded-md px-4 py-3 mb-5">
                 <p className="text-xs sm:text-sm font-bold text-white tracking-wider uppercase">
                   <ArrowRight className="w-3 h-3 inline mr-1" />
-                  Du sparst 3.288€ mit Code: WFXDEAL
+                  Du sparst 3.290€ mit Code: WFXDEAL
                 </p>
               </div>
 
@@ -197,7 +197,7 @@ const Hero = () => {
                   <span className="block text-base sm:text-lg font-black uppercase tracking-wider">
                     Ja, ich will meine Website
                   </span>
-                  <span className="block text-sm text-white/80 mt-0.5">(Fuer nur 349 €)</span>
+                  <span className="block text-sm text-white/80 mt-0.5">(Fuer nur 347 €)</span>
                 </a>
               </div>
             </div>

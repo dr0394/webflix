@@ -9,7 +9,7 @@ const Offer499Page = () => {
 
   useEffect(() => {
     trackPageView({
-      page_title: 'Website ab 499€ - 7 Tage Online',
+      page_title: 'Website ab 347€ - 7 Tage Online',
       page_location: window.location.href,
       page_path: window.location.pathname
     });
@@ -124,7 +124,7 @@ const Offer499Page = () => {
           <div className="mb-8 sm:mb-12">
             <div className="inline-flex items-center space-x-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full mb-6 sm:mb-8">
               <Sparkles className="w-4 h-4 text-orange-400" />
-              <span className="text-orange-400 font-medium text-sm">Webflix 499</span>
+              <span className="text-orange-400 font-medium text-sm">Webflix 347</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 leading-[1.1] px-4">
@@ -132,7 +132,7 @@ const Offer499Page = () => {
               <span className="relative inline-block">
                 <span className="absolute inset-0 bg-gradient-to-r from-orange-400 to-yellow-400 blur-xl opacity-50"></span>
                 <span className="relative bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                  499€
+                  347€
                 </span>
               </span>
             </h1>
@@ -186,7 +186,7 @@ const Offer499Page = () => {
       <section id="features" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-black">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 sm:mb-16 md:mb-20">
-            Was du für 499€ bekommst.
+            Was du für 347€ bekommst.
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
@@ -289,7 +289,7 @@ const Offer499Page = () => {
                   "Kostenlos" bis du Premium-Features, bessere Templates und Support brauchst. Dann wird's teuer.
                 </p>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Am Ende zahlst du mehr als 499€ - für weniger Qualität.
+                  Am Ende zahlst du mehr als 347€ - für weniger Qualität.
                 </p>
               </div>
             </div>
@@ -438,7 +438,7 @@ const Offer499Page = () => {
 
           <div className="space-y-3 sm:space-y-4">
             {[
-              { q: 'Was kostet die Website nach den ersten 499€?', a: 'Die 499€ sind eine Einmalzahlung. Für Hosting und Domain fallen ca. 10-15€ monatlich an. Keine versteckten Kosten.' },
+              { q: 'Was kostet die Website nach den ersten 347€?', a: 'Die 347€ sind eine Einmalzahlung. Für Hosting und Domain fallen ca. 10-15€ monatlich an. Keine versteckten Kosten.' },
               { q: 'Kann ich meine Website selbst bearbeiten?', a: 'Ja! Du bekommst ein einfaches CMS, mit dem du Texte und Bilder selbst ändern kannst. Oder wir machen das für dich.' },
               { q: 'Was passiert wenn ich nicht zufrieden bin?', a: 'Dann arbeitest wir kostenlos weiter, bis du zufrieden bist. Solltest du am Ende nicht happy sein, zahlst du nichts.' },
               { q: 'Wie viele Seiten bekomme ich?', a: 'Ein professioneller Onepager mit allen wichtigen Infos zu deinem Business, plus Basis-Impressum und Datenschutz-Seite. Mehr Seiten gegen Aufpreis möglich.' },

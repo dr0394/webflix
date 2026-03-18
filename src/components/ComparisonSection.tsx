@@ -14,7 +14,7 @@ export default function ComparisonSection() {
       criterion: 'Kosten einmalig',
       baukasten: 'Individuell ',
       agency: 'Ab 5.000 €',
-      webflix: '499 €',
+      webflix: '347 €',
       custom: 'Ab 999 €',
       webflixHighlight: true
     },

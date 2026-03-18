@@ -209,7 +209,7 @@ const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProp
               ))}
             </div>
             <span className="text-gray-800 font-bold text-xs sm:text-sm md:text-base">
-              Einmalige Setup-Kosten: <span className="text-pink-500">499 €</span>
+              Einmalige Setup-Kosten: <span className="text-pink-500">347 €</span>
             </span>
             <span className="hidden sm:inline text-gray-700 text-xs sm:text-sm md:text-base">
               · 72 Stunden Express · mit Zufriedenheitsgarantie oder du zahlst 0€

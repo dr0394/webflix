@@ -4,7 +4,7 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "Was kostet die Website genau?",
-    answer: "349€ einmalig. Das ist alles. Keine versteckten Kosten, keine monatlichen Gebühren, kein Abo. Du zahlst einmal und die Website gehört dir."
+    answer: "347€ einmalig. Das ist alles. Keine versteckten Kosten, keine monatlichen Gebühren, kein Abo. Du zahlst einmal und die Website gehört dir."
   },
   {
     question: "Was ist alles im Preis enthalten?",
@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Wie funktioniert der kostenlose Entwurf?",
-    answer: "Du schreibst uns per WhatsApp deine Branche und grundlegende Wünsche. Innerhalb von 24 Stunden erhältst du einen personalisierten Website-Entwurf. Nur wenn er dir gefällt, zahlst du die 349€."
+    answer: "Du schreibst uns per WhatsApp deine Branche und grundlegende Wünsche. Innerhalb von 24 Stunden erhältst du einen personalisierten Website-Entwurf. Nur wenn er dir gefällt, zahlst du die 347€."
   },
   {
     question: "Wann geht meine Website online?",
@@ -36,7 +36,7 @@ const FAQ = () => {
   };
 
   const whatsappNumber = "4915146692387";
-  const whatsappMessage = encodeURIComponent("Hallo! Ich möchte meinen kostenlosen Website-Entwurf für 349€ erhalten.");
+  const whatsappMessage = encodeURIComponent("Hallo! Ich möchte meinen kostenlosen Website-Entwurf für 347€ erhalten.");
 
   return (
     <section className="py-12 sm:py-16 px-4 bg-black">
@@ -46,7 +46,7 @@ const FAQ = () => {
             Häufig gestellte Fragen
           </h2>
           <p className="text-gray-400 text-lg">
-            Alles was du über das 349€ Paket wissen musst
+            Alles was du über das 347€ Paket wissen musst
           </p>
         </div>
 
