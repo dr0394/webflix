@@ -19,11 +19,21 @@ export default {
       },
       animation: {
         'shimmer': 'shimmer 2s infinite',
+        'marquee-left': 'marquee-left 40s linear infinite',
+        'marquee-right': 'marquee-right 40s linear infinite',
       },
       keyframes: {
         shimmer: {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(100%)' },
+        },
+        'marquee-left': {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'marquee-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       },
       boxShadow: {

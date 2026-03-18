@@ -1,70 +1,65 @@
-import React, { useRef, useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-
-const references = [
-  {
-    image: '/1.png',
-    title: 'Gartenpflege Theisen',
-    category: 'Gartenpflege',
-  },
-  {
-    image: '/2.png',
-    title: 'Facility Excellence',
-    category: 'Gebäudereinigung',
-  },
-  {
-    image: '/3.png',
-    title: 'Elbwacht Security',
-    category: 'Sicherheitsdienst',
-  },
-  {
-    image: '/4.png',
-    title: 'Team Sauber',
-    category: 'Umzug & Logistik',
-  },
-  {
-    image: '/5.png',
-    title: 'KBVest Krankenbeförderung',
-    category: 'Gesundheitswesen',
-  },
+const row1 = [
+  { image: '/1.png', title: 'Gartenpflege Theisen', category: 'Gartenpflege' },
+  { image: '/2.png', title: 'Facility Excellence', category: 'Gebäudereinigung' },
+  { image: '/3.png', title: 'Elbwacht Security', category: 'Sicherheitsdienst' },
+  { image: '/4.png', title: 'Team Sauber', category: 'Umzug & Logistik' },
+  { image: '/5.png', title: 'KBVest', category: 'Gesundheitswesen' },
+  { image: '/6.png', title: 'Kunde 6', category: 'Webflix' },
+  { image: '/7.png', title: 'Kunde 7', category: 'Webflix' },
+  { image: '/8.png', title: 'Kunde 8', category: 'Webflix' },
+  { image: '/9.png', title: 'Kunde 9', category: 'Webflix' },
 ];
 
-const ReferencesSlider = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-  const [activeIndex, setActiveIndex] = useState(0);
+const row2 = [
+  { image: '/10.png', title: 'Kunde 10', category: 'Webflix' },
+  { image: '/11.png', title: 'Kunde 11', category: 'Webflix' },
+  { image: '/12.png', title: 'Kunde 12', category: 'Webflix' },
+  { image: '/13.png', title: 'Kunde 13', category: 'Webflix' },
+  { image: '/14.png', title: 'Kunde 14', category: 'Webflix' },
+  { image: '/15.png', title: 'Kunde 15', category: 'Webflix' },
+  { image: '/16.png', title: 'Bozz Bau', category: 'Bauunternehmen' },
+  { image: '/17.png', title: 'DJ Toby K.', category: 'Entertainment' },
+];
 
-  const checkScroll = () => {
-    if (!scrollRef.current) return;
-    const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-    setCanScrollLeft(scrollLeft > 10);
-    setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10);
-
-    const cardWidth = 380;
-    const newIndex = Math.round(scrollLeft / cardWidth);
-    setActiveIndex(Math.min(newIndex, references.length - 1));
-  };
-
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-    el.addEventListener('scroll', checkScroll, { passive: true });
-    checkScroll();
-    return () => el.removeEventListener('scroll', checkScroll);
-  }, []);
-
-  const scroll = (direction: 'left' | 'right') => {
-    if (!scrollRef.current) return;
-    const cardWidth = 380;
-    const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
-    scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  };
+function MarqueeRow({ items, direction }: { items: typeof row1; direction: 'left' | 'right' }) {
+  const doubled = [...items, ...items];
+  const animClass = direction === 'left' ? 'animate-marquee-left' : 'animate-marquee-right';
 
   return (
+    <div className="relative overflow-hidden">
+      <div className={`flex gap-4 ${animClass}`} style={{ width: 'max-content' }}>
+        {doubled.map((ref, index) => (
+          <div key={index} className="flex-shrink-0 w-[300px] sm:w-[340px] group/card">
+            <div className="relative rounded-xl overflow-hidden border border-white/10 hover:border-green-400/40 transition-all duration-500 bg-gray-900/50">
+              <div className="absolute top-0 left-0 right-0 h-7 bg-gray-800/90 flex items-center px-3 gap-1.5 z-10">
+                <div className="w-2 h-2 rounded-full bg-red-500/80"></div>
+                <div className="w-2 h-2 rounded-full bg-yellow-500/80"></div>
+                <div className="w-2 h-2 rounded-full bg-green-500/80"></div>
+                <span className="ml-2 text-[9px] text-gray-500 truncate">
+                  {ref.title.toLowerCase().replace(/\s+/g, '-')}.webflix.de
+                </span>
+              </div>
+              <div className="pt-7 aspect-[16/10] overflow-hidden">
+                <img
+                  src={ref.image}
+                  alt={ref.title}
+                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover/card:scale-105"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const ReferencesSlider = () => {
+  return (
     <section className="py-16 sm:py-24 bg-[#0a0a0a] overflow-hidden">
-      <div className="container mx-auto max-w-7xl px-4">
-        <div className="text-center mb-12 sm:mb-16">
+      <div className="container mx-auto max-w-7xl px-4 mb-12 sm:mb-16">
+        <div className="text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-400/10 border border-green-400/20 rounded-full mb-6">
             <span className="text-sm font-semibold text-green-400 tracking-wider uppercase">Ergebnis Gallery</span>
           </div>
@@ -84,95 +79,22 @@ const ReferencesSlider = () => {
             von WEBFLIX innerhalb von 72 Stunden fertiggestellt. Professionell, individuell und sofort einsatzbereit.
           </p>
         </div>
+      </div>
 
-        <div className="relative group">
-          {canScrollLeft && (
-            <button
-              onClick={() => scroll('left')}
-              className="absolute left-2 sm:-left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/80 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-green-500/20 hover:border-green-400/50 transition-all duration-300 opacity-0 group-hover:opacity-100"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-          )}
+      <div className="relative">
+        <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
 
-          {canScrollRight && (
-            <button
-              onClick={() => scroll('right')}
-              className="absolute right-2 sm:-right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/80 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-green-500/20 hover:border-green-400/50 transition-all duration-300 opacity-0 group-hover:opacity-100"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-          )}
-
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-
-          <div
-            ref={scrollRef}
-            className="flex gap-5 overflow-x-auto scrollbar-hide pb-4 px-2 snap-x snap-mandatory"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
-            {references.map((ref, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-[340px] sm:w-[360px] group/card snap-start"
-              >
-                <div className="relative rounded-xl overflow-hidden border border-white/10 hover:border-green-400/40 transition-all duration-500 bg-gray-900/50">
-                  <div className="absolute top-0 left-0 right-0 h-8 bg-gray-800/90 flex items-center px-3 gap-1.5 z-10">
-                    <div className="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
-                    <span className="ml-2 text-[10px] text-gray-500 truncate">{ref.title.toLowerCase().replace(/\s+/g, '-')}.webflix.de</span>
-                  </div>
-
-                  <div className="pt-8 aspect-[4/3] overflow-hidden">
-                    <img
-                      src={ref.image}
-                      alt={ref.title}
-                      className="w-full h-full object-cover object-top transition-transform duration-700 group-hover/card:scale-105"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-
-                <div className="mt-3 px-1">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-white font-semibold text-sm group-hover/card:text-green-400 transition-colors">
-                      {ref.title}
-                    </h3>
-                    <span className="text-[11px] text-gray-500 bg-white/5 px-2 py-0.5 rounded-full">
-                      {ref.category}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="space-y-4">
+          <MarqueeRow items={row1} direction="left" />
+          <MarqueeRow items={row2} direction="right" />
         </div>
+      </div>
 
-        <div className="flex justify-center gap-1.5 mt-8">
-          {references.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => {
-                if (!scrollRef.current) return;
-                scrollRef.current.scrollTo({ left: index * 380, behavior: 'smooth' });
-              }}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === activeIndex
-                  ? 'bg-green-400 w-6'
-                  : 'bg-white/20 hover:bg-white/40'
-              }`}
-              aria-label={`Slide ${index + 1}`}
-            />
-          ))}
-        </div>
-
-        <div className="text-center mt-10">
-          <p className="text-gray-500 text-sm">
-            Bereits <span className="text-green-400 font-bold">50+</span> Websites erfolgreich umgesetzt
-          </p>
-        </div>
+      <div className="text-center mt-12">
+        <p className="text-gray-500 text-sm">
+          Bereits <span className="text-green-400 font-bold">50+</span> Websites erfolgreich umgesetzt
+        </p>
       </div>
     </section>
   );
