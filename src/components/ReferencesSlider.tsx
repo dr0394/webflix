@@ -103,8 +103,8 @@ const ReferencesSlider = () => {
           </h2>
 
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-            Gebaut mit WEBFLIX, ohne Agentur, ohne Vorkenntnisse. Jede dieser Websites wurde
-            von einem Kunden selbst bestellt – fertig in 48 Stunden. Besser als jeder Website Baukasten.
+            Kein Baukasten, keine Agentur – einfach bestellt, von uns gebaut. Jede dieser Websites wurde
+            von WEBFLIX innerhalb von 48 Stunden fertiggestellt. Professionell, individuell und sofort einsatzbereit.
           </p>
         </div>
 
