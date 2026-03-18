@@ -161,8 +161,8 @@ const Hero = () => {
                 <div className="flex gap-3">
                   <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-bold text-white uppercase tracking-wide">Unbegrenzte Aenderungen & Lifetime-Support</p>
-                    <p className="text-sm text-gray-400 mt-1">Aenderungswuensche werden sofort umgesetzt. Support per WhatsApp - ein Leben lang.</p>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Unbegrenzte Änderungen & Lifetime-Support</p>
+                    <p className="text-sm text-gray-400 mt-1">Änderungswünsche werden sofort umgesetzt. Support per WhatsApp - ein Leben lang.</p>
                   </div>
                 </div>
 
@@ -170,7 +170,7 @@ const Hero = () => {
                   <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm font-bold text-white uppercase tracking-wide">Bonus 1: SEO & Google Optimierung</p>
-                    <p className="text-sm text-gray-400 mt-1">Deine Website wird bei Google gefunden. Komplett optimiert fuer maximale Sichtbarkeit.</p>
+                    <p className="text-sm text-gray-400 mt-1">Deine Website wird bei Google gefunden. Komplett optimiert für maximale Sichtbarkeit.</p>
                   </div>
                 </div>
 
@@ -185,7 +185,7 @@ const Hero = () => {
 
               <div className="mt-6 pt-5 border-t border-white/10">
                 <p className="text-xs sm:text-sm font-bold text-white text-center uppercase tracking-wider mb-4">
-                  Gesamtwert: ueber 1.637 Euro
+                  Gesamtwert: über 1.637 Euro
                 </p>
 
                 <a
@@ -197,7 +197,7 @@ const Hero = () => {
                   <span className="block text-base sm:text-lg font-black uppercase tracking-wider">
                     Ja, ich will meine Website
                   </span>
-                  <span className="block text-sm text-white/80 mt-0.5">(Fuer nur 347 €)</span>
+                  <span className="block text-sm text-white/80 mt-0.5">(Für nur 347 €)</span>
                 </a>
               </div>
             </div>
@@ -206,7 +206,7 @@ const Hero = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-16 sm:mt-24 pt-12 sm:pt-16 border-t border-white/5">
             <div className="text-center">
               <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">500+</p>
-              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">umgesetzte Websites,<br />fuer zufriedene Kunden</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">umgesetzte Websites,<br />für zufriedene Kunden</p>
             </div>
             <div className="text-center">
               <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">72h</p>
@@ -214,7 +214,7 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">Mio €</p>
-              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">an Entwicklungskosten<br />fuer unsere Kunden gespart</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">an Entwicklungskosten<br />für unsere Kunden gespart</p>
             </div>
             <div className="text-center">
               <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">5 Jahre</p>
