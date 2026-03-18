@@ -62,17 +62,17 @@ const FeaturesSection = () => {
 
   return (
     <>
-      <section id="designs-section" className="py-12 sm:py-16 px-4 bg-[#0a0a0a]">
+      <section id="designs-section" className="py-12 sm:py-16 px-4 bg-gray-100">
         <div className="container mx-auto max-w-7xl">
           {/* Badge and Heading Section */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-green-400/10 to-emerald-400/10 border border-green-400/20 rounded-full mb-6">
               <span className="text-sm font-semibold bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Webflix zum Mitnehmen</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3">
               Ihre Premium Webflix Website
             </h2>
-            <p className="text-lg sm:text-xl text-gray-400">
+            <p className="text-lg sm:text-xl text-gray-500">
               ist in 72 Stunden online – einfach bestellen und loslegen
             </p>
           </div>
@@ -99,7 +99,7 @@ const FeaturesSection = () => {
                 <div
                   key={index}
                   onClick={() => setSelectedFeature(feature)}
-                  className="relative w-[280px] sm:w-[320px] h-[480px] sm:h-[520px] rounded-2xl overflow-hidden group cursor-pointer flex-shrink-0 border border-white/20 hover:border-green-400/60 transition-all duration-300"
+                  className="relative w-[280px] sm:w-[320px] h-[480px] sm:h-[520px] rounded-2xl overflow-hidden group cursor-pointer flex-shrink-0 border border-gray-200 hover:border-green-400/60 transition-all duration-300 shadow-md"
                 >
                   <img
                     src={feature.image}
@@ -141,42 +141,42 @@ const FeaturesSection = () => {
             {features.map((_, index) => (
               <button
                 key={index}
-                className="w-2 h-2 rounded-full bg-white/30 hover:bg-white/60 transition-colors"
+                className="w-2 h-2 rounded-full bg-gray-400 hover:bg-gray-600 transition-colors"
                 aria-label={`Slide ${index + 1}`}
               />
             ))}
           </div>
 
           {/* Price Section */}
-          <div className="max-w-2xl mx-auto bg-gradient-to-br from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-2xl p-8 text-center">
+          <div className="max-w-2xl mx-auto bg-white border border-green-500/30 rounded-2xl p-8 text-center shadow-lg">
             <div className="mb-6">
-              <div className="text-5xl sm:text-6xl font-black text-white mb-2">347€</div>
+              <div className="text-5xl sm:text-6xl font-black text-gray-900 mb-2">347€</div>
               <div className="text-xl text-green-400 font-medium">347€ Setup + Support ab 7,90€/Mo.</div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left mb-8">
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 text-sm">Premium Website-Design</span>
+                <span className="text-gray-600 text-sm">Premium Website-Design</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 text-sm">Support & Wartung ab 7,90€/Mo.</span>
+                <span className="text-gray-600 text-sm">Support & Wartung ab 7,90€/Mo.</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 text-sm">SSL-Zertifikat & Sicherheit</span>
+                <span className="text-gray-600 text-sm">SSL-Zertifikat & Sicherheit</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 text-sm">Mobile optimiert</span>
+                <span className="text-gray-600 text-sm">Mobile optimiert</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 text-sm">SEO-optimiert</span>
+                <span className="text-gray-600 text-sm">SEO-optimiert</span>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-300 text-sm">Kontaktformular</span>
+                <span className="text-gray-600 text-sm">Kontaktformular</span>
               </div>
             </div>
             <a
