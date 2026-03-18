@@ -161,8 +161,8 @@ const Hero = () => {
                 <div className="flex gap-3">
                   <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-bold text-white uppercase tracking-wide">Unbegrenzte Änderungen & Lifetime-Support</p>
-                    <p className="text-sm text-gray-400 mt-1">Änderungswünsche werden sofort umgesetzt. Support per WhatsApp - ein Leben lang.</p>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Schnelle Umsetzung & WhatsApp-Support</p>
+                    <p className="text-sm text-gray-400 mt-1">Änderungswünsche werden günstig & schnell umgesetzt. Direkter Draht per WhatsApp.</p>
                   </div>
                 </div>
 
