@@ -57,24 +57,23 @@ function MarqueeRow({ items, direction }: { items: typeof row1; direction: 'left
 
 const ReferencesSlider = () => {
   return (
-    <section className="py-16 sm:py-24 bg-[#0a0a0a] overflow-hidden">
+    <section className="py-16 sm:py-24 bg-white overflow-hidden">
       <div className="container mx-auto max-w-7xl px-4 mb-12 sm:mb-16">
         <div className="text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-400/10 border border-green-400/20 rounded-full mb-6">
-            <span className="text-sm font-semibold text-green-400 tracking-wider uppercase">Ergebnis Gallery</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 border border-green-200 rounded-full mb-6">
+            <span className="text-sm font-semibold text-green-600 tracking-wider uppercase">Ergebnis Gallery</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 leading-tight">
             ECHTE WEBSITES VON{' '}
             <span className="relative inline-block">
-              <span className="relative z-10 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
+              <span className="relative z-10 bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">
                 ECHTEN KUNDEN
               </span>
-              <span className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-emerald-400/20 blur-lg -z-0"></span>
             </span>
           </h2>
 
-          <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-500 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
             Kein Baukasten, keine Agentur – einfach bestellt, von uns gebaut. Jede dieser Websites wurde
             von WEBFLIX innerhalb von 72 Stunden fertiggestellt. Professionell, individuell und sofort einsatzbereit.
           </p>
@@ -82,8 +81,8 @@ const ReferencesSlider = () => {
       </div>
 
       <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
 
         <div className="space-y-4">
           <MarqueeRow items={row1} direction="left" />
@@ -93,7 +92,7 @@ const ReferencesSlider = () => {
 
       <div className="text-center mt-12">
         <p className="text-gray-500 text-sm">
-          Bereits <span className="text-green-400 font-bold">50+</span> Websites erfolgreich umgesetzt
+          Bereits <span className="text-green-600 font-bold">50+</span> Websites erfolgreich umgesetzt
         </p>
       </div>
     </section>
