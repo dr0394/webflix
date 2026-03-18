@@ -110,7 +110,7 @@ function getGalabauEmail(lead: Lead) {
                     </div>
                     <div style="margin-bottom:12px">
                         <span style="color:#22c55e;margin-right:8px;font-weight:600">✓</span>
-                        <span style="font-size:15px;color:#4b5563">48h bis zur Live-Schaltung</span>
+                        <span style="font-size:15px;color:#4b5563">72h bis zur Live-Schaltung</span>
                     </div>
                     <div>
                         <span style="color:#22c55e;margin-right:8px;font-weight:600">✓</span>

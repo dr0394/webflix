@@ -110,7 +110,7 @@ export function getGalabauIntroEmail(lead: Lead): EmailTemplate {
                                 </div>
                             </td>
                             <td valign="top">
-                                <h3 style="margin: 0 0 8px 0; color: #166534; font-size: 19px; font-weight: 700;">48h Online - Wir machen alles</h3>
+                                <h3 style="margin: 0 0 8px 0; color: #166534; font-size: 19px; font-weight: 700;">72h Online - Wir machen alles</h3>
                                 <p style="margin: 0; color: #333333; font-size: 15px; line-height: 1.6;">
                                     Domain, Hosting, Design, Texte, SEO - <strong>Sie geben nur Ihre Infos an, den Rest erledigen wir.</strong>
                                 </p>

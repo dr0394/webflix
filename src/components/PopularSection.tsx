@@ -170,7 +170,7 @@ const PopularSection = () => {
               war noch nie so einfach
             </span>
           </h2>
-          Vergiss komplizierte Briefings und endlose Abstimmungen. Suche dir einfach eines unserer Premium-Designs aus, füge deine Inhalte hinzu und freue dich in 48 Stunden über deine neue Website - so einfach wie Online-Shopping
+          Vergiss komplizierte Briefings und endlose Abstimmungen. Suche dir einfach eines unserer Premium-Designs aus, füge deine Inhalte hinzu und freue dich in 72 Stunden über deine neue Website - so einfach wie Online-Shopping
         </div>
 
         

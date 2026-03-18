@@ -385,7 +385,7 @@ const CheckoutPage: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 sm:gap-3">
                 <div className="w-5 h-5 sm:w-6 sm:h-6 bg-orange-500 rounded-full flex items-center justify-center text-black text-xs sm:text-sm font-bold flex-shrink-0">3</div>
-                <span className="text-sm sm:text-base">Ihre Website geht innerhalb von 48h live</span>
+                <span className="text-sm sm:text-base">Ihre Website geht innerhalb von 72h live</span>
               </div>
             </div>
             
@@ -655,7 +655,7 @@ const CheckoutPage: React.FC = () => {
                         <p className="font-medium mb-2">Wichtige Informationen:</p>
                         <ul className="space-y-1 text-gray-300">
                           <li>• Nach Vertragsabschluss erhalten Sie eine Checkliste mit benötigten Inhalten</li>
-                          <li>• 48h-Go-Live-Garantie nach vollständiger Bereitstellung Ihrer Inhalte</li>
+                          <li>• 72h-Go-Live-Garantie nach vollständiger Bereitstellung Ihrer Inhalte</li>
                           <li>• Monatlich kündbar nach Ablauf der Mindestlaufzeit</li>
                           <li>• Alle Preise verstehen sich zzgl. gesetzlicher MwSt.</li>
                         </ul>
@@ -878,7 +878,7 @@ const CheckoutPage: React.FC = () => {
                   <div className="space-y-2 sm:space-y-3">
                     <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300">
                       <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-400 flex-shrink-0" />
-                      <span>48h-Go-Live-Garantie</span>
+                      <span>72h-Go-Live-Garantie</span>
                     </div>
                     <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-300">
                       <Shield className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-400 flex-shrink-0" />

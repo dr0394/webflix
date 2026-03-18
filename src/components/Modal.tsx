@@ -31,7 +31,7 @@ const Modal = () => {
           </div>
           
           <div className="flex flex-wrap gap-2 mb-4">
-            {["Template", "Responsive", "SEO-Ready", "48h"].map((tag) => (
+            {["Template", "Responsive", "SEO-Ready", "72h"].map((tag) => (
               <span
                 key={tag}
                 className="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-pink-400/20 text-pink-400 text-sm rounded-full border border-pink-400/30"

@@ -396,10 +396,10 @@ Firma: ${orderData.customer.company}
 Template: ${orderData.template.name}
 Datum: ${new Date(orderData.timestamp).toLocaleDateString('de-DE')}
 
-WICHTIG: 48h-GO-LIVE-GARANTIE
+WICHTIG: 72h-GO-LIVE-GARANTIE
 =============================
 Sobald Sie uns alle PFLICHT-Inhalte (✓ markiert) zur Verfügung gestellt haben,
-geht Ihre Website innerhalb von 48 Stunden live!
+geht Ihre Website innerhalb von 72 Stunden live!
 
 PFLICHT-INHALTE (für Go-Live erforderlich):
 ==========================================
@@ -513,7 +513,7 @@ Ihr Webflix-Team
             </div>
             <h1 className="text-3xl font-bold mb-4">Ihre Webflix Checkliste</h1>
             <p className="text-gray-300 mb-6">
-              Stellen Sie uns diese Inhalte zur Verfügung, damit wir Ihre Website innerhalb von 48 Stunden live schalten können.
+              Stellen Sie uns diese Inhalte zur Verfügung, damit wir Ihre Website innerhalb von 72 Stunden live schalten können.
             </p>
             
             {/* Order Info */}
@@ -557,7 +557,7 @@ Ihr Webflix-Team
               {progressPercentage === 100 && (
                 <div className="mt-2 text-green-400 text-sm font-medium flex items-center gap-2">
                   <CheckCircle className="w-4 h-4" />
-                  Bereit für 48h-Go-Live!
+                  Bereit für 72h-Go-Live!
                 </div>
               )}
             </div>
@@ -742,10 +742,10 @@ Ihr Webflix-Team
             <div className="mt-6 p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
               <div className="flex items-center gap-2 mb-2">
                 <Clock className="w-5 h-5 text-green-400" />
-                <span className="font-semibold text-green-400">48h-Go-Live-Garantie</span>
+                <span className="font-semibold text-green-400">72h-Go-Live-Garantie</span>
               </div>
               <p className="text-sm text-gray-300">
-                Sobald wir alle Pflicht-Inhalte erhalten haben, geht Ihre Website innerhalb von 48 Stunden live!
+                Sobald wir alle Pflicht-Inhalte erhalten haben, geht Ihre Website innerhalb von 72 Stunden live!
               </p>
             </div>
           </div>

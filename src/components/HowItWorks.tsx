@@ -17,7 +17,7 @@ const HowItWorks = () => {
         <div className="max-w-4xl mx-auto mb-12">
           <p className="text-base sm:text-lg text-white/80 text-center leading-relaxed">
             Du gehst in unseren digitalen Showroom, siehst perfekt gestaltete Website-Designs,
-            testest sie live und sagst "Das ist es!" 48 Stunden später läuft deine Premium-Website.
+            testest sie live und sagst "Das ist es!" 72 Stunden später läuft deine Premium-Website.
           </p>
         </div>
 

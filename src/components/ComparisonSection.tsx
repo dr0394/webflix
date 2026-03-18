@@ -6,7 +6,7 @@ export default function ComparisonSection() {
       criterion: 'Wartezeit',
       baukasten: 'Mehrere Wochen',
       agency: '3–6 Monate',
-      webflix: '48 Stunden',
+      webflix: '72 Stunden',
       custom: '4-8 Wochen',
       webflixHighlight: true
     },

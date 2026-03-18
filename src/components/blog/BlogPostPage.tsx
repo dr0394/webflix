@@ -285,7 +285,7 @@ export default function BlogPostPage() {
                 </div>
                 <div className="pb-6">
                   <h3 className="text-lg font-bold text-gray-900 mb-3">Wie schnell ist meine Website online?</h3>
-                  <p className="text-gray-700 leading-relaxed">Innerhalb von 48 Stunden haben Sie eine professionelle, einsatzbereite Website, die Kunden überzeugt und Umsatz generiert.</p>
+                  <p className="text-gray-700 leading-relaxed">Innerhalb von 72 Stunden haben Sie eine professionelle, einsatzbereite Website, die Kunden überzeugt und Umsatz generiert.</p>
                 </div>
               </div>
             </div>

@@ -66,7 +66,7 @@ export default function ThankYouPage() {
                 <div className="w-10 h-10 bg-[orange-500]/20 rounded-lg flex items-center justify-center mb-4">
                   <Phone className="w-5 h-5 text-[pink-400]" />
                 </div>
-                <h3 className="text-white font-bold mb-2">Innerhalb von 48h</h3>
+                <h3 className="text-white font-bold mb-2">Innerhalb von 72h</h3>
                 <p className="text-white/60 text-sm">
                   Wir melden uns telefonisch für ein kurzes Kennenlerngespräch
                 </p>

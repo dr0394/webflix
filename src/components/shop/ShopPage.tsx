@@ -627,7 +627,7 @@ const ShopPage: React.FC = () => {
             </div>
             <div className="flex items-center gap-2">
               <Check className="w-5 h-5 text-green-400" />
-              <span className="text-white/70">In 48h online</span>
+              <span className="text-white/70">In 72h online</span>
             </div>
           </div>
 
@@ -753,7 +753,7 @@ const ShopPage: React.FC = () => {
                     <Clock className="w-4 h-4 text-gray-800" />
                     <span className="text-sm font-bold text-gray-800">Schnelllieferung</span>
                   </div>
-                  <p className="text-xs text-gray-700">Alle Designs in 48 Stunden online</p>
+                  <p className="text-xs text-gray-700">Alle Designs in 72 Stunden online</p>
                 </div>
               </div>
             </div>
@@ -1037,11 +1037,11 @@ const ShopPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* 48-Stunden-Garantie */}
+              {/* 72-Stunden-Garantie */}
               <div className="flex-shrink-0 w-[85vw] md:w-[45vw] lg:w-[380px] bg-white rounded-3xl p-8 hover:bg-gray-50 transition-all group flex flex-col snap-center shadow-lg">
                 <div className="flex-1 mb-6">
-                  <h3 className="text-xl font-bold text-black mb-2">WEBFLIX 48-STUNDEN-GARANTIE</h3>
-                  <p className="text-pink-400 font-semibold mb-3">In 48 Stunden online – garantiert.</p>
+                  <h3 className="text-xl font-bold text-black mb-2">WEBFLIX 72-STUNDEN-GARANTIE</h3>
+                  <p className="text-pink-400 font-semibold mb-3">In 72 Stunden online – garantiert.</p>
                   <p className="text-gray-700 leading-relaxed">
                     Deine Website ist in zwei Tagen live. Schnell. Sicher. Startklar.
                   </p>
@@ -1049,7 +1049,7 @@ const ShopPage: React.FC = () => {
                 <div className="w-full h-48 rounded-2xl overflow-hidden">
                   <img
                     src="https://images.pexels.com/photos/4458411/pexels-photo-4458411.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="48-Stunden-Garantie"
+                    alt="72-Stunden-Garantie"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -1575,7 +1575,7 @@ const ShopPage: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2 text-white/60 text-sm">
                   <Check className="w-4 h-4 text-white/40 flex-shrink-0" />
-                  <span>48h Go-Live Garantie</span>
+                  <span>72h Go-Live Garantie</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/60 text-sm">
                   <Check className="w-4 h-4 text-white/40 flex-shrink-0" />

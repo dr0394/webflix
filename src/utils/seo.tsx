@@ -112,7 +112,7 @@ export const PAGE_SEO = {
   },
   checkout: {
     title: 'Checkout - Website jetzt kaufen | Webflix',
-    description: 'Sichere Bestellung deiner neuen Website. In 48h online - garantiert! Jetzt kaufen und durchstarten.',
+    description: 'Sichere Bestellung deiner neuen Website. In 72h online - garantiert! Jetzt kaufen und durchstarten.',
     keywords: 'website kaufen checkout, website bestellen, sichere zahlung'
   },
   demoAutoaufbereitung: {

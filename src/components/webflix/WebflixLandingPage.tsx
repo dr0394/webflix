@@ -92,8 +92,8 @@ const templates = [
 const features = [
   {
     icon: Clock,
-    title: "In 48 Stunden live",
-    description: "Sobald Ihre Checkliste komplett ist, geht Ihre Website binnen 48 Stunden online – professionell umgesetzt."
+    title: "In 72 Stunden live",
+    description: "Sobald Ihre Checkliste komplett ist, geht Ihre Website binnen 72 Stunden online – professionell umgesetzt."
   },
   {
     icon: Settings,
@@ -121,7 +121,7 @@ const pricingPlans = [
     popular: false,
     features: [
       "Premium Website-Design",
-      "48h Go-Live Garantie",
+      "72h Go-Live Garantie",
       "5h Änderungen/Jahr inklusive",
       "Alle Basis-Features",
       "Hosting & Domain inklusive"
@@ -167,8 +167,8 @@ const faqs = [
     answer: "Je nach Laufzeit 79,90 €/29,90 €/24,90 € mtl. Add-ons optional. 5 h Änderungen/Jahr inklusive."
   },
   {
-    question: "Was bedeutet 48h-Go-Live?",
-    answer: "Nach Eingang aller Unterlagen aus der Checkliste publizieren wir Ihre Website innerhalb von 48 Stunden."
+    question: "Was bedeutet 72h-Go-Live?",
+    answer: "Nach Eingang aller Unterlagen aus der Checkliste publizieren wir Ihre Website innerhalb von 72 Stunden."
   },
   {
     question: "Wie kann ich kündigen?",
@@ -343,12 +343,12 @@ export default function WebflixLandingPage() {
             </span>
             <br />
             <span className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light">
-              Deine Website in 48 Stunden
+              Deine Website in 72 Stunden
             </span>
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto">
-            Premium-Designs zum fairen Preis. Wähle dein Template, konfiguriere es nach deinen Wünschen und gehe innerhalb von 48 Stunden online.
+            Premium-Designs zum fairen Preis. Wähle dein Template, konfiguriere es nach deinen Wünschen und gehe innerhalb von 72 Stunden online.
           </p>
 
           {/* CTA Buttons */}
@@ -372,7 +372,7 @@ export default function WebflixLandingPage() {
           <div className="flex flex-wrap justify-center gap-6 mt-12 text-sm">
             <div className="flex items-center gap-2">
               <Check className="w-5 h-5 text-orange-400" />
-              <span className="text-white/80">48h Go-Live</span>
+              <span className="text-white/80">72h Go-Live</span>
             </div>
             <div className="flex items-center gap-2">
               <Check className="w-5 h-5 text-orange-400" />
@@ -402,7 +402,7 @@ export default function WebflixLandingPage() {
             </h2>
 
             <p className="text-lg text-white/70 max-w-4xl">
-              Vergiss komplizierte Briefings und endlose Abstimmungen. Suche dir einfach eines unserer Premium-Designs aus, füge deine Inhalte hinzu und freue dich in 48 Stunden über deine neue Website - so einfach wie Online-Shopping
+              Vergiss komplizierte Briefings und endlose Abstimmungen. Suche dir einfach eines unserer Premium-Designs aus, füge deine Inhalte hinzu und freue dich in 72 Stunden über deine neue Website - so einfach wie Online-Shopping
             </p>
           </div>
 
@@ -541,8 +541,8 @@ export default function WebflixLandingPage() {
               {
                 number: 4,
                 icon: Zap,
-                title: "48h live gehen",
-                description: "Nach Erhalt deiner Inhalte geht deine professionelle Website innerhalb von 48 Stunden online.",
+                title: "72h live gehen",
+                description: "Nach Erhalt deiner Inhalte geht deine professionelle Website innerhalb von 72 Stunden online.",
                 color: "from-pink-600 to-orange-500"
               }
             ].map((step, index) => (
@@ -616,7 +616,7 @@ export default function WebflixLandingPage() {
 
               <div className="divide-y divide-white/5">
                 {[
-                  { criterion: 'Wartezeit', agency: '3–6 Monate', webflix: '48 Stunden' },
+                  { criterion: 'Wartezeit', agency: '3–6 Monate', webflix: '72 Stunden' },
                   { criterion: 'Kosten', agency: '5.000 €+ einmalig', webflix: '29,90 €/Monat' },
                   { criterion: 'Ergebnis', agency: 'Unklares Ergebnis', webflix: 'Siehst, was du kriegst' },
                   { criterion: 'Wartung', agency: 'Zusätzliche Kosten', webflix: 'Alles inklusive' },
@@ -703,7 +703,7 @@ export default function WebflixLandingPage() {
                   </div>
                   <div className="p-4 space-y-3">
                     {[
-                      { label: 'Wartezeit', value: '48 Stunden' },
+                      { label: 'Wartezeit', value: '72 Stunden' },
                       { label: 'Kosten', value: '29,90 €/Monat' },
                       { label: 'Ergebnis', value: 'Siehst, was du kriegst' },
                       { label: 'Wartung', value: 'Alles inklusive' },
@@ -1033,7 +1033,7 @@ export default function WebflixLandingPage() {
                     <Zap className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-white mb-2">48 Stunden Go-Live</h4>
+                    <h4 className="text-xl font-bold text-white mb-2">72 Stunden Go-Live</h4>
                     <p className="text-white/70">Schneller als jede Agentur</p>
                   </div>
                 </div>
@@ -1055,7 +1055,7 @@ export default function WebflixLandingPage() {
               {
                 icon: Clock,
                 title: 'Schnelligkeit',
-                description: 'Deine Website in 48 Stunden online – garantiert'
+                description: 'Deine Website in 72 Stunden online – garantiert'
               },
               {
                 icon: Shield,

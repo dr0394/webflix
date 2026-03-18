@@ -669,14 +669,14 @@ const NewShopPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Card 3 - 48h Online & Anpassbar */}
+            {/* Card 3 - 72h Online & Anpassbar */}
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-lg transition-all duration-300">
               <div className="mb-6">
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center mb-6">
                   <Zap className="w-7 h-7 text-orange-600" />
                 </div>
                 <h3 className="text-xl font-semibold text-black mb-3">
-                  <span className="text-orange-600">Innerhalb von 48h online</span> nachdem wir alle Infos haben.
+                  <span className="text-orange-600">Innerhalb von 72h online</span> nachdem wir alle Infos haben.
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
                   Du kannst deine Webflix Website deinen Bedürfnissen anpassen.

@@ -129,7 +129,7 @@ export default function CustomerProjects() {
             </span>
           </h2>
           <p className="text-white/60 text-base sm:text-lg max-w-3xl mx-auto mb-4">
-            Kein Baukasten, keine Agentur – einfach bestellt, von uns gebaut. Jede dieser Websites wurde von WEBFLIX innerhalb von 48 Stunden fertiggestellt. Professionell, individuell und sofort einsatzbereit.
+            Kein Baukasten, keine Agentur – einfach bestellt, von uns gebaut. Jede dieser Websites wurde von WEBFLIX innerhalb von 72 Stunden fertiggestellt. Professionell, individuell und sofort einsatzbereit.
           </p>
 
           <div className="inline-flex bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-1.5 mt-8">

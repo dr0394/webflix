@@ -372,7 +372,7 @@ const DemoEditor: React.FC<DemoEditorProps> = ({ demoType, onSave, onClose }) =>
           </div>
 
           <p className="text-sm text-gray-400">
-            Füllen Sie die Felder aus und wir erstellen Ihre Website in 48 Stunden
+            Füllen Sie die Felder aus und wir erstellen Ihre Website in 72 Stunden
           </p>
         </div>
 
@@ -545,7 +545,7 @@ const DemoEditor: React.FC<DemoEditorProps> = ({ demoType, onSave, onClose }) =>
             <AlertCircle className="w-8 h-8 text-[orange-500] mx-auto mb-2" />
             <p className="text-sm text-gray-300">
               Sobald Sie alle Pflichtfelder ausgefüllt haben, können Sie die Daten absenden.
-              Wir erstellen Ihre Website dann innerhalb von 48 Stunden.
+              Wir erstellen Ihre Website dann innerhalb von 72 Stunden.
             </p>
           </div>
         </div>

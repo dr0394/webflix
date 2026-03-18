@@ -359,7 +359,7 @@ const CheckoutSuccess: React.FC = () => {
 
         <div className="flex items-center justify-center gap-3 text-sm text-gray-600 mb-6">
           <Clock className="w-4 h-4 text-green-500" />
-          <span>48h-Go-Live-Garantie nach Bereitstellung aller Inhalte</span>
+          <span>72h-Go-Live-Garantie nach Bereitstellung aller Inhalte</span>
         </div>
 
         <div className="text-center">

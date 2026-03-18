@@ -50,12 +50,12 @@ const Hero = () => {
                 Deine professionelle
               </span>
               <span className="block text-white text-[2.2rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem] uppercase">
-                Website in 48 Stunden!
+                Website in 72 Stunden!
               </span>
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg font-bold text-gray-200 uppercase tracking-wider max-w-4xl mx-auto mb-4 sm:mb-5 leading-relaxed">
-              Der Service, der dir zeigt: Du brauchst keine Agentur, keine Erfahrung und keinen Technikstress. Wir bauen deine Website - fertig in 48h.
+              Der Service, der dir zeigt: Du brauchst keine Agentur, keine Erfahrung und keinen Technikstress. Wir bauen deine Website - fertig in 72h.
             </p>
 
             <p className="text-sm sm:text-base text-gray-400 max-w-3xl mx-auto mb-3">
@@ -153,8 +153,8 @@ const Hero = () => {
                 <div className="flex gap-3">
                   <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-bold text-white uppercase tracking-wide">Professionelle Website in 48 Stunden (Wert 1.997 €)</p>
-                    <p className="text-sm text-gray-400 mt-1">Von "Ich habe keine Website" zu "Meine Website ist online" - in 48 Stunden.</p>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Professionelle Website in 72 Stunden (Wert 1.997 €)</p>
+                    <p className="text-sm text-gray-400 mt-1">Von "Ich habe keine Website" zu "Meine Website ist online" - in 72 Stunden.</p>
                   </div>
                 </div>
 
@@ -209,7 +209,7 @@ const Hero = () => {
               <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">umgesetzte Websites,<br />ohne Agentur-Abhaengigkeit</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">48h</p>
+              <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">72h</p>
               <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">Express-Lieferung,<br />garantiert fertig</p>
             </div>
             <div className="text-center">

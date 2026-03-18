@@ -189,7 +189,7 @@ const getSubscriptionInvoiceEmailHTML = (
                         <td style="background-color: #f9fafb; padding: 24px; text-align: center; border-top: 1px solid #e5e7eb;">
                             <p style="margin: 0 0 4px 0; font-size: 14px; font-weight: 600; color: #333333;">Webflix</p>
                             <p style="margin: 0 0 8px 0; font-size: 13px; color: #666666;">
-                                Ihre Website in 48 Stunden live
+                                Ihre Website in 72 Stunden live
                             </p>
                             <p style="margin: 0; font-size: 12px; color: #999999;">
                                 © ${new Date().getFullYear()} Webflix. Alle Rechte vorbehalten.

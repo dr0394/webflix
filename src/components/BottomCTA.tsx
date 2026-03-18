@@ -22,7 +22,7 @@ const BottomCTA = () => {
         </div>
 
         <p className="text-xs sm:text-sm text-gray-400 px-4">
-          Sie liefern Ihre Inhalte – wir liefern Ihre Website. In 48 Stunden live.
+          Sie liefern Ihre Inhalte – wir liefern Ihre Website. In 72 Stunden live.
         </p>
       </div>
     </section>

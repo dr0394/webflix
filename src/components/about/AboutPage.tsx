@@ -15,7 +15,7 @@ const AboutPage = () => {
     {
       icon: Zap,
       title: 'Geschwindigkeit',
-      description: 'Deine Website in 48 Stunden live. Keine monatelangen Projekte, sondern schnelle Ergebnisse, die wirken.'
+      description: 'Deine Website in 72 Stunden live. Keine monatelangen Projekte, sondern schnelle Ergebnisse, die wirken.'
     },
     {
       icon: Heart,
@@ -32,7 +32,7 @@ const AboutPage = () => {
   const stats = [
     { number: '847+', label: 'Zufriedene Kunden' },
     { number: '98%', label: 'Kundenzufriedenheit' },
-    { number: '48h', label: 'Durchschnittliche Lieferzeit' },
+    { number: '72h', label: 'Durchschnittliche Lieferzeit' },
     { number: '4.9', label: 'Durchschnittliche Bewertung' }
   ];
 

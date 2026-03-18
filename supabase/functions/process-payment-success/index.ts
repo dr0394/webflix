@@ -197,7 +197,7 @@ const getSubscriptionInvoiceEmailHTML = (
                         <td style="background-color: #f9fafb; padding: 24px; text-align: center; border-top: 1px solid #e5e7eb;">
                             <p style="margin: 0 0 4px 0; font-size: 14px; font-weight: 600; color: #333333;">Webflix</p>
                             <p style="margin: 0 0 8px 0; font-size: 13px; color: #666666;">
-                                Ihre Website in 48 Stunden live
+                                Ihre Website in 72 Stunden live
                             </p>
                             <p style="margin: 0; font-size: 12px; color: #999999;">
                                 © ${new Date().getFullYear()} Webflix. Alle Rechte vorbehalten.
@@ -327,7 +327,7 @@ const getEmailHTML = (
                                     <td style="padding-left: 12px;">
                                         <p style="margin: 0 0 4px 0; font-size: 15px; font-weight: 600; color: #333333;">Website geht live</p>
                                         <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #666666;">
-                                            Innerhalb von 48h nach Bereitstellung aller Inhalte ist Ihre Website online
+                                            Innerhalb von 72h nach Bereitstellung aller Inhalte ist Ihre Website online
                                         </p>
                                     </td>
                                 </tr>
@@ -337,7 +337,7 @@ const getEmailHTML = (
                                 <tr>
                                     <td style="padding: 16px; text-align: center;">
                                         <p style="margin: 0 0 4px 0; font-size: 16px; color: #22c55e; font-weight: 600;">
-                                            48h-Go-Live-Garantie
+                                            72h-Go-Live-Garantie
                                         </p>
                                         <p style="margin: 0; font-size: 14px; color: #666666;">
                                             Nach Bereitstellung aller Inhalte
@@ -371,7 +371,7 @@ const getEmailHTML = (
                         <td style="background-color: #f9fafb; padding: 24px; text-align: center; border-top: 1px solid #e5e7eb;">
                             <p style="margin: 0 0 4px 0; font-size: 14px; font-weight: 600; color: #333333;">Webflix</p>
                             <p style="margin: 0 0 8px 0; font-size: 13px; color: #666666;">
-                                Ihre Website in 48 Stunden live
+                                Ihre Website in 72 Stunden live
                             </p>
                             <p style="margin: 0; font-size: 12px; color: #999999;">
                                 © ${new Date().getFullYear()} Webflix. Alle Rechte vorbehalten.

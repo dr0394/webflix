@@ -75,10 +75,10 @@ Ihre Webflix Bestellung {{params.ORDER_ID}} - Jetzt bezahlen
             
             <!-- Important Info -->
             <div style="background-color: #1a4d3a; border-radius: 12px; padding: 20px; margin-bottom: 25px; border-left: 4px solid #22c55e;">
-                <h4 style="color: #22c55e; margin-bottom: 10px;">⚡ 48h-Go-Live-Garantie</h4>
+                <h4 style="color: #22c55e; margin-bottom: 10px;">⚡ 72h-Go-Live-Garantie</h4>
                 <p style="margin: 0; color: #ffffff; font-size: 14px;">
                     Nach Ihrer Zahlung erhalten Sie automatisch die Checkliste per E-Mail. 
-                    Sobald Sie uns alle Inhalte bereitgestellt haben, geht Ihre Website innerhalb von 48 Stunden live!
+                    Sobald Sie uns alle Inhalte bereitgestellt haben, geht Ihre Website innerhalb von 72 Stunden live!
                 </p>
             </div>
             
@@ -168,12 +168,12 @@ Ihre Webflix Bestellung {{params.ORDER_ID}} - Jetzt bezahlen
                 </a>
             </div>
 
-            <!-- 48h Guarantee -->
+            <!-- 72h Guarantee -->
             <div style="background-color: #1a4d3a; border-radius: 12px; padding: 25px; margin-bottom: 30px; border-left: 4px solid #22c55e;">
-                <h3 style="color: #22c55e; margin-bottom: 15px; font-size: 20px;">⚡ 48h-Go-Live-Garantie</h3>
+                <h3 style="color: #22c55e; margin-bottom: 15px; font-size: 20px;">⚡ 72h-Go-Live-Garantie</h3>
                 <p style="margin: 0; color: #ffffff; font-size: 16px; line-height: 1.6;">
                     Sobald Sie uns alle Inhalte aus der Checkliste bereitgestellt haben,
-                    geht Ihre Website <strong>innerhalb von 48 Stunden live</strong>!
+                    geht Ihre Website <strong>innerhalb von 72 Stunden live</strong>!
                 </p>
             </div>
 
@@ -194,7 +194,7 @@ Ihre Webflix Bestellung {{params.ORDER_ID}} - Jetzt bezahlen
                     <li><strong>Einloggen:</strong> Melden Sie sich mit Ihren Zugangsdaten an</li>
                     <li><strong>Checkliste öffnen:</strong> Klicken Sie auf "Checkliste jetzt ausfüllen"</li>
                     <li><strong>Inhalte bereitstellen:</strong> Logo, Texte, Bilder, Kontaktdaten hochladen</li>
-                    <li><strong>Abschicken:</strong> Checkliste absenden und 48h warten</li>
+                    <li><strong>Abschicken:</strong> Checkliste absenden und 72h warten</li>
                     <li><strong>Live-Gang:</strong> Ihre Website geht automatisch live!</li>
                 </ol>
             </div>

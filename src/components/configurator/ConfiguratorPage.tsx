@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Check, Star, MessageCircle, BarChart2, BarChart3, Shield, Zap, Calendar, Car, Camera, MapPin, TreePine, User, ChevronRight, Euro, Bot, Search, Globe, Instagram, FileText, Calculator, Heart, Building, Brush, Sparkles, Wrench, ShoppingCart, Package, Clock, Rocket, ChevronDown, Tag, Percent, TrendingUp, Award, Zap as Lightning, Users, Eye, Layout, Gauge, PenTool, Plus, Minus, HelpCircle, Droplets, Settings, FileCheck, Palette, Circle, Hammer, Paintbrush, Leaf, Home } from 'lucide-react';
+import { ArrowLeft, Check, Star, MessageCircle, BarChart2, BarChart3, Shield, Zap, Calendar, Car, Camera, MapPin, TreePine, User, ChevronRight, Euro, Bot, Search, Globe, Instagram, FileText, Calculator, Heart, Building, Brush, Sparkles, Wrench, ShoppingCart, Package, Clock, Rocket, ChevronDown, Tag, Percent, TrendingUp, Award, Zap as Lightning, Users, Eye, LayoutGrid as Layout, Gauge, PenTool, Plus, Minus, HelpCircle, Droplets, Settings, FileCheck, Palette, Circle, Hammer, Paintbrush, Leaf, Home } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Footer from '../Footer';
 import AddonQuizModal from '../addons/AddonQuizModal';
@@ -140,7 +140,7 @@ const ConfiguratorPage: React.FC = () => {
       { id: 'meta-tracking', name: 'Meta Tracking', description: 'Facebook/Instagram Pixel Integration', price: 0, oneTimePrice: 99, icon: BarChart3, enabled: false, priceNote: '99€ einmalig' },
       { id: 'google-tracking', name: 'Google Tracking', description: 'Google Analytics & Tag Manager', price: 0, oneTimePrice: 99, icon: Gauge, enabled: false, priceNote: '99€ einmalig' },
       { id: 'copywriting', name: 'Copywriting', description: 'Speziell für dein Unternehmen erstellte Texte', price: 0, oneTimePrice: 199, icon: PenTool, enabled: false, popular: true, priceNote: '199€ einmalig' },
-      { id: 'express', name: 'Go Fast – Online in 48h', description: 'Express-Lieferung (Normalpreis 48€)', price: 0, oneTimePrice: 0, icon: Zap, enabled: false, popular: true, savings: 'AKTION: 0€', priceNote: 'AKTION: 0€' }
+      { id: 'express', name: 'Go Fast – Online in 72h', description: 'Express-Lieferung (Normalpreis 48€)', price: 0, oneTimePrice: 0, icon: Zap, enabled: false, popular: true, savings: 'AKTION: 0€', priceNote: 'AKTION: 0€' }
     ];
     setAddOns(defaultAddOns);
   }, []);
@@ -255,7 +255,7 @@ const ConfiguratorPage: React.FC = () => {
               </div>
               <div className="flex items-center gap-1.5 sm:gap-2 bg-gradient-to-r from-[#F3F3F5]/20 to-[#E8E8EA]/20 border border-[#F3F3F5]/30 rounded-full px-2 sm:px-4 py-1.5 sm:py-2">
                 <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F3F3F5] flex-shrink-0" />
-                <span className="text-xs sm:text-sm text-[#F3F3F5] font-semibold whitespace-nowrap">48h Lieferung</span>
+                <span className="text-xs sm:text-sm text-[#F3F3F5] font-semibold whitespace-nowrap">72h Lieferung</span>
               </div>
             </div>
           </div>
@@ -840,7 +840,7 @@ const ConfiguratorPage: React.FC = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-2 text-white/60 text-sm">
                   <Check className="w-4 h-4 text-green-400" />
-                  <span>In 48 Stunden online</span>
+                  <span>In 72 Stunden online</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/60 text-sm">
                   <Check className="w-4 h-4 text-green-400" />
@@ -906,8 +906,8 @@ const ConfiguratorPage: React.FC = () => {
                 answer: "Je nach Laufzeit 82 €/45 €/35 € mtl. Add-ons optional. 5 h Änderungen/Jahr inklusive."
               },
               {
-                question: "Was bedeutet 48h-Go-Live?",
-                answer: "Nach Eingang aller Unterlagen aus der Checkliste publizieren wir Ihre Website innerhalb von 48 Stunden."
+                question: "Was bedeutet 72h-Go-Live?",
+                answer: "Nach Eingang aller Unterlagen aus der Checkliste publizieren wir Ihre Website innerhalb von 72 Stunden."
               },
               {
                 question: "Wie kann ich kündigen?",

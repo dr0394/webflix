@@ -73,7 +73,7 @@ const FeaturesSection = () => {
               Ihre Premium Webflix Website
             </h2>
             <p className="text-lg sm:text-xl text-gray-400">
-              ist in 48 Stunden online – einfach bestellen und loslegen
+              ist in 72 Stunden online – einfach bestellen und loslegen
             </p>
           </div>
 

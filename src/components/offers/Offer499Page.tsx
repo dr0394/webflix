@@ -491,7 +491,7 @@ const Offer499Page = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Check className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500 flex-shrink-0" />
-              <span>Start in 48h möglich</span>
+              <span>Start in 72h möglich</span>
             </div>
           </div>
 

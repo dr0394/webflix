@@ -718,7 +718,7 @@ export const addonQuestions = {
       question: 'Wie dringend brauchen Sie die Website?',
       options: ['Kein Zeitdruck', 'Bald', 'Schnell', 'Sehr dringend'],
       weight: 1,
-      explanation: 'Express-Lieferung in 48h statt Standard 7-10 Tage'
+      explanation: 'Express-Lieferung in 72h statt Standard 7-10 Tage'
     },
     {
       id: 'express-2',
@@ -732,7 +732,7 @@ export const addonQuestions = {
       question: 'Möchten Sie so schnell wie möglich online gehen?',
       options: ['Nein, Zeit ist ok', 'Gerne schneller', 'Ja', 'Ja, sofort'],
       weight: 1,
-      explanation: '48h-Lieferung bringt Sie sofort online'
+      explanation: '72h-Lieferung bringt Sie sofort online'
     }
   ]
 };

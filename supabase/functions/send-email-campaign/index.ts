@@ -67,7 +67,7 @@ const templates = {
                                 <tr>
                                     <td style="padding: 20px; background-color: #f9fafb; border-radius: 12px; border-left: 4px solid #F472B6;">
                                         <p style="margin: 0 0 10px; color: #F472B6; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">
-                                            ✓ In 48h online
+                                            ✓ In 72h online
                                         </p>
                                         <p style="margin: 0; color: #6b7280; font-size: 14px; line-height: 1.5;">
                                             Nach Erhalt aller Informationen
