@@ -110,34 +110,29 @@ export default function CustomerProjects() {
   const projects = activeTab === 'webflix' ? webflixProjects : customProjects;
 
   return (
-    <section className="relative py-16 sm:py-20 md:py-24 bg-black/80 backdrop-blur-sm overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-transparent"></div>
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-1/4 w-72 h-72 bg-orange-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-pink-500/3 rounded-full blur-3xl"></div>
-      </div>
+    <section className="relative py-16 sm:py-20 md:py-24 bg-white overflow-hidden">
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-6">
-            <span className="text-white/60 font-semibold text-sm">Ergebnis Gallery</span>
+          <div className="inline-flex items-center gap-2 bg-gray-100 border border-gray-200 rounded-full px-4 py-2 mb-6">
+            <span className="text-gray-500 font-semibold text-sm">Ergebnis Gallery</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
-            <span className="bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
-              ECHTE WEBSITES VON ECHTEN KUNDEN
+            <span className="text-gray-900">
+              ECHTE WEBSITES VON <span className="text-orange-500">ECHTEN KUNDEN</span>
             </span>
           </h2>
-          <p className="text-white/60 text-base sm:text-lg max-w-3xl mx-auto mb-4">
+          <p className="text-gray-500 text-base sm:text-lg max-w-3xl mx-auto mb-4">
             Kein Baukasten, keine Agentur – einfach bestellt, von uns gebaut. Jede dieser Websites wurde von WEBFLIX innerhalb von 72 Stunden fertiggestellt. Professionell, individuell und sofort einsatzbereit.
           </p>
 
-          <div className="inline-flex bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-1.5 mt-8">
+          <div className="inline-flex bg-gray-100 border border-gray-200 rounded-2xl p-1.5 mt-8">
             <button
               onClick={() => setActiveTab('webflix')}
               className={`px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 ${
                 activeTab === 'webflix'
-                  ? 'bg-white/10 text-white shadow-lg'
-                  : 'text-white/60 hover:text-white/80'
+                  ? 'bg-white text-gray-900 shadow-lg'
+                  : 'text-gray-500 hover:text-gray-700'
               }`}
             >
               Webflix
@@ -147,7 +142,7 @@ export default function CustomerProjects() {
               className={`px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 ${
                 activeTab === 'custom'
                   ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg shadow-pink-500/50'
-                  : 'text-white/60 hover:text-white/80'
+                  : 'text-gray-500 hover:text-gray-700'
               }`}
             >
               Webflix Custom
