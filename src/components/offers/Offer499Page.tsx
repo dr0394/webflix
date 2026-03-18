@@ -50,7 +50,7 @@ const Offer499Page = () => {
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
               <img
-                src="https://i.imgur.com/4Hp6B6u.png"
+                src="/WEbflix_mdd_ohne_(2).png"
                 alt="Webflix"
                 className="h-10 sm:h-12 w-auto"
               />
@@ -518,7 +518,7 @@ const Offer499Page = () => {
             <div className="flex flex-col items-center md:items-start">
               <Link to="/" className="mb-3 sm:mb-4">
                 <img
-                  src="https://i.imgur.com/4Hp6B6u.png"
+                  src="/WEbflix_mdd_ohne_(2).png"
                   alt="Webflix"
                   className="h-12 sm:h-16 w-auto"
                 />
