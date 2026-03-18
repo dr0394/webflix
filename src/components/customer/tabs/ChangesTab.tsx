@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Edit, Plus, ShoppingCart, CheckCircle, Clock, AlertCircle } from 'lucide-react';
+import { CreditCard as Edit, Plus, ShoppingCart, CheckCircle, Clock, AlertCircle } from 'lucide-react';
 import { supabase } from '../../../lib/supabase';
 import { loadStripe } from '@stripe/stripe-js';
 
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
+const stripeKey = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
+const stripePromise = stripeKey ? loadStripe(stripeKey) : null;
 
 interface Subscription {
   id: string;
