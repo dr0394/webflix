@@ -18,7 +18,8 @@ const Footer = () => {
         { text: "Impressum", href: "/impressum" },
         { text: "Datenschutz", href: "/datenschutz" },
         { text: "Über uns", href: "/about" },
-        { text: "Kontakt", href: "/contact" }
+        { text: "Kontakt", href: "/contact" },
+        { text: "Standort (Google Maps)", href: "https://maps.app.goo.gl/EUY3fjZJ1PABgbrY7", external: true }
       ]
     },
     {
@@ -51,10 +52,12 @@ const Footer = () => {
                 {group.links.map((link) => {
                   const linkText = typeof link === 'string' ? link : link.text;
                   const linkHref = typeof link === 'string' ? '#' : link.href;
+                  const isExternal = typeof link !== 'string' && 'external' in link && link.external;
                   return (
                     <li key={linkText}>
                       <a
                         href={linkHref}
+                        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                         className="text-gray-400 hover:text-white transition-colors text-xs sm:text-sm"
                       >
                         {linkText}

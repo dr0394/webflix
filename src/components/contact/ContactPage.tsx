@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Clock, Send, CheckCircle2, MessageSquare, Zap, Users } from 'lucide-react';
+import { Mail, Phone, Clock, Send, CheckCircle2, MessageSquare, Zap, Users, MapPin } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../Header';
 
@@ -95,6 +95,13 @@ const ContactPage = () => {
       value: '+49 175 1194624',
       link: 'tel:+491751194624',
       description: 'Mo-Fr 9-18 Uhr'
+    },
+    {
+      icon: MapPin,
+      title: 'Standort',
+      value: 'Velbert, Deutschland',
+      link: 'https://maps.app.goo.gl/EUY3fjZJ1PABgbrY7',
+      description: 'Auf Google Maps ansehen'
     }
   ];
 
