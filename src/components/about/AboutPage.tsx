@@ -38,22 +38,16 @@ const AboutPage = () => {
 
   const teamMembers = [
     {
-      name: 'Max Mustermann',
+      name: 'Marcel Waschnewski',
       role: 'Gründer & CEO',
-      description: 'Mit über 10 Jahren Erfahrung im Webdesign hat Max die Vision, Websites für jeden zugänglich zu machen.',
-      image: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=800'
+      description: 'Mit seiner Vision, professionelle Websites für jeden zugänglich zu machen, hat Marcel Webflix gegründet und aufgebaut.',
+      image: '/Design_ohne_Titel_(73).png'
     },
     {
-      name: 'Laura Schmidt',
-      role: 'Lead Designer',
-      description: 'Laura bringt kreative Ideen zum Leben und sorgt dafür, dass jede Website visuell beeindruckend ist.',
-      image: 'https://images.pexels.com/photos/3756681/pexels-photo-3756681.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-      name: 'Tom Weber',
-      role: 'Tech Lead',
-      description: 'Tom entwickelt die Technologie, die unsere Websites schnell, sicher und skalierbar macht.',
-      image: 'https://images.pexels.com/photos/3778680/pexels-photo-3778680.jpeg?auto=compress&cs=tinysrgb&w=800'
+      name: 'David Liensdorf',
+      role: 'Co-Founder & CTO',
+      description: 'David ist der technische Kopf hinter Webflix und sorgt dafür, dass jede Website performant, sicher und zukunftssicher ist.',
+      image: '/Design_ohne_Titel_(74).png'
     }
   ];
 
@@ -161,7 +155,7 @@ const AboutPage = () => {
               Die Köpfe hinter deiner Website
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-pink-400/30 transition-all group">
                 <div className="relative overflow-hidden h-64">
