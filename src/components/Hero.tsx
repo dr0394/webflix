@@ -206,7 +206,7 @@ const Hero = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-16 sm:mt-24 pt-12 sm:pt-16 border-t border-white/5">
             <div className="text-center">
               <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">500+</p>
-              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">umgesetzte Websites,<br />ohne Agentur-Abhaengigkeit</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">umgesetzte Websites,<br />fuer zufriedene Kunden</p>
             </div>
             <div className="text-center">
               <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">72h</p>
@@ -214,7 +214,7 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">Mio €</p>
-              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">gesparte Agenturkosten<br />in der Community</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">an Entwicklungskosten<br />fuer unsere Kunden gespart</p>
             </div>
             <div className="text-center">
               <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">5 Jahre</p>
