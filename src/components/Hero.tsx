@@ -1,181 +1,228 @@
 import React, { useState, useEffect } from 'react';
-import { CheckCircle2, Sparkles, Clock, Shield } from 'lucide-react';
+import { Check, Play, Star, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
-  const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 45, seconds: 30 });
-  const [availableSlots, setAvailableSlots] = useState(2);
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 2, minutes: 42, seconds: 52 });
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(prev => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 };
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        } else if (prev.hours > 0) {
-          return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        }
-        return prev;
+        let { days, hours, minutes, seconds } = prev;
+        seconds--;
+        if (seconds < 0) { seconds = 59; minutes--; }
+        if (minutes < 0) { minutes = 59; hours--; }
+        if (hours < 0) { hours = 23; days--; }
+        if (days < 0) { days = 0; hours = 0; minutes = 0; seconds = 0; }
+        return { days, hours, minutes, seconds };
       });
     }, 1000);
     return () => clearInterval(timer);
   }, []);
 
+  const pad = (n: number) => String(n).padStart(2, '0');
+
   const whatsappNumber = "4915146692387";
-  const whatsappMessage = encodeURIComponent("Hallo! Ich möchte meinen kostenlosen Website-Entwurf für 349€ erhalten.");
+  const whatsappMessage = encodeURIComponent("Hallo! Ich interessiere mich für eine Website für 349€.");
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black pt-24 pb-12 sm:pt-28 sm:pb-16 md:pt-32 md:pb-20">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-green-500/10 via-transparent to-transparent"></div>
-
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 w-full max-w-5xl mx-auto">
-
-        {/* Limited Availability Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-full mb-6 animate-pulse">
-          <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-          <span className="text-sm font-bold text-red-400">Nur noch {availableSlots} Plätze diese Woche verfügbar</span>
-        </div>
-
-        {/* Main Headline */}
-        <h1 className="font-black mb-6 leading-tight">
-          <span className="block text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4">
-            Deine Website für
-          </span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
-            349€
-          </span>
-        </h1>
-
-        {/* Subheadline */}
-        <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-4 font-light">
-          Erst den Entwurf sehen. Dann bezahlen.
-        </p>
-        <p className="text-lg sm:text-xl text-gray-400 mb-12">
-          Kein Risiko. Keine Vorauszahlung. Alles per WhatsApp.
-        </p>
-
-        {/* Trust Badges */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
-          <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3">
-            <Shield className="w-5 h-5 text-green-400 flex-shrink-0" />
-            <span className="text-sm text-white font-medium">Kein Risiko</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3">
-            <Clock className="w-5 h-5 text-green-400 flex-shrink-0" />
-            <span className="text-sm text-white font-medium">In 24h Entwurf</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3">
-            <CheckCircle2 className="w-5 h-5 text-green-400 flex-shrink-0" />
-            <span className="text-sm text-white font-medium">Erst sehen</span>
-          </div>
-          <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-3">
-            <Sparkles className="w-5 h-5 text-green-400 flex-shrink-0" />
-            <span className="text-sm text-white font-medium">Dann zahlen</span>
-          </div>
-        </div>
-
-        {/* Main CTA */}
-        <div className="max-w-2xl mx-auto">
-          <a
-            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative block"
-          >
-            <div className="absolute -inset-1 bg-gradient-to-r from-green-400 via-emerald-400 to-green-500 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-300 animate-pulse"></div>
-            <div className="relative bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl p-8 hover:from-green-400 hover:to-emerald-400 transition-all duration-300 transform group-hover:scale-[1.02]">
-              <div className="flex items-center justify-center gap-4 mb-4">
-                <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                </svg>
-                <div className="text-left">
-                  <div className="text-white text-2xl sm:text-3xl font-black">
-                    Kostenlosen Entwurf erhalten
-                  </div>
-                  <div className="text-green-100 text-sm font-medium">
-                    Direkt per WhatsApp starten
-                  </div>
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-green-50 text-sm font-medium opacity-90">
-                  Antwort in wenigen Minuten
-                </div>
-              </div>
-            </div>
-          </a>
-
-          {/* Countdown Timer */}
-          <div className="mt-6 bg-black/40 backdrop-blur-sm border border-white/10 rounded-xl p-4">
-            <div className="text-gray-300 text-sm mb-2">Angebot endet in:</div>
-            <div className="flex justify-center gap-4">
-              <div className="text-center">
-                <div className="text-3xl font-black text-white">{String(timeLeft.hours).padStart(2, '0')}</div>
-                <div className="text-xs text-gray-400">Stunden</div>
-              </div>
-              <div className="text-3xl font-black text-white">:</div>
-              <div className="text-center">
-                <div className="text-3xl font-black text-white">{String(timeLeft.minutes).padStart(2, '0')}</div>
-                <div className="text-xs text-gray-400">Minuten</div>
-              </div>
-              <div className="text-3xl font-black text-white">:</div>
-              <div className="text-center">
-                <div className="text-3xl font-black text-white">{String(timeLeft.seconds).padStart(2, '0')}</div>
-                <div className="text-xs text-gray-400">Sekunden</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* How it Works */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl font-black text-green-400">1</span>
-            </div>
-            <h3 className="text-xl font-bold text-white mb-2">WhatsApp-Nachricht</h3>
-            <p className="text-gray-400">Schreibe uns deine Branche und grundlegende Wünsche</p>
-          </div>
-          <div className="text-center">
-            <div className="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl font-black text-green-400">2</span>
-            </div>
-            <h3 className="text-xl font-bold text-white mb-2">Entwurf in 24h</h3>
-            <p className="text-gray-400">Erhalte deinen persönlichen Website-Entwurf per WhatsApp</p>
-          </div>
-          <div className="text-center">
-            <div className="w-16 h-16 bg-green-500/10 border border-green-500/30 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <span className="text-3xl font-black text-green-400">3</span>
-            </div>
-            <h3 className="text-xl font-bold text-white mb-2">Zahlen & Online</h3>
-            <p className="text-gray-400">Nur bei Gefallen 349€ zahlen und Website geht live</p>
-          </div>
-        </div>
-
-        {/* Social Proof */}
-        <div className="mt-16 flex items-center justify-center gap-8 flex-wrap">
-          <div className="text-center">
-            <div className="text-3xl font-black text-green-400">847+</div>
-            <div className="text-sm text-gray-400">Zufriedene Kunden</div>
-          </div>
-          <div className="w-px h-12 bg-white/10"></div>
-          <div className="text-center">
-            <div className="text-3xl font-black text-green-400">4.9/5</div>
-            <div className="text-sm text-gray-400">Bewertung</div>
-          </div>
-          <div className="w-px h-12 bg-white/10"></div>
-          <div className="text-center">
-            <div className="text-3xl font-black text-green-400">24h</div>
-            <div className="text-sm text-gray-400">Entwurf-Zeit</div>
-          </div>
-        </div>
-
+    <section className="relative bg-[#0d0d0d] overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/15 via-transparent to-transparent"></div>
+        <div
+          className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a853' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        ></div>
       </div>
 
-      {/* Gradient overlay at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
+      <div className="relative z-10 pt-8 sm:pt-12 pb-16 sm:pb-24">
+        <div className="container mx-auto max-w-6xl px-4">
+          <div className="text-center mb-10 sm:mb-14">
+            <div className="inline-block px-5 py-2 border border-amber-500/40 rounded-sm mb-6 sm:mb-8">
+              <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-amber-400/90 uppercase">
+                Warum tausende zahlen wenn es auch einfacher geht
+              </span>
+            </div>
 
+            <h1 className="font-black leading-[0.95] mb-6 sm:mb-8 tracking-tight">
+              <span className="block text-white text-[2.2rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem] uppercase">
+                Deine professionelle
+              </span>
+              <span className="block text-white text-[2.2rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem] uppercase">
+                Website in 48 Stunden!
+              </span>
+            </h1>
+
+            <p className="text-sm sm:text-base md:text-lg font-bold text-gray-200 uppercase tracking-wider max-w-4xl mx-auto mb-4 sm:mb-5 leading-relaxed">
+              Der Service, der dir zeigt: Du brauchst keine Agentur, keine Erfahrung und keinen Technikstress. Wir bauen deine Website - fertig in 48h.
+            </p>
+
+            <p className="text-sm sm:text-base text-gray-400 max-w-3xl mx-auto mb-3">
+              Die meisten Menschen haben <strong className="text-white">KEINE AHNUNG</strong>, wie teuer und kompliziert Website-Agenturen arbeiten.
+            </p>
+
+            <p className="text-sm sm:text-base text-gray-400 max-w-3xl mx-auto">
+              Mit WEBFLIX bekommst du deine professionelle Website zum Festpreis - und wie <strong className="text-white">500+ Kunden</strong> es
+              bereits geschafft haben, waehrend andere noch auf ihre Agentur warten.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+            <div>
+              <div className="relative rounded-lg overflow-hidden bg-gray-900 border border-white/10 aspect-video group cursor-pointer">
+                <img
+                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="WEBFLIX Ergebnis"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-colors">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30 group-hover:scale-110 transition-transform">
+                    <Play className="w-8 h-8 sm:w-10 sm:h-10 text-white fill-white ml-1" />
+                  </div>
+                </div>
+
+                <div className="absolute top-3 right-3 w-8 h-8 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414m-4.242-4.242a9 9 0 0012.728 0" />
+                  </svg>
+                </div>
+
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4 flex items-center gap-3">
+                  <span className="text-amber-400 font-bold text-sm tracking-wider">WEBFLIX</span>
+                  <span className="text-white/40">|</span>
+                  <span className="text-gray-300 text-sm">So funktioniert's</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 sm:gap-4 mt-5 flex-wrap">
+                <div className="bg-[#1a1a2e] border border-white/10 rounded-md px-3 py-2 flex flex-col items-center">
+                  <span className="text-[9px] text-gray-400 leading-tight">Kundenmeinungen</span>
+                  <span className="text-[9px] text-gray-400 leading-tight">der letzten 12 Monate</span>
+                  <span className="text-white font-black text-xs mt-1">TOP</span>
+                  <span className="text-white font-black text-xs">DIENSTLEISTER</span>
+                  <span className="text-amber-400 font-bold text-xs">2026</span>
+                  <span className="text-[8px] text-gray-500 mt-0.5">Mehr Infos &gt;</span>
+                  <span className="text-[8px] text-gray-500">ProvenExpert</span>
+                </div>
+
+                <div className="bg-[#1a1a2e] border border-white/10 rounded-md px-3 py-2 flex flex-col items-center">
+                  <span className="text-[9px] text-gray-400 leading-tight">Kundenmeinungen</span>
+                  <span className="text-[9px] text-gray-400 leading-tight">der letzten 12 Monate</span>
+                  <span className="text-white font-black text-xs mt-1">TOP</span>
+                  <span className="text-amber-400 font-black text-xs">EMPFEHLUNG</span>
+                  <span className="text-amber-400 font-bold text-xs">2026</span>
+                  <span className="text-[8px] text-gray-500 mt-0.5">Mehr Infos &gt;</span>
+                  <span className="text-[8px] text-gray-500">ProvenExpert</span>
+                </div>
+
+                <div className="flex flex-col items-start">
+                  <div className="flex gap-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
+                    ))}
+                  </div>
+                  <span className="text-white font-bold text-base mt-1">Sehr Gut</span>
+                  <span className="text-gray-400 text-sm">ProvenExpert</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#141414] border border-white/10 rounded-lg p-6 sm:p-8">
+              <p className="text-xs sm:text-sm font-bold tracking-[0.15em] text-amber-400/80 uppercase mb-3">
+                Launch-Angebot gilt nur jetzt!
+              </p>
+
+              <div className="flex items-baseline gap-3 mb-4">
+                <span className="text-5xl sm:text-6xl font-black text-white">349€</span>
+                <span className="text-lg sm:text-xl text-red-500 line-through font-bold">3.637 Euro</span>
+              </div>
+
+              <div className="bg-[#1a1a1a] border border-white/10 rounded-md px-4 py-3 mb-5">
+                <p className="text-xs sm:text-sm font-bold text-white tracking-wider uppercase">
+                  <ArrowRight className="w-3 h-3 inline mr-1" />
+                  Du sparst 3.288€ mit Code: WFXDEAL
+                </p>
+              </div>
+
+              <div className="inline-block border border-white/20 px-3 py-1.5 mb-6">
+                <span className="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Deine Vorteile im Ueberblick</span>
+              </div>
+
+              <div className="space-y-5">
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Professionelle Website in 48 Stunden (Wert 1.997 €)</p>
+                    <p className="text-sm text-gray-400 mt-1">Von "Ich habe keine Website" zu "Meine Website ist online" - in 48 Stunden.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Unbegrenzte Aenderungen & Lifetime-Support</p>
+                    <p className="text-sm text-gray-400 mt-1">Aenderungswuensche werden sofort umgesetzt. Support per WhatsApp - ein Leben lang.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Bonus 1: SEO & Google Optimierung</p>
+                    <p className="text-sm text-gray-400 mt-1">Deine Website wird bei Google gefunden. Komplett optimiert fuer maximale Sichtbarkeit.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-3">
+                  <Check className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-bold text-white uppercase tracking-wide">Bonus 2: SSL, Hosting & Domain inklusive</p>
+                    <p className="text-sm text-gray-400 mt-1">Alles was du brauchst ist dabei. Keine versteckten Kosten, keine Extras.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 pt-5 border-t border-white/10">
+                <p className="text-xs sm:text-sm font-bold text-white text-center uppercase tracking-wider mb-4">
+                  Gesamtwert: weit ueber 3.637 Euro
+                </p>
+
+                <a
+                  href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-500 hover:to-red-500 text-white text-center rounded-md py-4 sm:py-5 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-orange-500/20"
+                >
+                  <span className="block text-base sm:text-lg font-black uppercase tracking-wider">
+                    Ja, ich will meine Website
+                  </span>
+                  <span className="block text-sm text-white/80 mt-0.5">(Fuer nur 349 €)</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mt-16 sm:mt-24 pt-12 sm:pt-16 border-t border-white/5">
+            <div className="text-center">
+              <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">500+</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">umgesetzte Websites,<br />ohne Agentur-Abhaengigkeit</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">48h</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">Express-Lieferung,<br />garantiert fertig</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">Mio €</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">gesparte Agenturkosten<br />in der Community</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl sm:text-4xl md:text-5xl font-black text-white italic">5 Jahre</p>
+              <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-tight">Erfahrung in Website-,<br />Funnel- & Systemaufbau</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

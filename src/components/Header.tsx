@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Star, Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Star, Menu, X, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 interface HeaderProps {
@@ -10,10 +10,73 @@ interface HeaderProps {
 const Header = ({ showNavigation = false, showShowroomLink = false }: HeaderProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 2, minutes: 42, seconds: 52 });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        let { days, hours, minutes, seconds } = prev;
+        seconds--;
+        if (seconds < 0) { seconds = 59; minutes--; }
+        if (minutes < 0) { minutes = 59; hours--; }
+        if (hours < 0) { hours = 23; days--; }
+        if (days < 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+        return { days, hours, minutes, seconds };
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const pad = (n: number) => String(n).padStart(2, '0');
 
   if (showNavigation) {
     return (
       <div className="sticky top-0 z-50">
+        <div className="bg-[#0d0d0d] border-b border-white/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                {[
+                  { value: pad(timeLeft.days), label: 'TAGE' },
+                  { value: pad(timeLeft.hours), label: 'STUNDEN' },
+                  { value: pad(timeLeft.minutes), label: 'MINUTEN' },
+                  { value: pad(timeLeft.seconds), label: 'SEKUNDEN' },
+                ].map((item, i) => (
+                  <div key={i} className="flex flex-col items-center">
+                    <div className="w-8 h-8 sm:w-9 sm:h-9 border border-white/20 rounded flex items-center justify-center">
+                      <span className="text-white font-black text-sm sm:text-base">{item.value}</span>
+                    </div>
+                    <span className="text-[7px] sm:text-[8px] text-gray-500 mt-0.5 tracking-wider">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="hidden sm:flex items-center">
+                <div className="px-4 sm:px-6 py-1.5 sm:py-2 border border-white/20 rounded-full">
+                  <span className="text-white text-xs sm:text-sm font-medium">Nur 349€ statt 3.637 €</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3 sm:gap-4">
+                <button
+                  onClick={() => navigate('/blog')}
+                  className="hidden sm:block text-white text-xs sm:text-sm font-medium hover:text-gray-300 transition-colors"
+                >
+                  BLOG
+                </button>
+                <a
+                  href={`https://wa.me/4915146692387?text=${encodeURIComponent("Hallo! Ich möchte meine Website für 349€ bestellen.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-black px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-black tracking-wider hover:bg-gray-200 transition-colors flex items-center gap-1.5"
+                >
+                  JETZT SICHERN <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
             <div className="flex items-center justify-between">
