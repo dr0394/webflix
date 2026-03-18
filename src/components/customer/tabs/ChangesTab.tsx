@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CreditCard as Edit, Plus, ShoppingCart, CheckCircle, Clock, AlertCircle } from 'lucide-react';
 import { supabase } from '../../../lib/supabase';
-import { loadStripe } from '@stripe/stripe-js';
-
-const stripeKey = import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY;
-const stripePromise = stripeKey ? loadStripe(stripeKey) : null;
 
 interface Subscription {
   id: string;
@@ -33,7 +29,6 @@ export default function ChangesTab({ customerId }: ChangesTabProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [purchaseAmount, setPurchaseAmount] = useState(1);
   const [selectedSubscription, setSelectedSubscription] = useState<string | null>(null);
-  const [isPurchasing, setIsPurchasing] = useState(false);
 
   useEffect(() => {
     loadData();
@@ -73,39 +68,8 @@ export default function ChangesTab({ customerId }: ChangesTabProps) {
     return sub.included_changes + sub.purchased_changes - sub.used_changes;
   };
 
-  const handlePurchaseChanges = async (subscriptionId: string) => {
-    setIsPurchasing(true);
-
-    try {
-      const response = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/create-checkout-session`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`
-          },
-          body: JSON.stringify({
-            type: 'changes',
-            subscriptionId,
-            amount: purchaseAmount,
-            pricePerChange: 14.99
-          })
-        }
-      );
-
-      const { sessionId } = await response.json();
-
-      const stripe = await stripePromise;
-      if (stripe) {
-        await stripe.redirectToCheckout({ sessionId });
-      }
-    } catch (error) {
-      console.error('Error purchasing changes:', error);
-      alert('Fehler beim Kauf. Bitte versuchen Sie es erneut.');
-    } finally {
-      setIsPurchasing(false);
-    }
+  const handlePurchaseChanges = async (_subscriptionId: string) => {
+    alert('Bitte kontaktieren Sie uns direkt um zusätzliche Änderungen zu bestellen.');
   };
 
   const getChangeTypeLabel = (type: string) => {
@@ -261,10 +225,9 @@ export default function ChangesTab({ customerId }: ChangesTabProps) {
               </button>
               <button
                 onClick={() => handlePurchaseChanges(selectedSubscription)}
-                disabled={isPurchasing}
-                className="flex-1 px-4 py-3 bg-gradient-to-r from-orange-500 to-pink-400 hover:from-orange-600 hover:to-pink-500 text-black font-bold rounded-lg transition-all disabled:opacity-50"
+                className="flex-1 px-4 py-3 bg-gradient-to-r from-orange-500 to-pink-400 hover:from-orange-600 hover:to-pink-500 text-black font-bold rounded-lg transition-all"
               >
-                {isPurchasing ? 'Wird verarbeitet...' : 'Jetzt kaufen'}
+                Jetzt kaufen
               </button>
             </div>
           </div>
