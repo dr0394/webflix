@@ -55,16 +55,15 @@ const Hero = () => {
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg font-bold text-gray-200 uppercase tracking-wider max-w-4xl mx-auto mb-4 sm:mb-5 leading-relaxed">
-              Der Service, der dir zeigt: Du brauchst keine Agentur, keine Erfahrung und keinen Technikstress. Wir bauen deine Website - fertig in 72h.
+              Wir sind die Agentur, die anders arbeitet: Kein Technikstress, keine langen Wartezeiten. Wir bauen deine Website - fertig in 72h.
             </p>
 
             <p className="text-sm sm:text-base text-gray-400 max-w-3xl mx-auto mb-3">
-              Die meisten Menschen haben <strong className="text-white">KEINE AHNUNG</strong>, wie teuer und kompliziert Website-Agenturen arbeiten.
+              Die meisten Agenturen verlangen <strong className="text-white">TAUSENDE EURO</strong> und brauchen Wochen fuer eine einfache Website.
             </p>
 
             <p className="text-sm sm:text-base text-gray-400 max-w-3xl mx-auto">
-              Mit WEBFLIX bekommst du deine professionelle Website zum Festpreis - und wie <strong className="text-white">500+ Kunden</strong> es
-              bereits geschafft haben, waehrend andere noch auf ihre Agentur warten.
+              Bei WEBFLIX bekommst du Agentur-Qualitaet zum Festpreis - genau wie <strong className="text-white">500+ zufriedene Kunden</strong> vor dir, die nicht mehr monatelang auf ihre Website warten mussten.
             </p>
           </div>
 
