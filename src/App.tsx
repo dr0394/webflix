@@ -133,6 +133,7 @@ import { WebflixOneDemo } from './components/webflix-one/DemoIndex';
 import { HelmetProvider } from 'react-helmet-async';
 import Offer499Page from './components/offers/Offer499Page';
 import WhatsAppButton from './components/WhatsAppButton';
+import ReferencesSlider from './components/ReferencesSlider';
 
 function App() {
   return (
@@ -147,6 +148,7 @@ function App() {
           <div className="min-h-screen bg-black text-white font-inter">
             <Header showNavigation={true} />
             <Hero />
+            <ReferencesSlider />
             <FeaturesSection />
             <FAQ />
             <Footer />
